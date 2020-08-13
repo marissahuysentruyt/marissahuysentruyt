@@ -1,0 +1,1021 @@
+/*homepage*/
+/* don't think any of the media queries are working yet.*/
+html {
+    font-size: 16pt;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+}
+
+div.heading-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    width: auto;
+    
+}
+
+div.left, 
+div.right, 
+div.image {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.left, 
+.right {
+    flex-shrink: 2;
+    flex-grow: 1;
+    
+}
+
+@media only screen and (max-width: 480px) {
+    div.left, 
+    div.right {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
+
+.image {
+    flex-shrink: 3;
+    flex-grow: 2;
+}
+
+.navbar {
+    display: inline-flex;
+    font-family: "Poppins", sans-serif;
+    flex-wrap: wrap;
+    color: #472a82;
+    margin: auto;
+}
+
+.navbar ul {
+    display: inline-flex;
+}
+
+.navbar ul li {
+    display: inline-flex;
+    padding: 0.75em;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a img {
+    height: 4rem;
+    margin: 0;
+}
+
+div.image-container {
+    background-image: url("../resources/trip_photos/DisneyWorld_2018/P1122682.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+} 
+
+@media only screen and (max-width: 480px) {
+    div.image-container {
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+div.name {
+    display: flex;
+    height: auto;
+    text-align: start;
+    width: 35%;
+    justify-content: center;
+    background
+    
+}
+
+div.tagline {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 50%;
+    
+}
+
+.name h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0.1rem;
+    text-shadow: 0.05em 0.05em 0.05em #472a82;
+    text-align: center;
+    
+    
+}
+
+.tagline p {
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    margin: 0 0;
+    padding: 0;
+    width: auto;
+    display: inline;
+}
+
+mark {
+    background: rgba(71, 42, 130, 0.90);
+    color: white;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+/*adding the same padding to the right side of top line, left side of the second. span?*/
+
+
+/*relive*/
+div.past-trip {
+    display: flex;
+    align-items: center;
+    /*do I have to center something here in order to get the .trip-section "button"(with relive some of our trips) to be vertically centered?*/
+
+}
+
+@media only screen and (max-width: 480px) {
+    /*the relive section should display as a column on mobile.*/
+    div.past-trip {
+        display: block;
+    }
+
+    .relive#sedona p,
+    .relive#wdw2018 p,
+    .relive#dl2019 p,
+    .relive#petoskey p {
+        font-size: 0.60rem;
+        flex-direction: column; 
+        flex-shrink: 2;
+    }
+
+    .tagline p {
+        font-size: 1.5rem;
+    }
+    
+}    
+
+.trip-section {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    background: rgba(71, 42, 130, 0.90);
+    border-radius: 0.65em;
+    flex-wrap: wrap;
+    /*height: auto;*/
+    width: 45%;
+    justify-content: center;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 0.35rem;
+    text-align: center;
+    margin-left: 3%;
+    
+}
+
+.trip-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 500ms easein;
+}
+
+.trip-section a:hover {
+    color: rgba(255, 251, 143, .9)
+}
+
+.relive#sedona,
+.relive#wdw2017,
+.relive#dl2019,
+.relive#petoskey {
+    display: inline-flex;
+    width: 20%;
+    height: 20%;
+    box-sizing: border-box;
+
+}
+
+.relive#sedona img,
+.relive#wdw2017 img,
+.relive#dl2019 img,
+.relive#petoskey img {
+    /*border: 1px solid orange;*/
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.relive#petoskey p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    background: rgba(150, 185, 255, 0.90);
+    margin-top: 0em;
+    border-radius: 1em;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 0.35rem;
+    text-align: center;
+}
+
+.relive#wdw2017 p {
+    background: rgba(150, 255, 187, 0.9);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-top: 0em;
+    border-radius: 1em;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 0.35rem;
+    text-align: center;
+}
+.relive#sedona p {
+    background: rgba(255, 154, 77, 0.9);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-top: 0em;
+    border-radius: 1em;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 0.35rem;
+    text-align: center;
+}
+
+.relive#dl2019 p {
+    background: rgba(255, 150, 203, 0.9);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-top: 0em;
+    border-radius: 1em;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 0.35rem;
+    text-align: center;
+}
+
+.relive#sedona a,
+.relive#wdw2017 a,
+.relive#dl2019 a,
+.relive#petoskey a {
+    text-decoration: none;
+    
+}
+
+.relive#petoskey, 
+.relive#dl2019 {
+    position: relative;
+    left: 55.25%;
+    align-content: flex-start;
+
+}
+
+.relive#sedona, 
+.relive#wdw2017 {
+    position: relative;
+    left: 7%;
+}
+
+
+/*footer section*/
+.footer {
+    background-color: #c7c5c5;
+    margin-top: 0.5em;
+    display: flex;
+    
+}
+
+.socials h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 0.65rem;
+    color: #472a82;
+    padding-left: 2%;
+
+}
+.socials {
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2%;
+}
+
+.socials a img {
+    width: 2em;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    
+}
+
+/*i don't think this stuff is quite working yet.*/
+@media only screen and (max-width: 480px) {
+    .socials a img {
+        display: block;
+        margin: 18%;
+    }
+
+    .socials {
+        padding: 2%;
+        display: block;
+    }
+
+    .socials h3 {
+        display: block;
+        text-align: center;
+        margin-bottom: 18%;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        float: right;
+    }
+
+    .footer-nav ul li {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+}
+
+.footer-nav {
+    width: 65%;
+    display: inline-flex;
+    font-family: "Poppins", sans-serif;
+    flex-wrap: wrap;
+    color: #472a82;
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+
+.footer-nav ul {
+        display: inline-flex;
+}
+    
+.footer-nav ul li {
+        display: inline-flex;
+        padding: 0.75em;
+        
+}
+
+
+
+/*about us*/
+#about {
+    background: linear-gradient(rgba(255, 251, 143, .9),rgba(255, 154, 77, 0.9), rgba(255, 150, 203, 0.9));
+    box-shadow: 0px 0px 2em rgba(255, 251, 143, 1);
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 2;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+
+}
+
+.aboutus span{
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    color: rgb(94, 110, 140);
+}
+
+#about p {
+    color: rgb(94, 110, 140);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+}
+
+#about a {
+    text-decoration: none;
+    color: rgb(94, 110, 140);
+    transition: all 100ms ease-in-out;
+}
+
+#about a:hover {
+    color: rgb(164, 165, 166);
+    text-decoration: underline;
+}
+
+.about-image {
+    display: flex;
+    box-sizing: border-box;
+    padding: 2em;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+
+.upnorth  {
+    width: 60%;
+    height: auto;
+
+}
+
+.starwars {
+    width: 60%;
+    height: auto;
+
+    
+}
+
+.arizona {
+    width: 100%;
+    height: auto;
+
+}
+
+.dl {
+    width: 60%;
+    height: auto;
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .upnorth  {
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .starwars {
+        width: 100%;
+        height: auto;
+    
+        
+    }
+    
+    .arizona {
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .dl {
+        width: 100%;
+        height: auto;
+    
+    }
+}
+
+/*get in touch*/
+.main-container {
+    background-image: url(../resources/trip_photos/Disneyland_2019/DSC00171.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    flex-shrink: 2;
+    
+}
+.go-ahead {
+    display: flex;
+    height: 20rem;
+    
+}
+
+#get-in-touch span {
+    background: rgba(255, 251, 143, .9);
+    color: #472a82;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    padding: 0.1em;
+    display: flex;
+    position: relative;
+    top: 95%;
+  
+}
+
+.container {
+    margin-top: 3em;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
+    
+}
+
+.promise {
+    background: rgba(255, 150, 203, 0.9);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-top-right-radius: 3rem;
+    
+}
+
+.promise p {
+    padding: 1rem;
+    
+}
+
+.email {
+    background: rgba(150, 255, 187, 0.9);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 3rem;
+    
+}
+
+.email p {
+    padding: 1rem;
+}
+
+.email a {
+    color: white;
+    text-decoration: none;
+    flex-wrap: wrap;
+
+}
+
+.email a:hover {
+    color: rgba(59, 150, 143);
+    font-size: 1.1em;
+}
+    
+.social-media {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: white;
+    background: rgba(150, 185, 255, 0.90);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    align-items: center;
+    
+}
+
+.social-media p {
+    padding: 1rem;
+    height: auto;
+}
+
+#bluebox {
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-flow: wrap;
+    
+}
+
+#bluebox a {
+    margin: 5%;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .promise, 
+    .email, 
+    .social-media {
+        display: block;
+        width: 90%;
+        margin: 2%;
+    }
+
+    #bluebox {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        flex-flow: wrap
+    }
+}
+
+/*photos*/
+
+.photo-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height: auto;
+    margin: auto;
+    background: linear-gradient(15deg, #472a82, rgb(150, 255, 187));
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.photo-container .title h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*why is there a little sliver between the image and the border?*/
+.photo-container a img {
+    display: flex;
+    flex-grow: 2;
+    flex-shrink: 1;
+    width: 10em;
+    height: auto;
+    margin: 1.25em;
+    border-radius: 1.5em;
+    border-color: white;
+    border-width: 0.25em;
+    border-style: solid;
+}
+
+.photo-container .title {
+    width: 100%;
+    margin: 0;
+    color: rgb(94, 110, 140);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,0.8);
+    text-align:center; 
+
+}
+
+
+.photo-container .lightbox img {
+    border-radius: 0;
+    width: 50%;
+    height: auto;
+    margin: auto;
+
+
+}
+
+/*the scroll always moves back to the top-how do I fix that? javascript? postback?*/
+.lightbox:target {
+    display: block;
+    outline: none;
+    
+}
+
+a.lightbox:hover {
+    cursor:default;
+}
+
+img:hover {
+    cursor:pointer;
+}
+
+
+
+/*trips page*/
+.trips-container {
+    height: auto;
+    display: flex;
+    border: 1px solid red;
+    box-sizing: border-box;
+    
+}
+
+.tripvideos {
+    /*display: flex;*/
+    height: auto;
+}
+
+.trip-nav ul li{
+    display: inline;
+
+}
+
+#sedonatrip {
+    background-image: url(../resources/trip_photos/Arizona_2018/image\ \(9\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45em;
+    width: 65%;
+    display: flex;
+}
+
+#cruisetrip {
+    background-image: url(../resources/trip_photos/DisneyWorld_2018_2/P1133009.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 45em;
+    width: 65%;
+    display: flex;
+}
+
+#sedonatrip iframe,
+#cruisetrip iframe {
+    border: 3px solid white;
+    border-radius: 1.125em;
+    float: right; 
+    position: relative;
+    top: 10em;
+    left: 50%;
+}
+
+#wdw2017trip {
+    background-image: url(../resources/trip_photos/DisneyWorld_2018/P1122754.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 45em;
+    width: 65%;
+    display: flex;
+    
+}
+
+#dl2019trip {
+    background-image: url(../resources/trip_photos/Disneyland_2019/DSC00138.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 45em;
+    width: 65%;
+    display: flex;
+    
+}
+
+#dl2019trip, 
+#wdw2017trip {
+    float: right;
+}
+
+
+#wdw2017trip iframe, 
+#dl2019trip iframe {
+    border: 3px solid white;
+    border-radius: 1.125em;
+    position: relative;
+    top: 10em;
+    right: 30%;
+}
+
+
+/*whats next*/
+.future-container {
+    box-sizing: border-box;
+    background: radial-gradient(rgba(150, 255, 187, 1), rgba(150, 185, 255, 1));
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    margin: 2%;
+    width: 65%;
+    text-align: center;
+    
+}
+
+.title h3 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+/*this stuff is so messed up*/
+@media only screen and (max-width: 480px) {
+    .title h3 {
+        font-size: 1.5em;
+    }
+    .about {
+        width: 100%;
+        height: auto;
+        font-size: 0.75em;
+    }
+
+    /*.airbnb {
+        display: block;
+        border: 1px solid red;
+    }
+
+    .golden, 
+    .canmore {
+        display: block;
+        position: relative;
+        top: 80%;
+    }
+
+    .airbnb p {
+        display: block;
+        border: 1px solid red;
+        width: 100%;
+    }
+*/
+}
+
+
+.about {
+    display: flex;
+    box-sizing: border-box;
+    float: right;
+    width: 65%;
+    padding: 2%;
+    margin: 2%;
+    
+}
+
+.airbnb {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: row;
+    
+
+}
+
+.airbnb p {
+    text-align: center;
+    align-self: center;
+}
+
+.golden img {
+    display: flex;
+    width: 65%;
+    height: auto;
+    padding: 1%;
+}
+
+.canmore img {
+    width: 80%;
+    padding: 3.5%;
+    position: relative;
+}
+
+.airbnb a {
+    text-decoration: none;
+    color: white;
+    flex-wrap: wrap;
+    height: auto;
+}
+.airbnb a:hover {
+    color: rgb(164, 165, 166);
+    text-decoration: underline;
+}
+
+.golden {
+    position: relative;
+    left: 3em;
+}
+
+.canmore {
+    position: relative;
+    right: 2em;
+}
+
+.canmore,
+.golden {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
+}
+    
+
+/*link hovers*/
+.button#aboutus,
+.button#trips,
+.button#photos,
+.button#whatsnext {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.button#aboutus:hover,
+.button#trips:hover,
+.button#photos:hover,
+.button#whatsnext:hover {
+    background: linear-gradient(135deg, rgba(157, 217, 245, .75), rgba(71, 42, 130, .75));
+    border-color: white;
+}
+
+#aboutus a, 
+#trips a, 
+#photos a, 
+#whatsnext a {
+    transition: color 0.1s ease-in-out;
+}
+
+#aboutus a:hover, 
+#trips a:hover, 
+#photos a:hover, 
+#whatsnext a:hover {
+    color: white;
+}
+
+.footer-nav li.button {
+    border-radius: 1rem;
+    box-sizing: border-box;
+    border: transparent;
+    transition-duration: all 1s ease-in;
+}
+
+.footer-nav li.button:hover {
+    border-color: rgba(71, 42, 130, .9);
+    border-style: solid;
+}   
