@@ -1,0 +1,377 @@
+/*trying to do scripts for animations
+didn't really work
+#javascript { display:none; }
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    
+}
+
+body {
+    /*padding: 5%;*/
+    margin: 0;
+}
+
+
+/*navigation*/
+nav {
+    /*border: 1px solid blue;*/
+    margin-bottom: 2%;
+    position: fixed;
+    width: 100%;
+}
+
+.page {
+    /*border: 1px solid red;*/
+    display: flex; 
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #F36748;
+}
+
+.page li {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page a {
+    width: 100%;
+    padding: 1%;
+    text-decoration: none;
+    transition: all 300ms ease-in-out 100ms;
+    color: white;
+}
+
+.page a:hover {
+    background-color: white;
+    color: #F36748;
+    
+}
+
+/*header portion*/
+
+main {
+    padding: 5%;
+}
+
+.content-container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto /*auto auto auto*/;
+
+}
+
+
+#education {grid-area: top-left}
+#skills {grid-area: bottom-left}
+#summary {grid-area: top-right}
+#experience {grid-area: bottom-right}
+.content-container {
+    grid-template-areas: 
+    'top-left top-right'
+    'top-left top-right'
+    'top-left bottom-right'
+    'bottom-left bottom-right'
+    'bottom-left bottom-right'
+}
+
+.intro {
+    /*border: 1px solid green;*/
+    display: grid;
+    grid-template-columns: 96px auto;
+    grid-template-rows: auto auto auto;
+}
+
+.developerlogo {
+    grid-column-start: 1;
+}
+
+mark {
+    background-color: #F36748;
+    color: white;
+    height: 1.25em;
+    grid-column-start: 2;
+    margin-left: 1.8em;
+    width: 17.25rem;
+    height: 1.5em;
+}
+
+.front-end-development {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.intro h1 {
+    font-size: 3.6em;
+    font-weight: 800;
+    /*border: 1px solid red;*/
+    grid-row-start: 1;
+    grid-column-start: 2;
+    margin-left: 0.5em;
+}
+
+.contacts {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: space-around;
+    /*font-weight: bold; why aren't these showing?*/
+}
+
+/*education portion*/
+
+#education {
+    /*border: 1px solid red;*/
+    margin-top: 1em;
+    width: 85%;
+}
+
+#education h2 {
+    font-weight: 700;
+}
+
+.edu li.date {
+    color: #F36748;
+    font-weight: 600;
+}
+
+.edu li.title {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.edu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.edu li {
+    font-weight: 300;
+    
+}
+
+/*summary*/
+#summary {
+    /*border: 1px solid red;*/
+    margin-top: 1em;
+    width: 100%;
+    padding-left: 3%;
+    
+}
+
+#summary > .title {
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 4.25em;
+}
+
+#summary h2 {
+    font-weight: 700;
+    display: inline;
+    padding-left: 0.5%;
+}
+
+#summary p {
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+#experience {
+    /*border: 1px solid red;*/
+    margin-top: 1em;
+    width: 100%;
+    padding-left: 3%;
+}
+
+.exp {
+    padding-left: 1em;
+    border-left: 1px solid #d9d9d9;
+    /*this border is what needs to worked on. it needs to break for each new div*/   
+}
+
+.exp li.date {
+    color: #F36748;
+    font-weight: 600;
+}
+
+.exp li.title {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+.exp li.des {
+    font-size: 1.25em;
+}
+
+.exp ul {
+    list-style: none;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+
+.exp li {
+    font-weight: 300;
+}
+
+.fraser, .wwt, .marysville {
+    /*border: 1px solid red; see above at .exp*/
+}
+
+.description {
+    padding-left: 1.3em;
+}
+
+img.closing-tag {
+    /*border: 1px solid black;*/
+    width: 32px;
+    height: 32px;
+}
+
+.marysville > ul > .description {
+    /*border: 1px solid black;*/
+    display: flex;
+    align-items: center;
+}
+
+/*skills section*/
+
+#skills > div {
+    font-size: 1.25em;
+}
+
+.skills-html, .skills-css, .skills-javascript, .skills-github, .skills-figma {
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+
+}
+
+.container {
+    height: 8px;
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.behindbars#html {
+    height: 8px;
+    background-color: rgba(243, 103, 72, 0.16);
+    margin: 0;
+    padding: 0;
+    width: 15%;
+}
+
+.bars#html {
+    height: 8px;
+    background-color: #F36748;
+    margin: 0;
+    padding: 0;
+    width: 85%;
+}
+
+.behindbars#css {
+    height: 8px;
+    background-color: rgba(243, 103, 72, 0.16);
+    margin: 0;
+    padding: 0;
+    width: 25%;
+}
+
+.bars#css {
+    height: 8px;
+    background-color: #F36748;
+    margin: 0;
+    padding: 0;
+    width: 75%;
+}
+
+.behindbars#javascript {
+    height: 8px;
+    background-color: rgba(243, 103, 72, 0.16);
+    margin: 0;
+    padding: 0;
+    width: 70%;
+}
+
+.bars#javascript {
+    height: 8px;
+    background-color: #F36748;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+}
+
+
+.behindbars#github {
+    height: 8px;
+    background-color: rgba(243, 103, 72, 0.16);
+    margin: 0;
+    padding: 0;
+    width: 58%;
+}
+
+.bars#github {
+    height: 8px;
+    background-color: #F36748;
+    margin: 0;
+    padding: 0;
+    width: 42%;
+}
+
+.behindbars#figma {
+    height: 8px;
+    background-color: rgba(243, 103, 72, 0.16);
+    margin: 0;
+    padding: 0;
+    width: 65%;
+}
+
+.bars#figma {
+    height: 8px;
+    background-color: #F36748;
+    margin: 0;
+    padding: 0;
+    width: 35%;
+}
+
+/*animation attempts*/
+/*can i trigger these when scrolled to?*/
+/*#F36748;*/
+@keyframes barsanimate{
+    0% {width: 0%; background-color: #F36748;}
+    /*too many keyframes makes it jumpy. to move smooth just set 0 and 100%
+    10% {width: 10%; background-color: #F36748;}
+    25% {width: 25%; background-color: #F36748;}
+    50% {width: 42%; background-color: #F36748;}
+    75% {width: 65%; background-color: #F36748;}*/
+    100% {width: 75%;}
+}
+
+
+
