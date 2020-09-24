@@ -373,5 +373,60 @@ img.closing-tag {
     100% {width: 75%;}
 }
 
+@media only screen and (max-width: 375px) {
+    nav {
+        position: static;
+    }
 
+    .content-container {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto auto auto auto;
+
+    }
+
+    #education {grid-area: row-2}
+    #skills {grid-area: row-4}
+    #summary {grid-area: row-1}
+    #experience {grid-area: row-3}
+    .content-container {
+        grid-template-areas: 
+        'row-1 row-1'
+        'row-2 row-2'
+        'row-3 row-3'
+        'row-4 row-4'
+        
+    }
+
+    mark {
+        margin-left: 1em;
+        width: 91%;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+    
+    .front-end-development {
+        font-size: 0.8em;
+    }
+    
+    .contacts {
+        display: block;
+        text-align: center;
+    }
+    
+    .contacts h4 {
+        margin: 0.5em;
+        font-size: 0.8em;
+    }
+
+    .marysville > ul > .description {
+        display: block;
+    }
+
+    .description > .closing-tag {
+        margin-top: 1em;
+    }
+
+}
 
