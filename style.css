@@ -94,7 +94,7 @@ main {
     grid-column-start: 1;
 }
 
-mark {
+/*mark {
     background-color: #F36748;
     color: white;
     height: 1.25em;
@@ -102,9 +102,14 @@ mark {
     margin-left: 1.8em;
     width: 17.25rem;
     height: 1.5em;
-}
+}*/
 
 .front-end-development {
+    background-color: #F36748;
+    color: white;
+    height: 1.25em;
+    margin-left: 1.8em;
+    width: 17.25rem;
     font-size: 1em;
     display: flex;
     align-items: center;
@@ -115,7 +120,7 @@ mark {
     grid-column-end: 3;
     grid-row-start: 1;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.25em;
 }
 
 .intro h1 {
@@ -373,6 +378,47 @@ img.closing-tag {
     100% {width: 75%;}
 }
 
+/*mobile*/
+
+@media only screen and (max-width: 600px) {
+    nav {
+        position: static;
+    }
+    
+    #education {grid-area: row-2}
+    #skills {grid-area: row-4}
+    #summary {grid-area: row-1}
+    #experience {grid-area: row-3}
+    .content-container {
+        grid-template-areas: 
+        'row-1 row-1'
+        'row-2 row-2'
+        'row-3 row-3'
+        'row-4 row-4'
+        
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    nav {
+        position: static;
+    }
+    
+    #education {grid-area: row-2}
+    #skills {grid-area: row-4}
+    #summary {grid-area: row-1}
+    #experience {grid-area: row-3}
+    .content-container {
+        grid-template-areas: 
+        'row-1 row-1'
+        'row-2 row-2'
+        'row-3 row-3'
+        'row-4 row-4'
+        
+    }
+}
+
 @media only screen and (max-width: 375px) {
     nav {
         position: static;
@@ -397,10 +443,14 @@ img.closing-tag {
         
     }
 
-    mark {
+    #summary {
+        font-size: 0.75em;
+    }
+
+    /*mark {
         margin-left: 1em;
         width: 91%;
-    }
+    }*/
 
     .intro h1 {
         font-size: 2em;
@@ -408,6 +458,9 @@ img.closing-tag {
     
     .front-end-development {
         font-size: 0.8em;
+        margin-left: 1em;
+        width: 91%;
+        flex-shrink: 2;
     }
     
     .contacts {
