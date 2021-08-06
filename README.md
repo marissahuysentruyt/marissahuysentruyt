@@ -1,3 +1,5 @@
-# marissahuysentruyt.github.io
+# marissahuysentruyt
 
-The very beginnings of a portfolio :)
+Trying something new out! 
+
+This is the very beginnings of a portfolio :)
