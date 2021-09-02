@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", "Raleway", sans-serif;
+}
+
+/* rgba(243, 103, 72, 0.08)
+#F36748
+
+maybe for the rest of the portfolio?
+#4281a4;
+004f4a */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: "Montserrat", "Raleway", sans-serif;
+}
+
+header {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    /* margin-bottom: 3%; */
+}
+
+.header-nav {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav ul {
+   display: flex;
+   flex-basis: 20%;
+   list-style-type: none;
+   align-items: center;
+   justify-content: space-between;
+   /* border: 1px solid red; */
+   height: 4rem;
+}
+
+.header-nav a img {
+    /* border: 1px solid purple; */
+    padding: 10%;
+    width: 75%;
+    height: auto;
+}
+
+.header-nav ul a {
+    /* border: 1px solid blue; */
+    line-height: 4rem;
+    width: 50%;
+    text-align: center;
+    color: #F36748;
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
+
+.header-nav ul a:hover {
+    background-color: rgba(243, 103, 72, 0.08);
+    border-radius: 8px;
+}
+
+footer {
+    /* border: 1px solid red; */
+    width: 50%;
+    padding-bottom: 2.5%;
+    margin: auto;
+}
+
+/* footer ul.footer-nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    border: 1px solid red;
+    padding: 2%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-around;
+} */
+
+/* footer ul.footer-nav a,  */
+footer .social a {
+    text-decoration: none;
+    color: #F36748;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    padding: 2%;
+    border-radius: 8px;
+}
+
+/* footer ul.footer-nav a:hover,  */
+footer .social a:hover {
+    background-color: rgba(243, 103, 72, 0.16);
+}
+
+footer .social {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin: 2%;
+    justify-content: space-evenly;
+}
+
+footer p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em;
+}
