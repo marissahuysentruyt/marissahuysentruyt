@@ -242,6 +242,8 @@ header {
     /* border: 1px solid black; */
     position: relative;
     top: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .mobile {
@@ -504,6 +506,11 @@ footer p {
         margin-top: 10%;
     }
     
+    .desktop img {
+        /* border: 1px solid black; */
+        top: 100px;
+    }
+    
     .collab-cta a {
         width: 25%;
     }
@@ -548,6 +555,12 @@ footer p {
     .body-container .hero-section {
         /* border: 1px solid red; */
         padding-top: 20%;
+    }
+    
+    .desktop img {
+        margin-top: 10%;
+        top: 0;
+        padding: 0;
     }
 
     .mobile {
