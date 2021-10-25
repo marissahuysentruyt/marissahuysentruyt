@@ -460,7 +460,7 @@ header {
     color: rgba(0, 0, 0, 0.88);
 }
 
-.collab-cta h3 {
+.collab-cta p {
     /* border: 1px solid red; */
     flex-basis: 70%;
     font-size: 2em;
@@ -587,7 +587,7 @@ footer p {
         /* border: 1px solid red; */
     }
 
-    .collab-cta h3 {
+    .collab-cta p {
          /* border: 1px solid red; */
          flex-basis: 60%;
     }
@@ -666,7 +666,7 @@ footer p {
         align-items: flex-start;
     }
 
-    .collab-cta h3 {
+    .collab-cta p {
         margin-bottom: 15%;
     }
 
