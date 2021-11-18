@@ -65,7 +65,7 @@ header {
     border-radius: 50px;
 }
 
-main {
+.body-container {
     /* border: 1px solid red; */
     padding: 0;
     background-color: #112437;
@@ -558,7 +558,7 @@ footer p {
         background-color: rgba(243, 103, 72, 0.16);
     }
 
-    main .hero-section {
+    .body-container .hero-section {
         /* border: 1px solid red; */
         padding-top: 20%;
     }
@@ -673,7 +673,7 @@ footer p {
         padding-bottom: 5%;
     }
 
-    main .hero-section {
+    .body-container .hero-section {
         padding-top: 36%
     }
 
@@ -693,11 +693,11 @@ footer p {
 
 
 @media only screen and (max-width: 414px) {
-    main .hero-section {
+    .body-container .hero-section {
         padding-top: 50%;
     }
 
-    main .hero-section .text-container h1{
+    .body-container .hero-section .text-container h1{
         font-size: 4.5em;
         padding: 0;
         /* border: 1px solid red; */
@@ -712,7 +712,7 @@ footer p {
         padding: 4%;
     }
     
-    main .hero-section .text-container h1{
+    .body-container .hero-section .text-container h1{
         font-size: 3.5em;
     }
     .visit-sites a {
