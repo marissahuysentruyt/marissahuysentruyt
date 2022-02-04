@@ -577,16 +577,16 @@ footer p {
         font-size: 90%;
      }
 
-     .body-container .hero-section h1 {
+    .body-container .hero-section h1 {
         /* border: 1px solid red; */
         width: 70%;
-     }
+    }
 
-     .neverland-travelers .nt-text .links a.link1,
-     .financial .fin-text .links a.link1, 
-     .iceland .ice-text .links a.link1 {
-         width: 40%;
-     }
+    .neverland-travelers .nt-text .links a.link1,
+    .financial .fin-text .links a.link1, 
+    .iceland .ice-text .links a.link1 {
+        width: 40%;
+    }
 
 
     .neverland-travelers .nt-text .links a.link2,
