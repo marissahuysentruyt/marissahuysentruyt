@@ -99,6 +99,37 @@ header {
     margin-bottom: 3%;
 }
 
+.article-links {
+    width: 80%;
+    /* border: 1px solid red; */
+    padding: 0 4%;
+    margin: -6% auto 6% auto;
+}
+
+.article-links ul {
+    list-style-type: none;
+}
+
+.article-links ul li {
+    /* border: 1px solid white; */
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 1.5em;
+    padding: 0.5em 0;
+}
+
+.article-links ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.72);
+    transition: all ease-in-out 0.2s;
+    padding-bottom: 0.1em;
+    border-bottom: 2px solid transparent;
+}
+
+.article-links ul li a:hover {
+    color: rgba(255, 255, 255, 0.95);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.72);
+}
+
 
 .collab-cta {
     /* border: 1px solid red; */
