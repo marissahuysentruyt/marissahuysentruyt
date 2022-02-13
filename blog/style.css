@@ -197,7 +197,6 @@ footer .social {
     list-style-type: none;
 }
 
-
 footer .social a {
     /* border: 1px solid black; */
     text-decoration: none;
@@ -228,7 +227,7 @@ footer .social li:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1%;
+    margin-right: 0.7em;
 }
 
 

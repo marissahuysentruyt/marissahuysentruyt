@@ -518,7 +518,8 @@ footer .social li:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1%;
+    margin-right: 0.7em;
+
 }
 
 
