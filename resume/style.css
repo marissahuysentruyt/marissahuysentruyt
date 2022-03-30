@@ -333,27 +333,27 @@ header {
 /* % fill, delayed, color: #F36748 */
 @keyframes barshtmlpercent {
     0% {width: 0%; border-bottom: 8px solid #F36748;}
-    100% {width: 85%; border-bottom: 8px solid #F36748;}
+    100% {width: 87%; border-bottom: 8px solid #F36748;}
 }
 
 @keyframes barscsspercent {
     0% {width: 0%; border-bottom: 8px solid #F36748;}
-    100% {width: 83%; border-bottom: 8px solid #F36748;}
+    100% {width: 85%; border-bottom: 8px solid #F36748;}
 }
 
 @keyframes barsjspercent {
     0% {width: 0%; border-bottom: 8px solid #F36748;}
-    100% {width: 40%; border-bottom: 8px solid #F36748;}
+    100% {width: 45%; border-bottom: 8px solid #F36748;}
 }
 
 @keyframes barsgitpercent {
     0% {width: 0%; border-bottom: 8px solid #F36748;}
-    100% {width: 25%; border-bottom: 8px solid #F36748;}
+    100% {width: 40%; border-bottom: 8px solid #F36748;}
 }
 
 @keyframes barsfigmapercent {
     0% {width: 0%; border-bottom: 8px solid #F36748;}
-    100% {width: 35%; border-bottom: 8px solid #F36748;}
+    100% {width: 40%; border-bottom: 8px solid #F36748;}
 }
     
 #skills {
@@ -773,7 +773,8 @@ footer p {
     }
 
     .grid-container {
-        margin-bottom: 15%;
+        padding-bottom: 50%;
+        margin-bottom: 25%;
         /* border: 1px solid blue; */
     }
     
@@ -822,15 +823,16 @@ footer p {
         margin-bottom: 5%;
     }
 
-    #experience {
-        /* border: 1px solid red; */
+    /* #experience {
+        border: 1px solid red;
         margin-top: 15%;
-    }
+    } */
 
 
      #experience .experience-container {
         /* border: 1px solid blue;  */
-        height: 100%;
+        /* height: 100%; */
+        padding-bottom: 0;
     } 
 
     #experience .experience-container .fraser, 
@@ -871,7 +873,6 @@ footer p {
 
     #skills {
         /* border: 1px solid red; */
-        padding-top: 35%;
         height: auto;
     }
 
@@ -885,11 +886,6 @@ footer p {
         font-size: 2.5em;
     }
 
-    #skills {
-        /* border: 1px solid red; */
-        padding-top: 60%;
-    }
-    
     .collab-cta a {
         width: 70%;
     }
@@ -913,6 +909,7 @@ footer p {
     .grid-container {
         padding-left: 5%;
         padding-right: 3%;
+        padding-bottom: 80%;
         width: 94%;
     }
     
