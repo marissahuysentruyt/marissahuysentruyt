@@ -803,14 +803,14 @@ footer p {
         z-index: -1;
     } 
 
-     .projects h2 {
-        font-size: 6em;
-     }
+    .projects h2 {
+    font-size: 6em;
+    }
 
-     .projects .links {
-        /* border: 1px solid red; */
-        flex-direction: column;
-     }
+    .projects .links {
+    /* border: 1px solid red; */
+    flex-direction: column;
+    }
 
     .neverland-travelers .nt-text .links a.link1,
     .financial .fin-text .links a.link1, 

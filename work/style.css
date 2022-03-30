@@ -1,18 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400&display=swap');
-
-* {
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
-    font-family: "Montserrat", "Raleway", sans-serif;
-}
-
-/* rgba(243, 103, 72, 0.08)
-#F36748
-
-maybe for the rest of the portfolio?
-#4281a4;
-004f4a */
+/* rgba(71, 42, 130,)
+#472A82 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400&display=swap');
 
@@ -24,10 +11,16 @@ maybe for the rest of the portfolio?
 }
 
 header {
-    width: 90%;
+    width: 100%;
     margin: auto;
     /* border: 1px solid red; */
-    /* margin-bottom: 3%; */
+    position: fixed;
+    z-index: 10;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-nav {
@@ -42,12 +35,11 @@ header {
 
 .header-nav ul {
    display: flex;
-   flex-basis: 20%;
+   flex-basis: 40%;
    list-style-type: none;
    align-items: center;
    justify-content: space-between;
    /* border: 1px solid red; */
-   height: 4rem;
 }
 
 .header-nav a img {
@@ -59,9 +51,11 @@ header {
 
 .header-nav ul a {
     /* border: 1px solid blue; */
-    line-height: 4rem;
+    /* line-height: 4rem; */
     width: 50%;
     text-align: center;
+    font-weight: 600;
+    padding: 1em 1.5em;
     color: #F36748;
     text-decoration: none;
     transition: all ease-in-out 0.2s;
@@ -69,48 +63,345 @@ header {
 
 .header-nav ul a:hover {
     background-color: rgba(243, 103, 72, 0.08);
-    border-radius: 8px;
+    border-radius: 50px;
 }
 
-footer {
+
+.body-container {
     /* border: 1px solid red; */
-    width: 50%;
-    padding-bottom: 2.5%;
-    margin: auto;
+    padding: 0;
+    background-color: #196076;
+    overflow: hidden;
 }
 
-/* footer ul.footer-nav {
+.body-container .hero-section {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    width: 100%;
+    padding: 7.5%;
+    /* border: 1px solid red; */
+}
+
+.body-container .hero-section h2 {
+    padding: 10% 0 5% 0;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.72);
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.body-container .hero-section h1 {
+    /* border: 1px solid red; */
+    width: 100%;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 140%;
+}
+
+.projects .grid {
+    display: grid;
+    grid-template-areas: 
+        "neverland"
+        "financial"
+        "iceland";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    /* border: 1px solid blue; */
+    color: rgba(255, 255, 255, 0.88);
+    height: auto
+}
+
+.neverland-travelers {
+    /* border: 1px solid white; */
+    grid-area: neverland;
+    display: flex;
+    flex-basis: 100%;
+    padding-left: 7.5%;
+    margin-bottom: 5%;
+}
+
+.neverland-travelers .left, 
+.financial .right, 
+.iceland .left {
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.neverland-travelers .nt-text h3, 
+.financial .fin-text h3, 
+.iceland .ice-text h3 {
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+
+.neverland-travelers .nt-text p, 
+.financial .fin-text p, 
+.iceland .ice-text p {
+    font-size: 1.5em;
+    line-height: 160%;
+    margin-bottom: 10%;
+
+}
+
+.neverland-travelers .links, 
+.financial .links,
+.iceland .links {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    list-style-type: none;
-    border: 1px solid red;
-    padding: 2%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    justify-content: space-around;
-} */
-
-/* footer ul.footer-nav a,  */
-footer .social a {
-    text-decoration: none;
-    color: #F36748;
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    padding: 2%;
-    border-radius: 8px;
 }
 
-/* footer ul.footer-nav a:hover,  */
-footer .social a:hover {
-    background-color: rgba(243, 103, 72, 0.16);
+.neverland-travelers .nt-text .links a.link1,
+.financial .fin-text .links a.link1, 
+.iceland .ice-text .links a.link1 {
+    width: 25%;
+    /* border: 1px solid black; */
+    color: #F36748;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1em 1.5em;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.neverland-travelers .nt-text .links a.link1:hover,
+.financial .fin-text .links a.link1:hover, 
+.iceland .ice-text .links a.link1:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.32);
+}
+
+.neverland-travelers .nt-text .links a.link1:active,
+.financial .fin-text .links a.link1:active, 
+.iceland .ice-text .links a.link1:active {
+    background-color: #fff;
+}
+
+.neverland-travelers .nt-text .links a.link2,
+.financial .fin-text .links a.link2,
+.iceland .ice-text .links a.link2 {
+    /* border: 1px solid red; */
+    width: 35%;
+    font-weight: 600;
+    color: #fff;
+    background-color:rgba(255, 255, 255, 0.16);
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.neverland-travelers .nt-text .links a.link2:hover,
+.financial .fin-text .links a.link2:hover,
+.iceland .ice-text .links a.link2:hover {
+    background-color:rgba(255, 255, 255, 0.24);
+}
+
+.neverland-travelers .nt-text .links a.link2:active,
+.financial .fin-text .links a.link2:active,
+.iceland .ice-text .links a.link2:active {
+    background-color:rgba(255, 255, 255, 0.1);
+
+}
+
+.neverland-travelers .nt-screenshot {
+    flex-basis: 50%;
+    position: relative;
+    left: 10%;
+}
+
+.neverland-travelers .nt-screenshot img {
+    width: 100%;
+    height: auto;
+}
+
+.financial {
+    /* border: 1px solid white; */
+    grid-area: financial;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: 100%;
+    padding-right: 7.5%;
+    margin-bottom: 5%;
+}
+
+.financial .fin-text {
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.financial .fin-screenshot {
+    flex-basis: 50%;
+    position: relative;
+    right: 10%;
+}
+
+.financial .fin-screenshot img {
+    width: 100%;
+    height: auto;
+}
+
+.iceland {
+    /* border: 1px solid white; */
+    grid-area: iceland;
+    display: flex;
+    flex-basis: 100%;
+    padding-left: 7.5%;
+    margin-bottom: 5%;
+}
+
+.iceland .ice-text {
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.iceland .ice-screenshot {
+    flex-basis: 50%;
+    position: relative;
+    left: 10%;
+}
+
+.iceland .ice-screenshot img {
+    width: 100%;
+    height: auto;
+}
+
+.collab-cta {
+    /* border: 1px solid red; */
+    padding: 10% 7.5%;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 100%;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.collab-cta p {
+    /* border: 1px solid red; */
+    flex-basis: 70%;
+    font-size: 2em;
+    line-height: 140%;
+    font-weight: 300;
+}
+
+.collab-cta a {
+    /* border: 1px solid red; */
+    width: 15%;
+    color: #F36748;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1em 1.5em;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.collab-cta a:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.32);
+    background-color: #fff;
+
+}
+
+.collab-cta a:active {
+    background-color: rgba(255, 255, 255, 0.88);
+    box-shadow: none;
+}
+footer {
+    /* border: 1px solid red; */
+    padding-bottom: 2.5%;
+    background-color: #FFF6F6;
 }
 
 footer .social {
     display: flex;
+    flex-basis: 35%;
     align-items: center;
     /* border: 1px solid red; */
-    margin: 2%;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 2% 0;
+    list-style-type: none;
+}
+
+
+footer .social a {
+    /* border: 1px solid black; */
+    text-decoration: none;
+    color: #F36748;
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer .social a:first-child {
+    margin-right: 0.5em;
+    /* border: 1px solid red; */
+}
+
+footer .social a:last-child  {
+    margin-left: 0.5em;
+    /* border: 1px solid red; */
+}
+
+footer .social li:first-child {
+    transform: scale(2);
+    /* border: 1px solid red; */
+    transition: all 0.2s ease-in-out;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.7em;
+
+}
+
+footer .social a img {
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    max-width: 48px;
+}
+
+footer .social a img:hover {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(80%) saturate(1244%) hue-rotate(341deg) brightness(89%) contrast(77%);
 }
 
 footer p {
@@ -118,4 +409,197 @@ footer p {
     padding: 0;
     margin: 0;
     font-size: 0.75em;
+}
+
+
+
+/* responsive/mobile */
+
+@media only screen and (max-width: 1220px) {
+    .header-nav ul {
+        flex-basis: 60%;
+        /* border: 1px solid red; */
+        }
+
+    .neverland-travelers .nt-text .links a.link1,
+    .financial .fin-text .links a.link1, 
+    .iceland .ice-text .links a.link1 {
+        width: 40%;
+    }
+
+
+    .neverland-travelers .nt-text .links a.link2,
+    .financial .fin-text .links a.link2,
+    .iceland .ice-text .links a.link2 {
+        /* border: 1px solid red; */
+        width: 55%;
+    } 
+
+     .collab-cta a {
+         width: 20%;
+     }
+} 
+
+@media only screen and (max-width: 1000px) {
+    .hero-section h2 {
+        border: 1px solid red;
+        
+     }
+
+    .body-container .hero-section h1 {
+        border: 1px solid red;
+        
+    }
+    
+    .collab-cta a {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header-nav ul {
+        flex-basis: 80%;
+        /* border: 1px solid red; */
+     }
+
+    
+
+     .collab-cta p {
+         /* border: 1px solid red; */
+         flex-basis: 60%;
+     }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-nav a img {
+        /* border: 1px solid purple; */
+        padding: 10%;
+        height: auto;
+    }
+
+    .header-nav ul a:active {
+        background-color: rgba(243, 103, 72, 0.16);
+    }
+
+    .neverland-travelers,
+    .financial, 
+    .iceland {
+        /* border: 1px solid black; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 10%;
+    }
+
+    .neverland-travelers .nt-text, 
+    .financial .fin-text, 
+    .iceland .ice-text {
+        /* border: 1px solid red; */
+        justify-content: center;
+        margin-bottom: 10%;
+        padding: 0 7.5%;
+    }
+
+    .neverland-travelers .nt-screenshot, 
+    .financial .fin-screenshot, 
+    .iceland .ice-screenshot {
+        left: 0;
+        right: 0;
+    }
+
+
+    .neverland-travelers .nt-text .links a.link1,
+    .financial .fin-text .links a.link1, 
+    .iceland .ice-text .links a.link1,
+    .neverland-travelers .nt-text .links a.link2,
+    .financial .fin-text .links a.link2,
+    .iceland .ice-text .links a.link2 {
+        /* border: 1px solid red; */
+        width: 50%;
+    }
+
+    .collab-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .collab-cta p {
+        margin-bottom: 15%;
+    }
+
+    .collab-cta a {
+        width: 50%;
+    }
+
+    footer {
+        padding: 10% 0;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+    
+}
+
+
+@media only screen and (max-width: 500px) {
+    header {
+        padding: 0;
+    }
+    
+    .header-nav {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .header-nav a img {
+        /* border: 1px solid purple; */
+        display: block;        
+        margin: auto;
+    }
+    
+    .header-nav ul {
+        /* border: 1px solid red; */
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    .projects .links {
+        /* border: 1px solid red; */
+        flex-direction: column;
+        }
+    
+        .neverland-travelers .nt-text .links a.link1,
+        .financial .fin-text .links a.link1, 
+        .iceland .ice-text .links a.link1 {
+            margin: 0 0 5% 0;
+            width: 70%;
+        }
+    
+        .neverland-travelers .nt-text .links a.link2,
+        .financial .fin-text .links a.link2,
+        .iceland .ice-text .links a.link2 {
+            margin: 0;
+            width: 70%;
+        }
+}
+
+
+@media only screen and (max-width: 414px) {
+    
+    .collab-cta a {
+        width: 70%;
+     }
+}
+
+@media only screen and (max-width: 325px) {
+    .header-nav ul a {
+        padding: 4%;
+    }
+    
+    
+
 }
