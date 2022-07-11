@@ -14,14 +14,14 @@
         <nav class="header-nav">
             <a href="index.html"><img src="usedresources/images_2x/mh_logo.png" alt="Home"></a>
             <ul>
-                <a href="#projects"><li>Projects</li></a>
+                <a href="work/workexamples.html"><li>Projects</li></a>
                 <a href="resume/resume.html"><li>Resume</li></a>
                 <a href="contacts/contactpage.html"><li>Contact</li></a>
             </ul>
         </nav>
     </header>
 
-    <div class="body-container">
+    <main class="body-container">
         <div class="hero-section">
             <div class="text">
                 <div id="type-on">
@@ -45,7 +45,7 @@
 
         <img class="arrow" src="usedresources/Arrow 1.png" alt="Scroll Down">
 
-        <div class="about-me">
+        <section class="about-me">
             <div class="text-container">
                 <p>
                     My name is Marissa and I'm starting my second career as a web developer! I've been working in public education for the last 6 years, and recently started dabbling in development. I really enjoy the problem-solving aspect and detail-driven nature of building user-friendly interfaces! Feel free to poke around my portfolio here, and shoot me an email if I can answer any questions!
@@ -55,9 +55,9 @@
                 <img src="usedresources/cropped_IMG_2512.png" class="me" alt="Photo of Marissa">
             </div>
                 
-        </div> 
+        </section> 
         
-        <div id="projects">
+        <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="grid">
 
@@ -83,6 +83,7 @@
                     </div>
                 </div>
 
+                <!-- greg parady remake -->
                 <div class="financial">
                     <div class="right">
                         <div class="fin-text">
@@ -94,7 +95,7 @@
                             </p>
                             <div class="links">
                                 <a href="work/financial.html" class="link1">Learn More</a>
-                                <a href="https://github.com/marissahuysentruyt/Financial-Website-Remake" target="_blank" class="link2">See on GitHub &nbsp;&nbsp; <img src="usedresources/external-link.svg" alt="Visit"></a>
+                                <a href="https://marissahuysentruyt.github.io/Financial-Website-Remake/" target="_blank" class="link2">See GitHub Site &nbsp;&nbsp; <img src="usedresources/external-link.svg" alt="Visit"></a>
                             </div>
                         </div>
                     </div>
@@ -103,6 +104,7 @@
                     </div>
                 </div>
 
+                <!-- iceland travel landing page -->
                 <div class="iceland">
                     <div class="left">
                         <div class="ice-text">
@@ -123,23 +125,29 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="collab-cta">
+        <section class="collab-cta">
             <p>
                 Interested in working together or collaborating on a project? <strong>Shoot me a message!</strong>
             </p>
-            <!-- should this just go to the contact page or open an email? -->
             <a href="contacts/contactpage.html">Get in Touch</a>
-        </div>
+        </section>
 
-    </div>
+    </main>
 
     <footer>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="usedresources/Subtract.svg" alt="LinkedIn"></a>
-            <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="usedresources/Github.svg" alt="GitHub"></a>
-        </div>
+        <ul class="social">
+            <li>
+                <a href="blog/blog.html"><img src="usedresources/medium_logo.svg" alt="Blog"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="usedresources/Subtract.svg" alt="LinkedIn"></a>
+            </li>
+            <li>
+                <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="usedresources/Github.svg" alt="GitHub"></a>
+            </li>
+        </ul>
 
         <p>&copy;&nbsp;2021 Marissa Huysentruyt</p>
     </footer>
@@ -147,7 +155,7 @@
     <!-- function to animate text -->
     <!-- increasing padding as it types? why? 
         FIGURED OUT! needed an extra container -->
-    <script> 
+    <script defer> 
         //animate text/typewriter
         var typeText = function(elem, toRotate, period) {
             this.toRotate = toRotate;
@@ -213,17 +221,6 @@
 
     </script>
 
-    <!-- function for hover -->
-    <!-- did this via css hovers instead -->
-    <!-- <script>
-        function hoverCursor(event) {
-            let elem =document.getElementById("hover");
-            elem.style.top = event.clientY + "px";
-            elem.style.left = event.clientX + "px";
-        };
-
-        document.getElementById("invisible").addEventListener('mousemove', hoverCursor);
-    </script> -->
 
 </body>
 </html>
