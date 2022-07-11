@@ -21,7 +21,7 @@
         </nav>
     </header>
 
-    <main class="body-container">
+    <div class="body-container">
         <div class="hero-section">
             <div class="text">
                 <div id="type-on">
@@ -45,7 +45,7 @@
 
         <img class="arrow" src="usedresources/Arrow 1.png" alt="Scroll Down">
 
-        <section class="about-me">
+        <div class="about-me">
             <div class="text-container">
                 <p>
                     My name is Marissa and I'm starting my second career as a web developer! I've been working in public education for the last 6 years, and recently started dabbling in development. I really enjoy the problem-solving aspect and detail-driven nature of building user-friendly interfaces! Feel free to poke around my portfolio here, and shoot me an email if I can answer any questions!
@@ -55,9 +55,9 @@
                 <img src="usedresources/cropped_IMG_2512.png" class="me" alt="Photo of Marissa">
             </div>
                 
-        </section> 
+        </div> 
         
-        <section id="projects" class="projects">
+        <div id="projects">
             <h2>Projects</h2>
             <div class="grid">
 
@@ -114,7 +114,7 @@
                             </p>
                             <div class="links">
                                 <a href="work/iceland.html" class="link1">Learn More</a>
-                                <a href="https://codepen.io/mhuysentruyt/pen/BaZyqwY?editors=1000" target="_blank" class="link2">See on CodePen &nbsp;&nbsp; <img src="usedresources/external-link.svg" alt="Visit"></a>
+                                <a href="https://marissahuysentruyt.github.io/Recreating-Iceland/" target="_blank" class="link2">See GitHub Site &nbsp;&nbsp; <img src="usedresources/external-link.svg" alt="Visit"></a>
                             </div>
                         </div>
                     </div>
@@ -123,30 +123,23 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="collab-cta">
+        <div class="collab-cta">
             <p>
                 Interested in working together or collaborating on a project? <strong>Shoot me a message!</strong>
             </p>
             <!-- should this just go to the contact page or open an email? -->
             <a href="contacts/contactpage.html">Get in Touch</a>
-        </section>
+        </div>
 
-    </main>
+    </div>
 
     <footer>
-        <ul class="social">
-            <li>
-                <a href="blog/blog.html"><img src="usedresources/medium_logo.svg" alt="Blog"></a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="usedresources/Subtract.svg" alt="LinkedIn"></a>
-            </li>
-            <li>
-                <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="usedresources/Github.svg" alt="GitHub"></a>
-            </li>
-        </ul>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="usedresources/Subtract.svg" alt="LinkedIn"></a>
+            <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="usedresources/Github.svg" alt="GitHub"></a>
+        </div>
 
         <p>&copy;&nbsp;2021 Marissa Huysentruyt</p>
     </footer>
@@ -154,7 +147,7 @@
     <!-- function to animate text -->
     <!-- increasing padding as it types? why? 
         FIGURED OUT! needed an extra container -->
-    <script defer> 
+    <script> 
         //animate text/typewriter
         var typeText = function(elem, toRotate, period) {
             this.toRotate = toRotate;
@@ -220,6 +213,17 @@
 
     </script>
 
+    <!-- function for hover -->
+    <!-- did this via css hovers instead -->
+    <!-- <script>
+        function hoverCursor(event) {
+            let elem =document.getElementById("hover");
+            elem.style.top = event.clientY + "px";
+            elem.style.left = event.clientX + "px";
+        };
+
+        document.getElementById("invisible").addEventListener('mousemove', hoverCursor);
+    </script> -->
 
 </body>
 </html>
