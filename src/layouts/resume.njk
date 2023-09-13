@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume, Marissa Huysentruyt</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" href="../../usedresources/favicon.png" type="image/png">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="icon" href="../../public/usedresources/favicon.png" type="image/png">
 </head>
 <body>
 
     <header>
         <nav class="header-nav">
-            <a href="../index.html"><img src="../usedresources/images_2x/mh_logo.png" alt="Home"></a>
+            <a href="../index.html">
+            {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
+            </a>
             <ul>
-                <a href="../work/workexamples.html"><li>Projects</li></a>
-                <a href="resume.html"><li>Resume</li></a>
-                <a href="../contacts/contactpage.html"><li>Contact</li></a>
+                <li><a href="../work/work-examples.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -30,22 +32,25 @@
         </div> -->
     </header>
 
-    <main class="body-container">
-        <div class="hero-section">
+    <main class="body-container--resume">
+        <div class="hero-section--resume">
             <div class="header">
                 <div class="across-top">
 
                     <a href="../../../../../m_huysentruyt_resume.pdf" target="_blank" value="Resume_Huysentruyt" class="full">
                         <button type="button" class="download-btn" value="Download ">
-                            Download
-                            <img src="../usedresources/download_arrow.svg" alt="Download">
+                            Download Resume
+                          {% image 'src/public/usedresources/download_arrow.svg', '', "Download Marissa's Resume"%}
+
+                            {# <img src="../public/usedresources/download_arrow.svg" alt="Download"> #}
                         </button>
                     </a>
 
                     <a href="../../../../m_huysentruyt_resume_1.pdf" target="_blank" value="Resume_Huysentruyt" class="icon">
                         <button type="button" class="download-btn" >
+                          {% image 'src/public/usedresources/download_arrow.svg', '', "Download Marissa's Resume"%}
                             
-                            <img src="../usedresources/download_arrow.svg" alt="Download">
+                            {# <img src="public/usedresources/download_arrow.svg" alt="Download"> #}
                         </button>
                     </a>
 
@@ -92,7 +97,7 @@
 
             <section id="about">
                 <div class="hello">
-                    <img src="../usedresources/images_2x/js_arrow.png" alt="start">
+                    <img src="../public/usedresources/images_2x/js_arrow.png" alt="start">
                     <h2>Hello there!</h2>
                 </div>
 
@@ -139,7 +144,7 @@
                         
                         <ul class="experience-items">
                             <li>Implement developmentally-appropriate music lessons as detailed by the teacher of record for grades 5-12 </li>
-                            <img src="../usedresources/images_2x/end_tag.png" alt="end">
+                            <img src="../public/usedresources/images_2x/end_tag.png" alt="end">
                         </ul>
                     </div>
                 </div>
@@ -150,35 +155,35 @@
                     <h2>Skills</h2>
                     <div class="html">
                         <div id="animate-html">
-                            <img src="../usedresources/images_2x/html.png" alt="HTML">
+                            <img src="../public/usedresources/images_2x/html.png" alt="HTML">
                             <h3>HTML</h3>
                         </div>
                         <div class="bars-all bottom"></div>
                     </div>
                     <div class="css">
                         <div id="animate-css">
-                            <img src="../usedresources/images_2x/css.png" alt="HTML">
+                            <img src="../public/usedresources/images_2x/css.png" alt="HTML">
                             <h3>CSS</h3>
                         </div>
                         <div class="bars-all bottom"></div>
                     </div>
                     <div class="javascript">
                         <div id="animate-js">
-                            <img src="../usedresources/images_2x/js.png" alt="HTML">
+                            <img src="../public/usedresources/images_2x/js.png" alt="HTML">
                             <h3>JavaScript</h3>
                         </div>
                         <div class="bars-all bottom"></div>
                     </div>
                     <div class="github">
                         <div id="animate-github">
-                            <img src="../usedresources/images_2x/github.png" alt="HTML">
+                            <img src="../public/usedresources/images_2x/github.png" alt="HTML">
                             <h3>GitHub</h3>
                         </div>
                         <div class="bars-all bottom"></div>
                     </div>
                     <div class="figma">
                         <div id="animate-figma">
-                            <img src="../usedresources/images_2x/figma.png" alt="HTML">
+                            <img src="../public/usedresources/images_2x/figma.png" alt="HTML">
                             <h3>Figma</h3>
                         </div>
                         <div class="bars-all bottom"></div>
@@ -187,12 +192,12 @@
             </section>
         </div>
 
-        <section class="collab-cta"> 
-            <p>
+        <section class="collab-cta--resume"> 
+            <p class="resume-page-text">
                 Interested in working together or collaborating on a project? <strong>Shoot me a message!</strong>
             </p>
             <!-- should this just go to the contact page or open an email? -->
-            <a href="../contacts/contactpage.html">Get in Touch</a>
+            <a href="../contact/contact.html">Get in Touch</a>
         </section>
 
     </main>
@@ -200,17 +205,17 @@
     <footer>
         <ul class="social">
             <li>
-                <a href="../blog/blog.html"><img src="../usedresources/medium_logo.svg" alt="Blog"></a>
+                <a href="../blog/blog.html"><img src="../public/usedresources/medium_logo.svg" alt="Blog"></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="../usedresources/Subtract.svg" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="../public/usedresources/LinkedIN.svg" alt="LinkedIn"></a>
             </li>
             <li>
-                <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="../usedresources/Github.svg" alt="GitHub"></a>
+                <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="../public/usedresources/Github.svg" alt="GitHub"></a>
             </li>
         </ul>
 
-        <p>&copy;&nbsp;2021 Marissa Huysentruyt</p>
+        <p>&copy;&nbsp;2023 Marissa Huysentruyt</p>
     </footer>
 
     <script>

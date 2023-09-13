@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="../../usedresources/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="icon" href="../../public/usedresources/favicon.png" type="image/png">
 </head>
 <body>
 
 <header>
     <nav class="header-nav">
-        <a href="../index.html"><img src="../usedresources/images_2x/mh_logo.png" alt="Home"></a>
+        <a href="../index.html">
+        {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
+        </a>
         <ul>
-            <a href="../index.html#projects"><li>Projects</li></a>
-            <a href="../resume/resume.html"><li>Resume</li></a>
-            <a href="../contacts/contactpage.html"><li>Contact</li></a>
+            <li><a href="../work/work-examples.html">Projects</a></li>
+            <li><a href="../resume/resume.html">Resume</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <main class="body-container">
-    <section class="hero-section">
+    <section class="hero-section--blog">
         <h2>blog</h2>
         <p>
             <!-- why am i writing these blogs -->
@@ -78,7 +80,7 @@
         <p>
             Interested in working together or collaborating on a project? <strong>Shoot me a message!</strong>
         </p>
-        <a href="../contacts/contactpage.html">Get in Touch</a>
+        <a href="../contact/contact.html">Get in Touch</a>
     </section>
 
 </main>
@@ -86,17 +88,17 @@
 <footer>
         <ul class="social">
             <li>
-                <a href="blog.html"><img src="../usedresources/medium_logo.svg" alt="Blog"></a>
+                <a href="blog.html"><img src="../public/usedresources/medium_logo.svg" alt="Blog"></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="../usedresources/Subtract.svg" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="../public/usedresources/LinkedIN.svg" alt="LinkedIn"></a>
             </li>
             <li>
-                <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="../usedresources/Github.svg" alt="GitHub"></a>
+                <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="../public/usedresources/Github.svg" alt="GitHub"></a>
             </li>
         </ul>
 
-        <p>&copy;&nbsp;2021 Marissa Huysentruyt</p>
+        <p>&copy;&nbsp;2023 Marissa Huysentruyt</p>
     </footer>
     
     

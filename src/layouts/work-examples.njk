@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Examples</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" href="../usedresources/favicon.png" type="image/png">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="icon" href="../public/usedresources/favicon.png" type="image/png">
 </head>
 <body>
 
     <header>
         <nav class="header-nav">
-            <a href="../index.html"><img src="../usedresources/images_2x/mh_logo.png" alt="Home"></a>
+            <a href="../index.html">
+              {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
+            </a>
             <ul>
-                <li><a href="workexamples.html">Projects</a></li>
+                <li><a href="work-examples.html">Projects</a></li>
                 <li><a href="../resume/resume.html">Resume</a></li>
-                <li><a href="../contacts/contactpage.html">Contact</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <main class="body-container">
+    <main class="body-container--projects">
 
-        <section class="hero-section">
+        <section class="hero-section--projects">
             <h2>projects</h2>
             <h1>Below are some of the projects I've worked on. Feel free to browse around, and click into any of these projects for more details on what I contributed during each, what technologies I used to create them, and any other important notes. You can also find links to the GitHub Repos, any CodePens, or live sites.</h1>
         </section>
@@ -42,14 +44,16 @@
                                 I built and deployed the first version of a website dedicated to my personal vlog channel called Neverland Travelers. 
                             </p>
                             <div class="links">
-                                <a href="neverlandtravelers.html" class="link1">Learn More</a>
-                                <a href="https://www.neverlandtravelers.com" target="_blank" class="link2">See Live Site &nbsp; &nbsp; <img src="../usedresources/external-link.svg" alt="Visit"></a>
+                              <a href="neverland-travelers.html" class="link1">Learn More</a>
+                              <a href="https://www.neverlandtravelers.com" target="_blank" class="link2">See Live Site &nbsp; &nbsp; 
+                              {% image 'src/public/usedresources/external-link.svg', '', 'Visit Neverland Travelers site' %}
+                              </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="nt-screenshot">
-                        <img src="../usedresources/NT-screenshot-hp.png" alt="Neverland Travelers Screenshot">
+                      {% image 'src/public/usedresources/NT-screenshot-hp.png', '', 'Neverland Travelers Screenshot'%}
                     </div>
                 </div>
 
@@ -64,13 +68,15 @@
                                 Using Figma designs, I recreated a real website for an independent financial advisor. 
                             </p>
                             <div class="links">
-                                <a href="financial.html" class="link1">Learn More</a>
-                                <a href="https://marissahuysentruyt.github.io/Financial-Website-Remake/" target="_blank" class="link2">See GitHub Site &nbsp;&nbsp; <img src="../usedresources/external-link.svg" alt="Visit"></a>
+                              <a href="financial.html" class="link1">Learn More</a>
+                              <a href="https://marissahuysentruyt.github.io/Financial-Website-Remake/" target="_blank" class="link2">See GitHub Site &nbsp;&nbsp;
+                              {% image 'src/public/usedresources/external-link.svg', '', 'Visit the Finance Remake site' %}
+                              </a>
                             </div>
                         </div>
                     </div>
                     <div class="fin-screenshot">
-                        <img src="../usedresources/Fin-Screenshot-hp.png" alt="Financial Remake Screenshot">
+                      {% image 'src/public/usedresources/Fin-Screenshot-hp.png', '', 'Financial Remake Screenshot'%}
                     </div>
                 </div>
 
@@ -85,13 +91,15 @@
                                 After browsing Dribbble, I developed this Icelandic travel landing page and added minor interactivity.
                             </p>
                             <div class="links">
-                                <a href="iceland.html" class="link1">Learn More</a>
-                                <a href="https://marissahuysentruyt.github.io/Recreating-Iceland/" target="_blank" class="link2">See GitHub Site &nbsp;&nbsp; <img src="../usedresources/external-link.svg" alt="Visit"></a>
+                              <a href="iceland.html" class="link1">Learn More</a>
+                              <a href="https://marissahuysentruyt.github.io/Recreating-Iceland/" target="_blank" class="link2">See GitHub Site &nbsp;&nbsp;
+                                {% image 'src/public/usedresources/external-link.svg', '', 'Visit Iceland Travel page' %}
+                              </a>
                             </div>
                         </div>
                     </div>
                     <div class="ice-screenshot">
-                        <img src="../usedresources/Ice-screenshot-hp.png" alt="Fire & Ice Screenshot">
+                      {% image 'src/public/usedresources/Ice-screenshot-hp.png', '', 'Fire & Ice Screenshot'%}
                     </div>
                 </div>
             </div>
@@ -110,17 +118,23 @@
     <footer>
         <ul class="social">
             <li>
-                <a href="../blog/blog.html" target="_blank"><img src="../usedresources/medium_logo.svg" alt="Medium"></a>
+                <a href="../blog/blog.html">
+                  {% image 'src/public/usedresources/medium_logo.svg', '', 'Blog'%}
+                </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="../usedresources/LinkedIN.svg" alt="LinkedIn"></a>
+                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank">
+                  {% image 'src/public/usedresources/LinkedIN.svg', '', 'LinkedIn'%}
+                </a>
             </li>
             <li>
-                <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="../usedresources/Github.svg" alt="GitHub"></a>
+                <a href="https://github.com/marissahuysentruyt" target="_blank">
+                  {% image 'src/public/usedresources/Github.svg', '', 'GitHub'%}
+                </a>
             </li>
         </ul>
 
-        <p>&copy;2021 Marissa Huysentruyt</p>
+        <p>&copy;2023 Marissa Huysentruyt</p>
     </footer>
 
 </body>
