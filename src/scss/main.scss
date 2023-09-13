@@ -5,6 +5,14 @@ maybe for the rest of the portfolio?
 #4281a4;
 004f4a */
 
+@use './blog';
+@use './contact';
+@use './resume';
+@use './work-examples';
+@use './neverland-travelers';
+@use './financial';
+@use './iceland';
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400&display=swap');
 
 * {
@@ -14,15 +22,27 @@ maybe for the rest of the portfolio?
     font-family: "Montserrat", "Raleway", sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     width: 100%;
-    margin: auto;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 10;
     padding-left: 7.5%;
     padding-right: 7.5%;
     background-color: rgba(255, 255, 255, 0.95);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-height: 5rem;
 }
 
 .header-nav {
@@ -47,8 +67,6 @@ header {
 .header-nav a img {
     /* border: 1px solid purple; */
     padding: 10%;
-    width: 75%;
-    height: auto;
 }
 
 .header-nav ul a {
@@ -69,9 +87,9 @@ header {
 }
 
 .body-container {
-    /* border: 1px solid red; */
     padding: 0;
     background-color: #196076;
+    height: 100%;
 }
 
 .body-container .hero-section {
@@ -527,8 +545,8 @@ footer .social a img {
     display: inline;
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: auto;
+    // width: 100%;
+    // height: auto;
     max-width: 48px;
 }
 

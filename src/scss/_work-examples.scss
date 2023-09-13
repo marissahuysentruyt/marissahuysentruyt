@@ -1,0 +1,475 @@
+.body-container--projects {
+    /* border: 1px solid red; */
+    padding: 0;
+    background-color: #196076;
+    height: 100%;
+    overflow: hidden;
+}
+
+.body-container--projects .hero-section--projects {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    width: 100%;
+    padding: 7.5%;
+    /* border: 1px solid red; */
+}
+
+.body-container--projects .hero-section--projects h2 {
+    padding: 10% 0 5% 0;
+    font-size: 200px;
+    color: rgba(255, 255, 255, 0.72);
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.body-container--projects .hero-section--projects h1 {
+    /* border: 1px solid red; */
+    width: 100%;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 140%;
+}
+
+.projects {
+    padding-top: 7.5%;
+    padding-bottom: 5%;
+}
+
+.projects .grid {
+    display: grid;
+    grid-template-areas: 
+        "neverland"
+        "financial"
+        "iceland";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    /* border: 1px solid blue; */
+    color: rgba(255, 255, 255, 0.88);
+    height: auto
+}
+
+.neverland-travelers {
+    /* border: 1px solid white; */
+    grid-area: neverland;
+    display: flex;
+    flex-basis: 100%;
+    padding-left: 7.5%;
+    margin-bottom: 5%;
+}
+
+.neverland-travelers .left, 
+.financial .right, 
+.iceland .left {
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.neverland-travelers .nt-text h3, 
+.financial .fin-text h3, 
+.iceland .ice-text h3 {
+    font-size: 2em;
+    margin-bottom: 3%;
+}
+
+.neverland-travelers .nt-text p, 
+.financial .fin-text p, 
+.iceland .ice-text p {
+    font-size: 1.5em;
+    line-height: 160%;
+    margin-bottom: 10%;
+
+}
+
+.neverland-travelers .links, 
+.financial .links,
+.iceland .links {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.neverland-travelers .nt-text .links a.link1,
+.financial .fin-text .links a.link1, 
+.iceland .ice-text .links a.link1 {
+    width: 25%;
+    /* border: 1px solid black; */
+    color: #F36748;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1em 1.5em;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.neverland-travelers .nt-text .links a.link1:hover,
+.financial .fin-text .links a.link1:hover, 
+.iceland .ice-text .links a.link1:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.32);
+}
+
+.neverland-travelers .nt-text .links a.link1:active,
+.financial .fin-text .links a.link1:active, 
+.iceland .ice-text .links a.link1:active {
+    background-color: #fff;
+}
+
+.neverland-travelers .nt-text .links a.link2,
+.financial .fin-text .links a.link2,
+.iceland .ice-text .links a.link2 {
+    /* border: 1px solid red; */
+    width: 35%;
+    font-weight: 600;
+    color: #fff;
+    background-color:rgba(255, 255, 255, 0.16);
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.neverland-travelers .nt-text .links a.link2:hover,
+.financial .fin-text .links a.link2:hover,
+.iceland .ice-text .links a.link2:hover {
+    background-color:rgba(255, 255, 255, 0.24);
+}
+
+.neverland-travelers .nt-text .links a.link2:active,
+.financial .fin-text .links a.link2:active,
+.iceland .ice-text .links a.link2:active {
+    background-color:rgba(255, 255, 255, 0.1);
+
+}
+
+.neverland-travelers .nt-screenshot {
+    flex-basis: 50%;
+    position: relative;
+    left: 10%;
+}
+
+.neverland-travelers .nt-screenshot img {
+    width: 100%;
+    height: auto;
+}
+
+.financial {
+    /* border: 1px solid white; */
+    grid-area: financial;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-basis: 100%;
+    padding-right: 7.5%;
+    margin-bottom: 5%;
+}
+
+.financial .fin-text {
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.financial .fin-screenshot {
+    flex-basis: 50%;
+    position: relative;
+    right: 10%;
+}
+
+.financial .fin-screenshot img {
+    width: 100%;
+    height: auto;
+}
+
+.iceland {
+    /* border: 1px solid white; */
+    grid-area: iceland;
+    display: flex;
+    flex-basis: 100%;
+    padding-left: 7.5%;
+    margin-bottom: 5%;
+}
+
+.iceland .ice-text {
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.iceland .ice-screenshot {
+    flex-basis: 50%;
+    position: relative;
+    left: 10%;
+}
+
+.iceland .ice-screenshot img {
+    width: 100%;
+    height: auto;
+}
+
+.collab-cta {
+    /* border: 1px solid red; */
+    padding: 10% 7.5%;
+    background-color: rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 100%;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.collab-cta p {
+    /* border: 1px solid red; */
+    flex-basis: 70%;
+    font-size: 2em;
+    line-height: 140%;
+    font-weight: 300;
+}
+
+.collab-cta a {
+    /* border: 1px solid red; */
+    width: 15%;
+    color: #F36748;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1em 1.5em;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.collab-cta a:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.32);
+    background-color: #fff;
+
+}
+
+.collab-cta a:active {
+    background-color: rgba(255, 255, 255, 0.88);
+    box-shadow: none;
+}
+
+/* responsive/mobile */
+
+@media only screen and (max-width: 1220px) {
+
+    .body-container--projects .hero-section--projects h2 {
+        /* border: 1px solid red; */
+        font-size: 180px;
+    }
+
+    .body-container--projects .hero-section--projects h1 {
+        /* border: 1px solid red; */
+        font-size: 1.8em;
+    }
+        
+    .neverland-travelers .nt-text .links a.link1,
+    .financial .fin-text .links a.link1, 
+    .iceland .ice-text .links a.link1 {
+        width: 40%;
+    }
+
+
+    .neverland-travelers .nt-text .links a.link2,
+    .financial .fin-text .links a.link2,
+    .iceland .ice-text .links a.link2 {
+        /* border: 1px solid red; */
+        width: 55%;
+    } 
+
+     .collab-cta a {
+         width: 20%;
+     }
+} 
+
+@media only screen and (max-width: 1000px) {
+    .body-container--projects .hero-section--projects h2 {
+        /* border: 1px solid red; */
+        font-size: 160px;
+    }
+
+    .body-container--projects .hero-section--projects h1 {
+        /* border: 1px solid red; */
+        font-size: 1.6em;
+    }
+    
+    .collab-cta a {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+     .body-container--projects .hero-section--projects h2 {
+        /* border: 1px solid red; */
+        font-size: 144px;
+    }
+
+    .body-container--projects .hero-section--projects h1 {
+        /* border: 1px solid red; */
+        font-size: 1.4em;
+    }
+
+     .collab-cta p {
+         /* border: 1px solid red; */
+         flex-basis: 60%;
+     }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .body-container--projects .hero-section--projects h2 {
+        font-size: 120px;
+    }
+
+    .body-container--projects .hero-section--projects h1 {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    .neverland-travelers,
+    .financial, 
+    .iceland {
+        /* border: 1px solid black; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 10%;
+    }
+
+    .neverland-travelers .nt-text, 
+    .financial .fin-text, 
+    .iceland .ice-text {
+        /* border: 1px solid red; */
+        justify-content: center;
+        margin-bottom: 10%;
+        padding: 0 7.5%;
+    }
+
+    .neverland-travelers .nt-screenshot, 
+    .financial .fin-screenshot, 
+    .iceland .ice-screenshot {
+        left: 0;
+        right: 0;
+    }
+
+
+    .neverland-travelers .nt-text .links a.link1,
+    .financial .fin-text .links a.link1, 
+    .iceland .ice-text .links a.link1,
+    .neverland-travelers .nt-text .links a.link2,
+    .financial .fin-text .links a.link2,
+    .iceland .ice-text .links a.link2 {
+        /* border: 1px solid red; */
+        width: 50%;
+    }
+
+    .collab-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .collab-cta p {
+        margin-bottom: 15%;
+    }
+
+    .collab-cta a {
+        width: 50%;
+    }
+
+
+}
+
+@media only screen and (max-width: 640px) {
+    .body-container--projects .hero-section--projects h2 {
+        font-size: 90px;
+    }
+
+    .body-container--projects .hero-section--projects h1 {
+        font-size: 1.2em;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .body-container--projects .hero-section--projects h2 {
+        margin-top: 20%;
+        font-size: 80px;
+        margin-bottom: 10%;
+    }
+
+    .projects .links {
+        /* border: 1px solid red; */
+        flex-direction: column;
+        }
+    
+        .neverland-travelers .nt-text .links a.link1,
+        .financial .fin-text .links a.link1, 
+        .iceland .ice-text .links a.link1 {
+            margin: 0 0 5% 0;
+            width: 70%;
+        }
+    
+        .neverland-travelers .nt-text .links a.link2,
+        .financial .fin-text .links a.link2,
+        .iceland .ice-text .links a.link2 {
+            margin: 0;
+            width: 70%;
+        }
+}
+
+
+@media only screen and (max-width: 414px) {
+    .body-container--projects .hero-section--projects h2 {
+        margin-top: 35%;
+        font-size: 60px;
+    }
+
+    .body-container--projects .hero-section--projects h1 {
+        /* border: 1px solid red; */
+        font-size: 1.2em;
+    }
+
+    .collab-cta a {
+        width: 70%;
+     }
+}
+
+@media only screen and (max-width: 325px) {
+    
+    .body-container--projects .hero-section--projects h2 {
+        /* border: 1px solid red; */
+        margin-top: 45%;
+    }
+    
+
+}
