@@ -1,5 +1,5 @@
- //animate text/typewriter
- var typeText = function(elem, toRotate, period) {
+// animate text/typewriter
+var typeText = function(elem, toRotate, period) {
   this.toRotate = toRotate;
   this.elem = elem;
   this.loopNum = 0;
@@ -9,7 +9,7 @@
   this.isDeleting = false;
 };
 
-//cursor 
+// cursor
 typeText.prototype.tick = function() {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
