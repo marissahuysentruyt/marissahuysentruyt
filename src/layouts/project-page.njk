@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="icon" href="../public/usedresources/favicon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <a href="../index.html">
+              {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
+            </a>
+            <ul>
+                <li><a href="work-examples.html">Projects</a></li>
+                <li><a href="../resume/resume.html">Resume</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="{{bodyClass}}">
+       <section class="hero-section">
+        <div class="back" id="invisible">
+            <a href="../index.html">
+                <div id="hover">
+                    <img src="../public/usedresources/Arrow2.png" alt="Back"> 
+                </div>
+            </a>
+            <a href="../index.html">
+                <div id="slide">
+                    Back Home
+                </div>
+            </a>
+        </div>
+
+           <section class="desktop">
+               <div class="text-container">
+                    <h1>{{projectTitle}}</h1>
+
+                    <div class="details">
+                        <h3>Overview</h3>
+                        <p>
+                            {{overview}} 
+                        </p>
+
+                        <!-- <div class="progress">
+                            Completion: 100%
+                            <div class="progress-bar"></div>
+                        </div> -->
+                        
+                    </div>
+               </div>
+
+               <img src="{{desktopImage}}" alt="{{desktopAltText}}">
+           </section>
+       </section>
+
+       <section class="mobile">
+
+            <div class="text-container">
+                <h3>Contribution</h3>
+                <p>
+                    {{contribution}}
+                </p>
+                <div class="tech">
+                    <h3>Languages & Tech</h3>
+                    <div class="languages">
+                      
+                      {% for item in languages %}
+                        <img src="{{item.image}}" alt="{{item.alt}}" 
+                        {% if className%} class="{{item.className}}" {% endif %}>
+                      {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="{{mobileImage}}" alt="{{mobileAltText}}" class="screenshot">
+            </div>
+       </section>
+
+       <section class="visit-sites">
+           <h2>Take a look at the site in action!</h2>
+           <a href="{{link}}" target="_blank" class="link2">
+            Visit Site &nbsp;
+            {% image 'src/public/usedresources/external-link.svg', '', 'Visit' %}
+          </a>
+       </section>
+                
+        <section class="{{collabClass}}">
+            <p>
+                Interested in working together or collaborating on a project? <strong>Shoot me a message!</strong>
+            </p>
+            <!-- should this just go to the contact page or open an email? -->
+            <a href="../contact/contact.html">Get in Touch</a>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <ul class="social">
+            <li>
+                <a href="../blog/blog.html"><img src="../public/usedresources/medium_logo.svg" alt="Blog"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank"><img src="../public/usedresources/LinkedIN.svg" alt="LinkedIn"></a>
+            </li>
+            <li>
+                <a href="https://github.com/marissahuysentruyt" target="_blank"><img src="../public/usedresources/Github.svg" alt="GitHub"></a>
+            </li>
+        </ul>
+
+        <p>&copy;&nbsp;2023 Marissa Huysentruyt</p>
+    </footer>
+
+</body>
+</html>
