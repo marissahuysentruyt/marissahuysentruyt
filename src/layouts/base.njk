@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="icon" href="public/usedresources/favicon.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <nav class="header-nav">
+      <a href="index.html">
+        {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
+      </a>
+      <ul>
+        <li><a href="work/work-examples.html">Projects</a></li>
+        <!-- <li><a href="#projects">Projects</a></li> -->
+        <!-- <li><a href="work/workexamples.html">Projects</a></li> -->
+        <li><a href="resume/resume.html">Resume</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="body-container">
+
+      <div class="hero-section">
+        <div class="text">
+          <div id="type-on">
+            <h2 class="typewriter" data-period="2000" data-type='[ "hi there!", "aloha!", "hello!", "hola!", "welcome!", "bonjour!"]'>
+            <span class="wrap"></span>
+            </h2>
+          </div>
+
+          <h1>
+            {{ content | safe }}
+          </h1>
+        </div>
+      </div> 
+
+      {% image 'src/public/usedresources/Arrow 1.png', 'arrow', 'Scroll Down'%}
+
+      <section class="about-me">
+        <div class="text-container">
+          <p>
+            {{intro}}
+          </p>
+        </div>
+        <div class="image-container">
+          {% image 'src/public/usedresources/cropped_IMG_2512.png', 'me', 'Photo of Marissa' %}
+        </div>
+      </section> 
+        
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+
+          <!-- neverland travelers -->
+          <div class="neverland-travelers">
+            <div class="left">
+              <div class="nt-text">
+                <h3>
+                  Website for personal vlog
+                </h3>
+                <p>
+                  I built and deployed the first version of a website dedicated to my personal vlog channel called Neverland Travelers. 
+                </p>
+                <div class="links">
+                  <a href="work/neverland-travelers.html" class="link1">Learn More</a>
+                  <a href="https://www.neverlandtravelers.com" target="_blank" class="link2">
+                    See Live Site &nbsp; &nbsp;  
+                    {% image 'src/public/usedresources/external-link.svg', '', 'Visit Neverland Travelers site' %}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="nt-screenshot">
+              {% image 'src/public/usedresources/NT-screenshot-hp.png', '', 'Neverland Travelers Screenshot'%}
+            </div>
+          </div>
+
+          <!-- greg parady remake -->
+          <div class="financial">
+            <div class="right">
+              <div class="fin-text">
+                <h3>
+                  Financial Website Remake
+                </h3>
+                <p>
+                  Using Figma designs, I recreated a real website for an independent financial advisor. 
+                </p>
+                <div class="links">
+                  <a href="work/financial.html" class="link1">Learn More</a>
+                  <a href="https://marissahuysentruyt.github.io/Financial-Website-Remake/" target="_blank" class="link2">
+                    See GitHub Pages Site &nbsp;&nbsp;
+                    {% image 'src/public/usedresources/external-link.svg', '', 'Visit the Finance Remake site' %}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="fin-screenshot">
+              {% image 'src/public/usedresources/Fin-Screenshot-hp.png', '', 'Financial Remake Screenshot'%}
+            </div>
+          </div>
+
+            <!-- iceland travel landing page -->
+            <div class="iceland">
+              <div class="left">
+                <div class="ice-text">
+                  <h3>
+                    Fire & Ice Landing Page
+                  </h3>
+                  <p>
+                    After browsing Dribbble, I developed this Icelandic travel landing page and added minor interactivity.
+                  </p>
+                <div class="links">
+                  <a href="work/iceland.html" class="link1">Learn More</a>
+                  <a href="https://marissahuysentruyt.github.io/Recreating-Iceland/" target="_blank" class="link2">
+                    See GitHub Pages Site &nbsp;&nbsp; 
+                    {% image 'src/public/usedresources/external-link.svg', '', 'Visit Iceland Travel page' %}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="ice-screenshot">
+              {% image 'src/public/usedresources/Ice-screenshot-hp.png', '', 'Fire & Ice Screenshot'%}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="collab-cta">
+        <p>
+          {{collabText.paragraph}} <strong>{{collabText.bold}}</strong>
+          {# Interested in working together or collaborating on a project? <strong>Shoot me a message!</strong> #}
+        </p>
+        <a href="contact/contact.html">{{collabText.linkText}}</a>
+      </section>
+
+    </main>
+
+  <footer>
+    <ul class="social">
+      <li>
+        <a href="blog/blog.html">
+          {% image 'src/public/usedresources/medium_logo.svg', '', 'Blog'%}
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank">
+          {% image 'src/public/usedresources/LinkedIN.svg', '', 'LinkedIn'%}
+          </a>
+      </li>
+      <li>
+        <a href="https://github.com/marissahuysentruyt" target="_blank">
+          {% image 'src/public/usedresources/Github.svg', '', 'GitHub'%}
+        </a>
+      </li>
+    </ul>
+
+    <p>&copy;&nbsp;2023 Marissa Huysentruyt</p>
+  </footer>
+
+  <script src="scripts/animate-text.js" defer type="module"></script>
+</body>
+</html>
