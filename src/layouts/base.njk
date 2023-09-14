@@ -5,22 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,600;0,700;1,400&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@300;400&family=Signika+Negative:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="icon" href="public/usedresources/favicon.png" type="image/png">
 </head>
 
 <body>
-  <header>
-    <nav class="header-nav">
-      <a href="index.html">
+  <header class="header-nav">
+    <nav class="header-nav__container">
+      <a href="index.html" class="header-nav__home-link">
         {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
       </a>
-      <ul>
-        <li><a href="work/work-examples.html">Projects</a></li>
-        <!-- <li><a href="#projects">Projects</a></li> -->
-        <!-- <li><a href="work/workexamples.html">Projects</a></li> -->
-        <li><a href="resume/resume.html">Resume</a></li>
-        <li><a href="contact/contact.html">Contact</a></li>
+      <ul class="header-nav__link-list">
+        <li class="header-nav__list-item">
+          <a class="header-nav__link" href="work/work-examples.html">Projects</a>
+        </li>
+        <li class="header-nav__list-item">
+          <a class="header-nav__link" href="resume/resume.html">Resume</a>
+        </li>
+        <li class="header-nav__list-item">
+          <a class="header-nav__link" href="contact/contact.html">Contact</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -35,7 +42,7 @@
             </h2>
           </div>
 
-          <h1>{{ content | safe }}</h1>
+          {{ content | safe }}
         </div>
       </div> 
 
