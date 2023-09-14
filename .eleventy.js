@@ -4,13 +4,10 @@ const eleventyImage = require('@11ty/eleventy-img');
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  // watches scss directory & copies it into dist/css 
+  // watches scss & scripts directories for changes 
+  // (scripts in package.json declare where the compiled code goes)
   eleventyConfig.addWatchTarget('src/scss/');
-  eleventyConfig.addPassthroughCopy('css/');
-  
-  // watches & copies JS files
   eleventyConfig.addWatchTarget('src/scripts/');
-  eleventyConfig.addPassthroughCopy({ 'src/scripts': 'scripts' });
 
   // copies images
   eleventyConfig.addPassthroughCopy({ 'src/public/' : 'public/' });
