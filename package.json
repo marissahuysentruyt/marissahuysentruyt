@@ -11,7 +11,7 @@
     "build:eleventy": "npx @11ty/eleventy",
     "prestart": "rm -rf ./dist",
     "start": "npm-run-all prestart --parallel build:styles --parallel watch:*",
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all prestart build:*",
     "lint:js": "eslint . --ext .js",
     "lint:scss": "stylelint **/*.scss",
     "lint": "run-s lint:js lint:scss",
