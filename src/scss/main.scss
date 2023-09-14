@@ -1,94 +1,36 @@
-/* rgba(243, 103, 72, 0.08)
-#F36748
+// SETTINGS
 
-maybe for the rest of the portfolio?
-#4281a4;
-004f4a */
+// TOOLS
 
-@use './components/blog-page';
-@use './components/contact-page';
-@use './components/resume-page';
-@use './components/work-examples-page';
-@use './components/neverland-travelers-page';
-@use './components/financial-page';
-@use './components/iceland-page';
+// GENERAL
+@forward './general/general';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400&display=swap');
+// ELEMENTS
+@forward './elements/html';
+@forward './elements/body';
+@forward './elements/root';
 
-* {
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
-    font-family: "Montserrat", "Raleway", sans-serif;
-}
+// OBJECTS/LAYOUTS
 
-html {
-    height: 100%;
-}
+// COMPONENTS
+@forward './components/header';
+@forward './components/blog-page';
+@forward './components/contact-page';
+@forward './components/resume-page';
+@forward './components/work-examples-page';
+@forward './components/neverland-travelers-page';
+@forward './components/financial-page';
+@forward './components/iceland-page';
 
-body {
-    position: relative;
-    // height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+// VENDOR
 
-header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-height: 5rem;
-}
+// UTILITIES
 
-.header-nav {
-    margin: 0;
-    padding: 0;
-    /* border: 1px solid red; */
-    display: flex;
-    flex-basis: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.header-nav ul {
-   display: flex;
-   flex-basis: 40%;
-   list-style-type: none;
-   align-items: center;
-   justify-content: space-between;
-   /* border: 1px solid red; */
-}
-
-.header-nav a img {
-    /* border: 1px solid purple; */
-    padding: 10%;
-}
-
-.header-nav ul a {
-    /* border: 1px solid blue; */
-    /* line-height: 4rem; */
-    width: 50%;
-    text-align: center;
-    font-weight: 600;
-    padding: 1em 1.5em;
-    color: #F36748;
-    text-decoration: none;
-    transition: all ease-in-out 0.2s;
-}
-
-.header-nav ul a:hover {
-    background-color: rgba(243, 103, 72, 0.08);
-    border-radius: 50px;
-}
 
 .body-container {
     padding: 0;
-    background-color: #196076;
+    background-color: var(--color-dark-teal);
     height: 100%;
 }
 
@@ -584,10 +526,6 @@ footer p {
 /* responsive/mobile */
 
 @media only screen and (max-width: 1220px) {
-    .header-nav ul {
-        flex-basis: 60%;
-        /* border: 1px solid red; */
-     }
 
     .hero-section h2 span {
         /* border: 1px solid red; */
@@ -632,10 +570,6 @@ footer p {
 }
 
 @media only screen and (max-width: 900px) {
-    .header-nav ul {
-        flex-basis: 80%;
-        /* border: 1px solid red; */
-     }
 
      .hero-section h2 span {
         /* border: 1px solid red; */
@@ -657,10 +591,6 @@ footer p {
 
 
 @media only screen and (max-width: 768px) {
-    .header-nav ul a:active {
-        background-color: rgba(243, 103, 72, 0.16);
-
-    }
 
     .hero-section h2 span {
         /* border: 1px solid red; */
@@ -771,28 +701,6 @@ footer p {
 
 
 @media only screen and (max-width: 500px) {
-    header {
-        padding: 0;
-    }
-    
-    .header-nav {
-        /* border: 1px solid red; */
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-    }
-
-    .header-nav a img {
-        /* border: 1px solid purple; */
-        display: block;        
-        margin: auto;
-    }
-
-    .header-nav ul {
-        /* border: 1px solid red; */
-        width: 100%;
-        padding-bottom: 5%;
-    }
     
     .hero-section h2 span {
         /* border: 1px solid red; */
@@ -868,9 +776,6 @@ footer p {
 }
 
 @media only screen and (max-width: 325px) {
-    .header-nav ul a {
-        padding: 4%;
-    }
     
     .hero-section h2 span {
         /* border: 1px solid red; */
