@@ -20,7 +20,7 @@ TypeText.prototype.tick = function typeTextTick() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.elem.innerHTML = `<span class="wrap">${this.txt}</span>`;
+  this.elem.innerHTML = `<span class="js-wrap">${this.txt}</span>`;
 
   const that = this;
   let delta = 200 - Math.random() * 100;
@@ -44,7 +44,7 @@ TypeText.prototype.tick = function typeTextTick() {
 };
 
 window.onload = function onLoad() {
-  const elements = document.getElementsByClassName('typewriter');
+  const elements = document.getElementsByClassName('js-typewriter');
   // eslint-disable-next-line no-plusplus
   for (let i = 0; i < elements.length; i++) {
     const toRotate = elements[i].getAttribute('data-type');
@@ -58,5 +58,5 @@ window.onload = function onLoad() {
 };
 
 const css = document.createElement('style');
-css.innerHTML = '.typewriter > .wrap {border-right: 0.06em solid rgba(255, 255, 255, 0.24);}';
+css.innerHTML = '.js-typewriter > .js-wrap {border-right: 0.06em solid rgba(255, 255, 255, 0.24);}';
 document.body.appendChild(css);

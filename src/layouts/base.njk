@@ -33,18 +33,19 @@
   </header>
 
   <main class="cmp-body">
-    <div class="hero-section">
-      <div class="text">
+    <section class="cmp-homepage-hero">
+      <div class="cmp-homepage-hero__text">
         <div id="type-on">
-          <h2 class="typewriter" data-period="2000" data-type='[ "hi there!", "aloha!", "hello!", "hola!", "welcome!", "bonjour!"]'>
-          <span class="wrap"></span>
+          <h2 class="js-typewriter cmp-homepage-hero__typewriter" data-period="2000" data-type='[ "hi there!", "aloha!", "hello!", "hola!", "welcome!", "bonjour!"]'>
+          <span class="js-wrap"></span>
           </h2>
         </div>
-        {{ content | safe }}
+        <h1 class="{{ headingClass }}">
+          {{ heading }}
+        </h1>
       </div>
-    </div> 
-
-    {% image 'src/public/usedresources/Arrow 1.png', 'arrow', 'Scroll Down'%}
+        {% image 'src/public/usedresources/Arrow 1.png', 'cmp-homepage-hero__arrow', 'Scroll Down' %}
+    </section> 
 
     <section class="about-me">
       <div class="text-container">

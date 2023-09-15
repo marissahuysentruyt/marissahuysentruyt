@@ -1,0 +1,83 @@
+@use './general/general';
+
+.cmp-homepage-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1.5rem;
+  position: relative;
+
+  @media (min-width: general.$bp-medium) {
+    max-width: general.$max-page-width;
+    margin: auto;
+    padding: 5rem 1.5rem;
+  }
+
+  // this is the container for the typewriter (h2) & h1 heading
+  &__text {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__typewriter {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 3rem;
+    color: hsla(var(--color-white) / 0.72);
+    margin: 0 auto;
+    // TODO: refactor javascript animate-text, to use CSS animations instead?
+    // animation: type-on 2.5s steps(50, end) alternate infinite,
+    // blink-cursor 0.75s step-end infinite;
+
+    @media (min-width: general.$bp-small) {
+      font-size: 4rem;
+    }
+
+    @media (min-width: general.$bp-medium) {
+      font-size: 6rem;
+    }
+
+    @media (min-width: general.$bp-large) {
+      font-size: 10rem;
+    }
+  }
+
+  &__heading {
+    color: hsla(var(--color-white) / 0.88);
+    font-size: 1.5rem;
+    text-wrap: balance;
+
+    @media (min-width: general.$bp-medium) {
+      font-size: 2.5rem;
+      max-width: 70%;
+    }
+  }
+
+  &__arrow {
+    display: none;
+
+    @media (min-width: general.$bp-medium) {
+      display: block;
+      position: absolute;
+      left: 90%;
+      top: 70%;
+      animation: arrowBounce 1s ease-in-out alternate infinite;
+
+      @media (prefers-reduced-motion) {
+        animation: none;
+      }
+    }
+
+    // TODO: can we get rid of this 3rem somehow?
+    @media (min-width: calc(general.$max-page-width + 3rem)) {
+      left: 100%;
+    }
+  }
+}
+
