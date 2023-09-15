@@ -1,0 +1,31 @@
+@use '../general';
+
+@keyframes arrowBounce {
+  0% {
+    top: 75%;
+  }
+  100% {
+    top: 85%;
+  }
+}
+
+@keyframes type-on {
+  from { 
+    width: 0;
+  }
+  to { 
+    width: 100%;
+  }
+}
+
+@keyframes blink-cursor {
+  to { 
+    border-color: transparent;
+  }
+  50% { 
+    border-color: var(--color-bright-coral);
+  }
+  100% { 
+    border-color: transparent;
+  }
+}

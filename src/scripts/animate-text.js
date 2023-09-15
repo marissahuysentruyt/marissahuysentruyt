@@ -20,7 +20,7 @@ typeText.prototype.tick = function() {
   this.txt = fullTxt.substring(0, this.txt.length + 1);
 }
 
-this.elem.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+this.elem.innerHTML = '<span class="js-wrap">' + this.txt + '</span>';
 
 var that = this;
 var delta = 200 - Math.random() * 100;
@@ -44,7 +44,7 @@ setTimeout(function() {
 };
 
 window.onload = function() {
-  var elements = document.getElementsByClassName('typewriter');
+  var elements = document.getElementsByClassName('js-typewriter');
   for(var i = 0; i< elements.length; i++) {
       var toRotate = elements[i].getAttribute('data-type');
       var period = elements[i].getAttribute('data-period');
@@ -58,5 +58,5 @@ window.onload = function() {
 
 var css = document.createElement("style");
 css.type= "text/css";
-css.innerHTML = ".typewriter > .wrap {border-right: 0.06em solid rgba(255, 255, 255, 0.24);}";
+css.innerHTML = ".js-typewriter > .js-wrap {border-right: 0.06em solid rgba(255, 255, 255, 0.24);}";
 document.body.appendChild(css);

@@ -6,6 +6,7 @@
 @forward './root';
 
 // TOOLS
+@forward './tools/animations';
 
 // GENERAL
 @forward './general';
@@ -19,6 +20,7 @@
 @forward './header-nav';
 @forward './body-container';
 @forward './footer';
+@forward './homepage-hero';
 @forward './blog';
 @forward './contact';
 @forward './resume';
@@ -30,73 +32,6 @@
 // VENDOR
 
 // UTILITIES
-
-
-.body-container .hero-section {
-    display: flex;
-    flex-basis: 80%;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 7.5%;
-    /* border: 1px solid red; */
-}
-
-/* css animations */
-/* @keyframes type-on {
-    from { width: 0}
-    to { width: 100%}
-}
-
-@keyframes blink-cursor {
-    from, to { border-color: transparent}
-    50% { border-color: #F36748}
-    100% { border-color: transparent}
-} */
-
-.body-container .hero-section .text {
-    /* border: 1px solid black; */
-    width: 100%;
-    margin: 0;
-}
-
-
-.body-container .hero-section h2 {
-    padding: 10% 0 5% 0;
-    /* cursor: none; */
-    text-align: left;
-    font-size: 200px;
-    color: rgba(255, 255, 255, 0.72);
-    flex-shrink: 1;
-    flex-grow: 0;
-    overflow: hidden;
-    border-right: 0.06em solid transparent;
-    white-space: nowrap;
-    margin: 0 auto;
-    /* animation: type-on 2.5s steps(50, end) alternate infinite,
-    blink-cursor 0.75s step-end infinite; */
-}
-
-.body-container .hero-section h1 {
-    /* border: 1px solid red; */
-    width: 55%;
-    font-size: 2em;
-    color: rgba(255, 255, 255, 0.88);
-    line-height: 140%;
-}
-
-@keyframes arrowBounce {
-    0% {top: -1.75em;}
-    100% {top: -4em;}
-}
-
-.body-container img.arrow {
-    /* border: 1px solid red; */
-    position: relative;
-    left: 90%;
-    top: -1.75em;
-    animation: arrowBounce 1s ease-in-out alternate infinite;
-}
 
 .body-container .about-me {
     /* border: 1px solid red; */
@@ -429,16 +364,6 @@
 
 @media only screen and (max-width: 1220px) {
 
-    .hero-section h2 span {
-        /* border: 1px solid red; */
-        font-size: 90%;
-     }
-
-    .body-container .hero-section h1 {
-        /* border: 1px solid red; */
-        width: 70%;
-    }
-
     .neverland-travelers .nt-text .links a.link1,
     .financial .fin-text .links a.link1, 
     .iceland .ice-text .links a.link1 {
@@ -460,10 +385,6 @@
 } 
 
 @media only screen and (max-width: 1000px) {
-    .hero-section h2 span {
-        /* border: 1px solid red; */
-        font-size: 80%;
-     }
 
     .projects h2 {
         /* border: 1px solid red; */
@@ -472,12 +393,6 @@
 }
 
 @media only screen and (max-width: 900px) {
-
-     .hero-section h2 span {
-        /* border: 1px solid red; */
-        font-size: 72%;
-     }
-
      .collab-cta p {
          /* border: 1px solid red; */
          flex-basis: 60%;
@@ -493,18 +408,6 @@
 
 
 @media only screen and (max-width: 768px) {
-
-    .hero-section h2 span {
-        /* border: 1px solid red; */
-        font-size: 60%;
-    }
-
-    .body-container .hero-section h1 {
-        /* border: 1px solid red; */
-        width: 100%;
-        margin-bottom: 10%;
-    }
-
     .body-container .about-me {
         /* border: 1px solid red; */
         flex-direction: column-reverse;
@@ -589,26 +492,7 @@
     }
 }
 
-@media only screen and (max-width: 640px) {
-    .hero-section h2 span {
-        /* border: 1px solid red; */
-        font-size: 45%;
-    }
-}
-
-
 @media only screen and (max-width: 500px) {
-    
-    .hero-section h2 span {
-        /* border: 1px solid red; */
-        font-size: 40%;
-        margin-top: 20%;
-        }
-
-    .body-container .hero-section h1 {
-        /* border: 1px solid red; */
-        font-size: 1.5em;
-    }
 
     .body-container .about-me .text-container::before {
         /* border: 1px solid black; */
@@ -650,10 +534,6 @@
 
 
 @media only screen and (max-width: 414px) {
-    .hero-section h2 span {
-        /* border: 1px solid red; */
-        font-size: 30%;
-    }
 
     .body-container .about-me .text-container::before {
         /* border: 1px solid black; */
@@ -670,13 +550,4 @@
      .collab-cta a {
          width: 70%;
      }
-}
-
-@media only screen and (max-width: 325px) {
-    
-    .hero-section h2 span {
-        /* border: 1px solid red; */
-        font-size: 22%;
-     }
-     
 }

@@ -34,18 +34,20 @@
 
   <main>
     <div class="body-container">
-      <div class="hero-section">
-        <div class="text">
+      <div class="homepage-hero">
+        <div class="homepage-hero__text">
           <div id="type-on">
-            <h2 class="typewriter" data-period="2000" data-type='[ "hi there!", "aloha!", "hello!", "hola!", "welcome!", "bonjour!"]'>
-            <span class="wrap"></span>
+            <h2 class="js-typewriter homepage-hero__typewriter" data-period="2000" data-type='[ "hi there!", "aloha!", "hello!", "hola!", "welcome!", "bonjour!"]'>
+            <span class="js-wrap"></span>
             </h2>
           </div>
-          {{ content | safe }}
+          <h1 class="{{headingClass}}">
+            {{heading}}
+          </h1>
         </div>
+        {% image 'src/public/usedresources/Arrow 1.png', 'homepage-hero__arrow', 'Scroll Down' %}
       </div> 
 
-      {% image 'src/public/usedresources/Arrow 1.png', 'arrow', 'Scroll Down'%}
 
       <section class="about-me">
         <div class="text-container">
