@@ -18,6 +18,7 @@
 // COMPONENTS
 @forward './header-nav';
 @forward './body-container';
+@forward './footer';
 @forward './blog';
 @forward './contact';
 @forward './resume';
@@ -424,102 +425,6 @@
     box-shadow: none;
 }
 
-
-footer {
-    /* border: 1px solid red; */
-    padding-bottom: 2.5%;
-    background-color: #FFF6F6;
-
-}
-
-footer .social {
-    display: flex;
-    flex-basis: 35%;
-    align-items: center;
-    /* border: 1px solid red; */
-    justify-content: center;
-    padding: 2% 0;
-    list-style-type: none;
-}
-
-
-footer .social a {
-    /* border: 1px solid black; */
-    text-decoration: none;
-    color: #F36748;
-    transition: all 0.2s ease-in-out;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-footer .social a:first-child {
-    margin-right: 0.5em;
-    /* border: 1px solid red; */
-}
-
-footer .social a:last-child  {
-    margin-left: 0.5em;
-    /* border: 1px solid red; */
-}
-
-footer .social li:first-child {
-    transform: scale(2);
-    /* border: 1px solid red; */
-    transition: all 0.2s ease-in-out;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0.7em;
-
-}
-
-
-footer .social a img {
-    /* border: 1px solid black; */
-    border-radius: 50%;
-    display: inline;
-    padding: 0;
-    margin: 0;
-    // width: 100%;
-    // height: auto;
-    max-width: 48px;
-}
-
-footer .social a img:hover {
-    filter: brightness(0) saturate(100%) invert(31%) sepia(80%) saturate(1244%) hue-rotate(341deg) brightness(89%) contrast(77%);
-}
-
-footer p {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    font-size: 0.75em;
-}
-
-
-/* #invisible {
-    width: 100%;
-    border: 1px solid blue;
-}
-#invisible #hover {
-    height: 4em;
-    width: 100%;
-    opacity: 0;
-    border: 1px solid black;
-}  
-
-#invisible:hover #hover {
-    opacity: 0;
-    width: 100%;
-    height: 4em;
-    visibility: visible;
-    cursor: url(usedresources/cursor_hover.svg), auto;
-} */
-
 /* responsive/mobile */
 
 @media only screen and (max-width: 1220px) {
@@ -682,11 +587,6 @@ footer p {
     .collab-cta a {
         width: 50%;
     }
-
-    footer {
-        padding: 10% 0;
-    }
-
 }
 
 @media only screen and (max-width: 640px) {

@@ -146,28 +146,26 @@
     </div>
   </main>
 
-    </main>
-
-  <footer>
-    <ul class="social">
-      <li>
-        <a href="blog/blog.html">
-          {% image 'src/public/usedresources/medium_logo.svg', '', 'Blog'%}
+  <footer class="footer">
+    <ul class="footer__link-list">
+      <li class="footer__list-item">
+        <a class="footer__link" href="blog/blog.html">
+          {% image 'src/public/usedresources/medium_logo.svg', 'footer__link-image', 'Blog'%}
         </a>
       </li>
-      <li>
-        <a href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank">
-          {% image 'src/public/usedresources/LinkedIN.svg', '', 'LinkedIn'%}
+      <li class="footer__list-item">
+        <a class="footer__link" href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank">
+          {% image 'src/public/usedresources/LinkedIN.svg', 'footer__link-image', 'LinkedIn'%}
           </a>
       </li>
-      <li>
-        <a href="https://github.com/marissahuysentruyt" target="_blank">
-          {% image 'src/public/usedresources/Github.svg', '', 'GitHub'%}
+      <li class="footer__list-item">
+        <a class="footer__link" href="https://github.com/marissahuysentruyt" target="_blank">
+          {% image 'src/public/usedresources/Github.svg', 'footer__link-image', 'GitHub'%}
         </a>
       </li>
     </ul>
 
-    <p>&copy;&nbsp;2023 Marissa Huysentruyt</p>
+    <p class="footer__copyright">&copy; 2023 Marissa Huysentruyt</p>
   </footer>
 
   <script src="scripts/index.js" type="module"></script>
