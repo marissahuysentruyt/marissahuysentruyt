@@ -17,6 +17,7 @@
 
 // COMPONENTS
 @forward './header-nav';
+@forward './body-container';
 @forward './blog';
 @forward './contact';
 @forward './resume';
@@ -29,13 +30,6 @@
 
 // UTILITIES
 
-
-
-.body-container {
-    padding: 0;
-    background-color: var(--color-dark-teal);
-    height: 100%;
-}
 
 .body-container .hero-section {
     display: flex;
