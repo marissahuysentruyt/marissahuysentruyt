@@ -50,7 +50,7 @@
     <section class="about-me">
       <div class="text-container">
         <p>
-          {{intro}}
+          {{ intro }}
         </p>
       </div>
       <div class="image-container">
@@ -136,11 +136,13 @@
       </div>
     </section>
 
-    <section class="collab-cta">
-      <p>
-        {{collabText.paragraph}} <strong>{{collabText.bold}}</strong>
-      </p>
-      <a href="contact/contact.html">{{collabText.linkText}}</a>
+    <section class="cmp-contact">
+      <div class="cmp-contact__container">
+        <p class="cmp-contact__text">
+          {{ collabText.paragraph }} <strong class="util-bold">{{ collabText.bold }}</strong>
+        </p>
+        <a class="cmp-contact__link util-bold" href="/contact/contact.html">{{ collabText.linkText }}</a>
+      </div>
     </section>
   </main>
 
