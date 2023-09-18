@@ -21,6 +21,7 @@
 @forward './body-container';
 @forward './footer';
 @forward './homepage-hero';
+@forward './about-section';
 @forward './contact-section';
 @forward './blog';
 @forward './contact';
@@ -34,74 +35,6 @@
 
 // UTILITIES
 @forward './utilities/bold';
-
-.body-container .about-me {
-    /* border: 1px solid red; */
-    background-color:#fff6f6;
-    padding: 7.5% 7.5% 12% 7.5%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
-.body-container .about-me .text-container {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    font-weight: 400;
-    /* border: 1px solid red; */
-    flex-basis: 60%;
-    flex-grow: 0;
-    flex-shrink: 1;
-    z-index: 4;
-    padding-left: 7.5%;
-    position: relative;
-}
-
-.body-container .about-me .image-container {
-    /* border: 1px solid blue; */
-    flex-basis: 40%;
-    z-index: 4;
-    padding: 0;
-}
-
-
-.body-container .about-me .image-container img {
-    width: 100%;
-    height: auto;
-    /* border: 1px solid blue; */
-    border-radius: 50%;
-    position: relative;
-    z-index: 3;
-}
-
-.body-container .about-me .text-container::before {
-    content: " ";
-    display: inline;
-    height: 292px;
-    width: 292px;
-    background-color: #FFCEC6;
-    border-radius: 50%;
-    position: absolute;
-    right: 150%;
-    top: 50px;
-    z-index: -1;
-}
-
-.body-container .about-me .text-container::after {
-    content: " ";
-    height: 513px;
-    width: 513px;
-    /* border: 1px solid black; */
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: -275px;
-    left: 60%;
-    z-index: -1;
-    display: inline;
-} 
 
 .projects {
     /* border: 1px solid red; */
@@ -349,34 +282,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
-    .body-container .about-me {
-        /* border: 1px solid red; */
-        flex-direction: column-reverse;
-    }
-    
-    .body-container .about-me .text-container {
-        /* border: 1px solid red; */
-        flex-basis: 100%;
-        z-index: 4;
-        padding: 10% 0 0 0;
-        position: relative;
-    }
-    
-    .body-container .about-me .text-container::before {
-        /* border: 1px solid black; */
-        right: 75%;
-        top: -155%;
-        z-index: -1;
-    }
-    
-    .body-container .about-me .text-container::after {
-        /* border: 1px solid black; */
-        top: -275px;
-        left: 60%;
-        z-index: -1;
-    }  
-
+@media only screen and (max-width: 768px) {  
     .projects h2 {
         /* border: 1px solid black; */
         font-size: 120px;
@@ -422,21 +328,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-
-    .body-container .about-me .text-container::before {
-        /* border: 1px solid black; */
-        right: 55%;
-        top: -55%;
-        z-index: -1;
-    }
-    
-    .body-container .about-me .text-container::after {
-        /* border: 1px solid black; */
-        top: -10%;
-        left: 40%;
-        z-index: -1;
-    } 
-
     .projects h2 {
     font-size: 6em;
     }
@@ -463,14 +354,6 @@
 
 
 @media only screen and (max-width: 414px) {
-
-    .body-container .about-me .text-container::before {
-        /* border: 1px solid black; */
-        right: 35%;
-        top: -35%;
-        z-index: -1;
-    }
-
     .projects h2 {
         font-size: 4.5em;
         /* border: 1px solid white; */
