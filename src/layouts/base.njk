@@ -47,20 +47,20 @@
         {% image 'src/public/usedresources/Arrow 1.png', 'cmp-homepage-hero__arrow', 'Scroll Down' %}
     </section> 
 
-    <section class="about-me">
-      <div class="text-container">
-        <p>
+    <section class="cmp-about">
+      <div class="cmp-about__container">
+        <div class="cmp-about__image-container">
+          {% image 'src/public/usedresources/cropped_IMG_2512.png', 'cmp-about__image', 'Marissa with a big smile, harnessed while on an outdoor excursion' %}
+        </div>
+        <p class="cmp-about__text">
           {{ intro }}
         </p>
       </div>
-      <div class="image-container">
-        {% image 'src/public/usedresources/cropped_IMG_2512.png', 'me', 'Photo of Marissa' %}
-      </div>
     </section> 
-      
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <div class="grid">
+        
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="grid">
 
         <!-- neverland travelers -->
         <div class="neverland-travelers">

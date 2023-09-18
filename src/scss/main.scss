@@ -20,6 +20,7 @@
 @forward './components/body';
 @forward './components/footer';
 @forward './components/homepage-hero';
+@forward './components/about-section';
 @forward './components/contact-section';
 @forward './components/blog-page';
 @forward './components/contact-page';
@@ -33,85 +34,6 @@
 
 // UTILITIES
 @forward './utilities/bold';
-
-// ===============
-
-/* css animations */
-
-/* @keyframes type-on {
-    from { width: 0}
-    to { width: 100%}
-}
-
-@keyframes blink-cursor {
-    from, to { border-color: transparent}
-    50% { border-color: #F36748}
-    100% { border-color: transparent}
-} */
-
-// stylelint-disable-next-line keyframes-name-pattern
-
-.cmp-body .about-me {
-    background-color:#fff6f6;
-    padding: 7.5% 7.5% 12%;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-}
-
-.cmp-body .about-me .text-container {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    font-weight: 400;
-
-    // grow, shrink, basis
-    flex: 0 1 60%;
-    z-index: 4;
-    padding-left: 7.5%;
-    position: relative;
-}
-
-.cmp-body .about-me .image-container {
-    flex-basis: 40%;
-    z-index: 4;
-    padding: 0;
-}
-
-.cmp-body .about-me .image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    position: relative;
-    z-index: 3;
-}
-
-.cmp-body .about-me .text-container::before {
-    content: " ";
-    display: inline;
-    height: 292px;
-    width: 292px;
-    background-color: #FFCEC6;
-    border-radius: 50%;
-    position: absolute;
-    right: 150%;
-    top: 50px;
-    z-index: -1;
-}
-
-.cmp-body .about-me .text-container::after {
-    content: " ";
-    height: 513px;
-    width: 513px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: -275px;
-    left: 60%;
-    z-index: -1;
-    display: inline;
-} 
 
 .projects {
     padding-top: 5%;
@@ -340,31 +262,7 @@
 }
 
 
-@media only screen and (max-width: 768px) {
-    .cmp-body .about-me {
-        /* border: 1px solid red; */
-        flex-direction: column-reverse;
-    }
-    
-    .cmp-body .about-me .text-container {
-        flex-basis: 100%;
-        z-index: 4;
-        padding: 10% 0 0;
-        position: relative;
-    }
-    
-    .cmp-body .about-me .text-container::before {
-        right: 75%;
-        top: -155%;
-        z-index: -1;
-    }
-    
-    .cmp-body .about-me .text-container::after {
-        top: -275px;
-        left: 60%;
-        z-index: -1;
-    }  
-
+@media only screen and (max-width: 768px) {  
     .projects h2 {
         font-size: 120px;
     }
@@ -406,18 +304,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .cmp-body .about-me .text-container::before {
-        right: 55%;
-        top: -55%;
-        z-index: -1;
-    }
-    
-    .cmp-body .about-me .text-container::after {
-        top: -10%;
-        left: 40%;
-        z-index: -1;
-    } 
-
     .projects h2 {
     font-size: 6em;
     }
@@ -442,12 +328,6 @@
 }
 
 @media only screen and (max-width: 414px) {
-    .cmp-body .about-me .text-container::before {
-        right: 35%;
-        top: -35%;
-        z-index: -1;
-    }
-
     .projects h2 {
         font-size: 4.5em;
      }

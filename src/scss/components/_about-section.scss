@@ -1,0 +1,85 @@
+@use '../general/general';
+
+.cmp-about {
+  background-color: var(--color-light-peach);
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: general.$bp-medium) {
+    padding: 5rem 1.5rem;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  &::before {
+    height: 18.25rem; // 292px
+    width: 18.25rem; // 292px
+    background-color: var(--color-bright-coral-transparent);
+    left: -9rem;
+    top: 18rem;
+
+    @media (min-width: general.$bp-medium) {
+      left: -4rem;
+      top: 15rem;
+    }
+  }
+
+  &::after {
+    height: 32.125rem; // 514px
+    width: 32.125rem; // 514px
+    background-color: hsla(var(--color-white) / 100%);
+    bottom: -14rem;
+    right: -10rem;
+
+    @media (min-width: general.$bp-medium) {
+      top: -4rem;
+    }
+  } 
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @media (min-width: general.$bp-medium) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin: auto;
+      max-width: general.$max-page-width;
+    }
+  }
+
+  &__text {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 0;
+    text-wrap: balance;
+    position: relative;
+
+    @media (min-width: general.$bp-medium) {
+      max-width: 50%;
+    }
+  }
+
+  &__image-container {
+    z-index: 3;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+  }
+}
