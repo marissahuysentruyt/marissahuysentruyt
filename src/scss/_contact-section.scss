@@ -1,0 +1,63 @@
+@use './general';
+
+.contact-section {
+  padding: 2rem 1.5rem;
+  background-color: rgba(var(--color-black), 0.08);
+  color: rgba(var(--color-white), 0.88);
+  box-sizing: border-box;
+
+  @media (min-width: general.$bp-medium) {
+    padding: 5rem 1.5rem;
+  }
+  
+  &__container {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    flex-direction: column;
+    
+    @media (min-width: general.$bp-medium) {
+      margin: auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: general.$max-page-width;
+    }
+  }
+
+  &__text {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  &__link {
+    box-sizing: border-box;
+    width: 100%;
+    color: var(--color-bright-coral);
+    background-color: rgba(var(--color-white), 0.88);
+    // TODO: border-radius across all links should be a variable
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 1em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: general.$default-transition;
+
+    @media (min-width: general.$bp-medium) {
+      max-width: 30%;
+    }
+
+    &:hover {
+      background-color: rgba(var(--color-white), 1);
+      box-shadow: 0px 4px 6px rgba(var(--color-black), 0.32);
+    }
+
+    &:active {
+      background-color: rgba(var(--color-white), 0.88);
+      box-shadow: none;
+    }
+  }
+}
