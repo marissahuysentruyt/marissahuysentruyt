@@ -1,0 +1,10 @@
+@use '../general/general';
+
+.util-max-width {
+  width: 100%;
+
+  @media (min-width: general.$bp-medium) {
+    max-width: general.$max-page-width;
+    margin: auto;
+  }
+}
