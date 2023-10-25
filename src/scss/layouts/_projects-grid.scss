@@ -14,8 +14,6 @@
     gap: 6rem;
     grid-template-columns: unset;
     grid-template-rows: repeat(3, 1fr);
-    max-width: general.$max-page-width;
-    margin: auto;
   }
   
   &__item {
