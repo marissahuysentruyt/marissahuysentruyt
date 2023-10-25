@@ -1,0 +1,43 @@
+@use '../general/general';
+
+.cmp-button {
+  width: 100%;
+  box-sizing: border-box;
+
+  // TODO: border-radius across all links/buttons should be a variable
+  border-radius: 3rem;
+  text-decoration: none;
+  padding: 1em 1.5rem;
+  font-size: 1em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: general.$default-transition;
+
+  &--primary {
+    color: var(--color-bright-coral);
+    background-color: hsla(var(--color-white) / 88%);
+
+    &:hover {
+      box-shadow: 0 0.25rem 0.625rem hsla(var(--color-black) / 32%);
+    }
+
+    &:active {
+      background-color: hsla(var(--color-white) / 100%);
+    }
+}
+
+  &--secondary {color: hsla(var(--color-white) / 100%);
+    background-color: hsla(var(--color-white) / 16%);
+    gap: 0.5rem;
+
+    &:hover {
+      background-color: hsla(var(--color-white) / 24%);
+    }
+
+    &:active {
+      background-color: hsla(var(--color-white) / 100%);
+    }
+  }
+}

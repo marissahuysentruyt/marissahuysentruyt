@@ -58,90 +58,93 @@
       </div>
     </section> 
         
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="grid">
+      <section id="projects" class="cmp-projects">
+        <div class="cmp-projects__container">
+          <h2 class="cmp-projects__heading">Projects</h2>
 
-        <!-- neverland travelers -->
-        <div class="neverland-travelers">
-          <div class="left">
-            <div class="nt-text">
-              <h3>
-                Website for personal vlog
-              </h3>
-              <p>
-                I built and deployed the first version of a website dedicated to my personal vlog channel called Neverland Travelers. 
-              </p>
-              <div class="links">
-                <a href="work/neverland-travelers.html" class="link1">Learn More</a>
-                <a href="https://www.neverlandtravelers.com" target="_blank" class="link2">
-                  See Live Site &nbsp; &nbsp;  
-                  {% image 'src/public/usedresources/external-link.svg', '', 'Visit Neverland Travelers site' %}
-                </a>
+          <div class="obj-projects-grid">
+            {# neverland travelers vlog #}
+            <div class="obj-projects-grid__item obj-projects-grid__item--vlog">
+              {# text container on left #}
+              <div class="obj-projects-grid__item-text">
+                <h3 class="obj-projects-grid__heading">
+                  Website for personal vlog
+                </h3>
+                <p class="obj-projects-grid__description">
+                  I built and deployed the first version of a website dedicated to my personal vlog channel called Neverland Travelers. 
+                </p>
+                <div class="obj-projects-grid__links">
+                  <a href="/work/neverland-travelers.html" class="cmp-button cmp-button--primary" aria-label="Learn more about the Neverland Travelers vlog project site">Learn More</a>
+                  <a href="https://www.neverlandtravelers.com" class="cmp-button cmp-button--secondary">
+                    Visit Site
+                    {% image 'src/public/usedresources/external-link.svg', 'cmp-button__icon', 'Visit Neverland Travelers site' %}
+                  </a>
+                </div>
+              </div>
+
+              <div class="obj-projects-grid__item-screenshot">
+                {% image 'src/public/usedresources/NT-screenshot-hp.png', 'obj-projects-grid__image', 'Neverland Travelers homepage, with a navigation menu, an image of a castle in Walt Disney World and several images of the Neverland Travelers'%}
+              </div>
+            </div>
+
+            {# financial group remake #}
+            <div class="obj-projects-grid__item obj-projects-grid__item--remake">
+              {# text container on right #}
+              <div class="obj-projects-grid__item-text">
+                <h3 class="obj-projects-grid__heading">
+                  Financial Website Remake
+                </h3>
+                <p class="obj-projects-grid__description">
+                  Using Figma designs, I recreated a real website for an independent financial advisor. 
+                </p>
+                <div class="obj-projects-grid__links">
+                  <a href="/work/financial.html" class="cmp-button cmp-button--primary" aria-label="Learn more about the financial advisor remake project site">Learn More</a>
+                  <a href="https://marissahuysentruyt.github.io/Financial-Website-Remake/" class="cmp-button cmp-button--secondary">
+                    Visit Site
+                    {% image 'src/public/usedresources/external-link.svg', 'cmp-button__icon', 'Visit the Finance Remake site' %}
+                  </a>
+                </div>
+              </div>
+
+              <div class="obj-projects-grid__item-screenshot obj-projects-grid__item-screenshot--remake">
+                {% image 'src/public/usedresources/Fin-Screenshot-hp.png', 'obj-projects-grid__image', 'Financial Group Remake homepage, with a navigation menu, call-to-action buttons, and an image of two men talking while sitting on a bench'%}
+              </div>
+            </div>
+
+            {# iceland travel landing page #}
+            <div class="obj-projects-grid__item obj-projects-grid__item--travel">
+              {# text container on left #}
+              <div class="obj-projects-grid__item-text">
+                <h3 class="obj-projects-grid__heading">
+                  Fire & Ice Landing Page
+                </h3>
+                <p class="obj-projects-grid__description">
+                  After browsing Dribbble, I developed this Icelandic travel landing page and added minor interactivity.
+                </p>
+                <div class="obj-projects-grid__links">
+                  <a href="/work/iceland.html" class="cmp-button cmp-button--primary" aria-label="Learn more about the Iceland travel project site">Learn More</a>
+                  <a href="https://marissahuysentruyt.github.io/Recreating-Iceland/" class="cmp-button cmp-button cmp-button--secondary">
+                    Visit Site
+                    {% image 'src/public/usedresources/external-link.svg', 'cmp-button__icon', 'Visit Iceland Travel page' %}
+                  </a>
+                </div>
+              </div>
+
+              <div class="obj-projects-grid__item-screenshot">
+                {% image 'src/public/usedresources/Ice-screenshot-hp.png', 'obj-projects-grid__image', 'Fire & Ice landing page, with a navigation menu and Icelandic landscape images'%}
               </div>
             </div>
           </div>
-          <div class="nt-screenshot">
-            {% image 'src/public/usedresources/NT-screenshot-hp.png', '', 'Neverland Travelers Screenshot'%}
-          </div>
-        </div>
 
-        <!-- greg parady remake -->
-        <div class="financial">
-          <div class="right">
-            <div class="fin-text">
-              <h3>
-                Financial Website Remake
-              </h3>
-              <p>
-                Using Figma designs, I recreated a real website for an independent financial advisor. 
-              </p>
-              <div class="links">
-                <a href="work/financial.html" class="link1">Learn More</a>
-                <a href="https://marissahuysentruyt.github.io/Financial-Website-Remake/" target="_blank" class="link2">
-                  See GitHub Pages Site &nbsp;&nbsp;
-                  {% image 'src/public/usedresources/external-link.svg', '', 'Visit the Finance Remake site' %}
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="fin-screenshot">
-            {% image 'src/public/usedresources/Fin-Screenshot-hp.png', '', 'Financial Remake Screenshot'%}
-          </div>
         </div>
-
-        <!-- iceland travel landing page -->
-        <div class="iceland">
-          <div class="left">
-            <div class="ice-text">
-              <h3>
-                Fire & Ice Landing Page
-              </h3>
-              <p>
-                After browsing Dribbble, I developed this Icelandic travel landing page and added minor interactivity.
-              </p>
-              <div class="links">
-                <a href="work/iceland.html" class="link1">Learn More</a>
-                <a href="https://marissahuysentruyt.github.io/Recreating-Iceland/" target="_blank" class="link2">
-                  See GitHub Pages Site &nbsp;&nbsp; 
-                  {% image 'src/public/usedresources/external-link.svg', '', 'Visit Iceland Travel page' %}
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="ice-screenshot">
-            {% image 'src/public/usedresources/Ice-screenshot-hp.png', '', 'Fire & Ice Screenshot'%}
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
     <section class="cmp-contact">
       <div class="cmp-contact__container">
         <p class="cmp-contact__text">
           {{ collabText.paragraph }} <strong class="util-bold">{{ collabText.bold }}</strong>
         </p>
-        <a class="cmp-contact__link util-bold" href="/contact/contact.html">{{ collabText.linkText }}</a>
+        <a class="cmp-button cmp-button--primary" href="/contact/contact.html">{{ collabText.linkText }}</a>
       </div>
     </section>
   </main>
@@ -154,12 +157,12 @@
         </a>
       </li>
       <li class="cmp-footer__list-item">
-        <a class="cmp-footer__link" href="https://www.linkedin.com/in/mhuysentruyt/" target="_blank">
+        <a class="cmp-footer__link" href="https://www.linkedin.com/in/mhuysentruyt/">
           {% image 'src/public/usedresources/LinkedIN.svg', 'cmp-footer__link-image', 'LinkedIn'%}
         </a>
       </li>
       <li class="cmp-footer__list-item">
-        <a class="cmp-footer__link" href="https://github.com/marissahuysentruyt" target="_blank">
+        <a class="cmp-footer__link" href="https://github.com/marissahuysentruyt">
           {% image 'src/public/usedresources/Github.svg', 'cmp-footer__link-image', 'GitHub'%}
         </a>
       </li>
