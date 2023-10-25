@@ -1,0 +1,47 @@
+@use './general';
+
+.button {
+  width: 100%;
+  box-sizing: border-box;
+  // TODO: border-radius across all links/buttons should be a variable
+  border-radius: 3rem;
+  text-decoration: none;
+  padding: 1em 1.5rem;
+  font-size: 1em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: general.$default-transition;
+}
+
+.button-primary {
+  @extend .button;
+
+  color: var(--color-bright-coral);
+  background-color: rgba(var(--color-white), 0.88);
+
+  &:hover {
+    box-shadow: 0 0.25rem 0.625rem rgba(var(--color-black), 0.32);
+  }
+
+  &:active {
+    background-color: rgba(var(--color-white), 1);
+  }
+}
+
+.button-secondary {
+  @extend .button;
+
+  color: rgba(var(--color-white), 1);
+  background-color:rgba(var(--color-white), 0.16);
+  gap: 0.5rem;
+
+  &:hover {
+    background-color:rgba(var(--color-white), 0.24);
+  }
+
+  &:active {
+    background-color:rgba(var(--color-white), 0.1);
+  }
+}
