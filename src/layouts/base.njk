@@ -14,7 +14,7 @@
 
 <body>
   <header class="header-nav">
-    <nav class="header-nav__container">
+    <nav class="header-nav__container max-width">
       <a href="index.html" class="header-nav__home-link">
         {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
       </a>
@@ -34,7 +34,7 @@
 
   <main>
     <div class="body-container">
-      <div class="homepage-hero">
+      <div class="homepage-hero max-width">
         <div class="homepage-hero__text">
           <div id="type-on">
             <h2 class="js-typewriter homepage-hero__typewriter" data-period="2000" data-type='[ "hi there!", "aloha!", "hello!", "hola!", "welcome!", "bonjour!"]'>
@@ -50,7 +50,7 @@
 
 
       <section class="about-me">
-        <div class="about-me__container">
+        <div class="about-me__container max-width">
           <div class="about-me__image-container">
             {% image 'src/public/usedresources/cropped_IMG_2512.png', 'about-me__image', 'Marissa with a big smile, harnessed while on an outdoor excursion' %}
           </div>
@@ -61,7 +61,7 @@
       </section> 
         
       <section id="projects" class="projects-section">
-        <div class="projects-section__container">
+        <div class="projects-section__container max-width">
           <h2 class="projects-section__heading">Projects</h2>
 
           <div class="projects-grid">
@@ -142,11 +142,11 @@
       </section>
 
       <section class="contact-section">
-        <div class="contact-section__container">
+        <div class="contact-section__container max-width">
           <p class="contact-section__text">
             {{collabText.paragraph}} <strong class="bold">{{collabText.bold}}</strong>
           </p>
-          <a class="contact-section__link bold" href="contact/contact.html">{{collabText.linkText}}</a>
+          <a class="contact-section__link button-primary" href="contact/contact.html">{{collabText.linkText}}</a>
         </div>
       </section>
     </div>

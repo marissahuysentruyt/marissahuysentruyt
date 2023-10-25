@@ -54,8 +54,6 @@
     @media (min-width: general.$bp-medium) {
       flex-direction: row;
       justify-content: space-between;
-      margin: auto;
-      max-width: general.$max-page-width;
     }
   }
 

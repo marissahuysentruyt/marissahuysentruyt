@@ -20,15 +20,9 @@
     justify-content: space-between;
 
     @media (min-width: general.$bp-medium) {
-      max-width: general.$max-page-width;
-      margin: auto;
       flex-direction: row;
     }
   }
-
-  // &__home-link {
-  //   border: 1px solid red;
-  // }
 
   &__link-list {
     display: flex;
