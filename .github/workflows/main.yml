@@ -1,0 +1,45 @@
+name: CI
+
+on: 
+  # any time you create a pull request against `main` or 
+  # try to push to `main`, this workflow file will run 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# the jobs are the workflows that github will automatically run. 
+# the steps that need to be taken for this workflow to pass are:
+# checkout the branch
+# useNode.js
+# install dependencies
+# build the thing
+# run the linting scripts
+# run the cypress tests
+# run the jest tests
+ 
+jobs:
+  build-lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+      - name: Install dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Run linter
+        run: npm run lint
+      - name: cypress-run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
+      - name: jest-tests
+        run: npm run test 
+
