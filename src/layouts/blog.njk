@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="icon" href="../../public/usedresources/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css" type="text/css">
+  <link rel="icon" href="/public/usedresources/favicon.png" type="image/png">
 </head>
 <body>
 
-<header>
-    <nav class="header-nav">
-        <a href="../index.html">
+  <header class="cmp-header">
+    <nav class="cmp-header__container">
+      <a href="/index.html" class="cmp-header__home-link">
         {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
-        </a>
-        <ul>
-            <li><a href="../work/work-examples.html">Projects</a></li>
-            <li><a href="../resume/resume.html">Resume</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
-        </ul>
+      </a>
+      <ul class="cmp-header__link-list">
+        <li class="cmp-header__list-item">
+          <a class="cmp-header__link" href="/work/work-examples.html">Projects</a>
+        </li>
+        <li class="cmp-header__list-item">
+          <a class="cmp-header__link" href="/resume/resume.html">Resume</a>
+        </li>
+        <li class="cmp-header__list-item">
+          <a class="cmp-header__link" href="/contact/contact.html">Contact</a>
+        </li>
+      </ul>
     </nav>
-</header>
+  </header>
 
 <main class="body-container">
     <section class="hero-section--blog">
