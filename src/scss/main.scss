@@ -5,13 +5,13 @@ maybe for the rest of the portfolio?
 #4281a4;
 004f4a */
 
-@use './blog';
-@use './contact';
-@use './resume';
-@use './work-examples';
-@use './neverland-travelers';
-@use './financial';
-@use './iceland';
+@use './components/blog-page';
+@use './components/contact-page';
+@use './components/resume-page';
+@use './components/work-examples-page';
+@use './components/neverland-travelers-page';
+@use './components/financial-page';
+@use './components/iceland-page';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Raleway:wght@100;300;400&display=swap');
 
