@@ -1,11 +1,11 @@
-.body-container--projects {
+.cmp-body--projects {
     padding: 0;
     background-color: #196076;
     height: 100%;
     overflow: hidden;
 }
 
-.body-container--projects .hero-section--projects {
+.cmp-body--projects .hero-section--projects {
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
@@ -13,7 +13,7 @@
     padding: 7.5%;
 }
 
-.body-container--projects .hero-section--projects h2 {
+.cmp-body--projects .hero-section--projects h2 {
     padding: 10% 0 5%;
     font-size: 200px;
     color: rgba(255 255 255 / 72%);
@@ -21,7 +21,7 @@
     flex-grow: 0;
 }
 
-.body-container--projects .hero-section--projects h1 {
+.cmp-body--projects .hero-section--projects h1 {
     width: 100%;
     font-size: 2em;
     color: rgba(255 255 255 / 88%);
@@ -264,11 +264,11 @@
 /* responsive/mobile */
 
 @media (max-width: 1220px) {
-    .body-container--projects .hero-section--projects h2 {
+    .cmp-body--projects .hero-section--projects h2 {
         font-size: 180px;
     }
 
-    .body-container--projects .hero-section--projects h1 {
+    .cmp-body--projects .hero-section--projects h1 {
         font-size: 1.8em;
     }
         
@@ -290,11 +290,11 @@
 } 
 
 @media (max-width: 1000px) {
-    .body-container--projects .hero-section--projects h2 {
+    .cmp-body--projects .hero-section--projects h2 {
         font-size: 160px;
     }
 
-    .body-container--projects .hero-section--projects h1 {
+    .cmp-body--projects .hero-section--projects h1 {
         font-size: 1.6em;
     }
     
@@ -304,11 +304,11 @@
 }
 
 @media (max-width: 900px) {
-    .body-container--projects .hero-section--projects h2 {
+    .cmp-body--projects .hero-section--projects h2 {
         font-size: 144px;
     }
 
-    .body-container--projects .hero-section--projects h1 {
+    .cmp-body--projects .hero-section--projects h1 {
         font-size: 1.4em;
     }
 
@@ -318,11 +318,11 @@
 }
 
 @media (max-width: 768px) {
-    .body-container--projects .hero-section--projects h2 {
+    .cmp-body--projects .hero-section--projects h2 {
         font-size: 120px;
     }
 
-    .body-container--projects .hero-section--projects h1 {
+    .cmp-body--projects .hero-section--projects h1 {
         width: 100%;
     }
 
@@ -375,18 +375,18 @@
 }
 
 @media (max-width: 640px) {
-    .body-container--projects .hero-section--projects h2 {
+    .cmp-body--projects .hero-section--projects h2 {
         font-size: 90px;
     }
 
-    .body-container--projects .hero-section--projects h1 {
+    .cmp-body--projects .hero-section--projects h1 {
         font-size: 1.2em;
     }
 }
 
 
 @media (max-width: 500px) {
-    .body-container--projects .hero-section--projects h2 {
+    .cmp-body--projects .hero-section--projects h2 {
         margin-top: 20%;
         font-size: 80px;
         margin-bottom: 10%;
@@ -412,12 +412,12 @@
 }
 
 @media (max-width: 414px) {
-    .body-container--projects .hero-section--projects h2 {
+    .cmp-body--projects .hero-section--projects h2 {
         margin-top: 35%;
         font-size: 60px;
     }
 
-    .body-container--projects .hero-section--projects h1 {
+    .cmp-body--projects .hero-section--projects h1 {
         font-size: 1.2em;
     }
 
@@ -427,7 +427,7 @@
 }
 
 @media (max-width: 325px) {
-    .body-container--projects .hero-section--projects h2 {
+    .cmp-body--projects .hero-section--projects h2 {
         margin-top: 45%;
     }
 }

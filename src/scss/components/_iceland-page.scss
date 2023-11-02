@@ -1,4 +1,4 @@
-.body-container--iceland {
+.cmp-body--iceland {
   padding: 0;
   background-color: #00B0CD;
   overflow: hidden;
@@ -371,7 +371,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .body-container--iceland .hero-section {
+  .cmp-body--iceland .hero-section {
       padding-top: 20%;
   }
   
@@ -452,7 +452,7 @@
 
 
 @media only screen and (max-width: 500px) {
-  .body-container--iceland .hero-section {
+  .cmp-body--iceland .hero-section {
       padding-top: 36%
   }
 
@@ -471,11 +471,11 @@
 
 
 @media only screen and (max-width: 414px) {
-  .body-container--iceland .hero-section {
+  .cmp-body--iceland .hero-section {
       padding-top: 50%;
   }
 
-  .body-container--iceland .hero-section .text-container h1{
+  .cmp-body--iceland .hero-section .text-container h1{
       font-size: 4.5em;
       padding: 0;
   }
@@ -486,7 +486,7 @@
 }
 
 @media only screen and (max-width: 325px) {
-  .body-container--iceland .hero-section .text-container h1{
+  .cmp-body--iceland .hero-section .text-container h1{
       font-size: 3.5em;
   }
   

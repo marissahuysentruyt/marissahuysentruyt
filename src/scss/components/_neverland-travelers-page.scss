@@ -1,4 +1,4 @@
-.body-container--nt {
+.cmp-body--nt {
   padding: 0;
   background-color: #472A82;
   overflow: hidden;
@@ -352,7 +352,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .body-container--nt .hero-section {
+  .cmp-body--nt .hero-section {
       padding-top: 20%;
   }
   
@@ -430,7 +430,7 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .body-container--nt .hero-section {
+  .cmp-body--nt .hero-section {
       padding-top: 36%
   }
 
@@ -448,11 +448,11 @@
 }
 
 @media only screen and (max-width: 414px) {
-  .body-container--nt .hero-section {
+  .cmp-body--nt .hero-section {
       padding-top: 50%;
   }
 
-  .body-container--nt .hero-section .text-container h1 {
+  .cmp-body--nt .hero-section .text-container h1 {
       font-size: 4em;
       padding: 0;
   }
@@ -463,7 +463,7 @@
 }
 
 @media only screen and (max-width: 325px) {
-  .body-container--nt .hero-section .text-container h1 {
+  .cmp-body--nt .hero-section .text-container h1 {
       font-size: 3em;
   }
   

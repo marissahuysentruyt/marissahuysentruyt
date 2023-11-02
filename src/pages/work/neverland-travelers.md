@@ -2,7 +2,7 @@
 title: 'Project: Neverland Travelers Website'
 layout: project-page.njk
 permalink: work/neverland-travelers.html
-bodyClass: body-container--nt
+bodyClass: cmp-body--nt
 collabClass: collab-cta--nt
 projectTitle: Neverland Travelers Website
 overview: |

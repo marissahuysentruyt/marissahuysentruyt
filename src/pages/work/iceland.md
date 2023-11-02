@@ -2,7 +2,7 @@
 title: 'Project: Iceland Travel Landing Page'
 layout: project-page.njk
 permalink: work/iceland.html
-bodyClass: body-container--iceland
+bodyClass: cmp-body--iceland
 collabClass: collab-cta--iceland
 projectTitle: Fire & Ice Landing Page
 overview: |

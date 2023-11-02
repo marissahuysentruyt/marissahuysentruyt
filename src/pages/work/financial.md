@@ -2,7 +2,7 @@
 title: 'Project: Financial Advisor Website Remake'
 layout: project-page.njk
 permalink: work/financial.html
-bodyClass: body-container--financial
+bodyClass: cmp-body--financial
 collabClass: collab-cta--financial
 projectTitle: Financial Advisor's Website
 overview: |
