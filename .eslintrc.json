@@ -2,9 +2,19 @@
   "root": true,
   "extends": [
     "eslint:recommended",
-    "airbnb-base"
+    "airbnb-base",
+    "plugin:cypress/recommended"
   ],
   "rules": {
-    "import/prefer-default-export": 0
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+        {
+          "devDependencies":
+          [
+            "cypress.config.js"
+          ]
+        }
+      ]
   }
 }
