@@ -24,7 +24,7 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@babel/core": "^7.22.17",
     "@babel/preset-env": "^7.23.2",
-    "axe-core": "^4.7.2",
+    "axe-core": "^4.8.2",
     "babel-jest": "^29.7.0",
     "cypress": "^12.17.4",
     "esbuild": "^0.19.2",
