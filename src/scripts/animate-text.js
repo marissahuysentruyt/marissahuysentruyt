@@ -1,5 +1,5 @@
 // animate text/typewriter
-var typeText = function(elem, toRotate, period) {
+const TypeText = function initTypeText(elem, toRotate, period) {
   this.toRotate = toRotate;
   this.elem = elem;
   this.loopNum = 0;
@@ -10,53 +10,53 @@ var typeText = function(elem, toRotate, period) {
 };
 
 // cursor
-typeText.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+TypeText.prototype.tick = function typeTextTick() {
+  const i = this.loopNum % this.toRotate.length;
+  const fullTxt = this.toRotate[i];
 
-  if(this.isDeleting) {
-  this.txt = fullTxt.substring(0, this.txt.length - 1);
-} else {
-  this.txt = fullTxt.substring(0, this.txt.length + 1);
-}
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
 
-this.elem.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+  this.elem.innerHTML = `<span class="wrap">${this.txt}</span>`;
 
-var that = this;
-var delta = 200 - Math.random() * 100;
+  const that = this;
+  let delta = 200 - Math.random() * 100;
 
-if(this.isDeleting) {
-  delta /= 2;
-}
+  if (this.isDeleting) {
+    delta /= 2;
+  }
 
-if(!this.isDeleting && this.txt === fullTxt) {
-  delta = this.period;
-  this.isDeleting = true;
-} else if(this.isDeleting && this.txt === '') {
-  this.isDeleting = false;
-  this.loopNum++;
-  delta = 500;
-}
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum += 1;
+    delta = 500;
+  }
 
-setTimeout(function() {
-  that.tick();
-}, delta);
+  setTimeout(() => {
+    that.tick();
+  }, delta);
 };
 
-window.onload = function() {
-  var elements = document.getElementsByClassName('typewriter');
-  for(var i = 0; i< elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      var period = elements[i].getAttribute('data-period');
+window.onload = function onLoad() {
+  const elements = document.getElementsByClassName('typewriter');
+  // eslint-disable-next-line no-plusplus
+  for (let i = 0; i < elements.length; i++) {
+    const toRotate = elements[i].getAttribute('data-type');
+    const period = elements[i].getAttribute('data-period');
 
-  if(toRotate) {
-      new typeText(elements[i], JSON.parse(toRotate), period);
+    if (toRotate) {
+      // eslint-disable-next-line no-new
+      new TypeText(elements[i], JSON.parse(toRotate), period);
+    }
   }
 };
-};
 
-
-var css = document.createElement("style");
-css.type= "text/css";
-css.innerHTML = ".typewriter > .wrap {border-right: 0.06em solid rgba(255, 255, 255, 0.24);}";
+const css = document.createElement('style');
+css.innerHTML = '.typewriter > .wrap {border-right: 0.06em solid rgba(255, 255, 255, 0.24);}';
 document.body.appendChild(css);
