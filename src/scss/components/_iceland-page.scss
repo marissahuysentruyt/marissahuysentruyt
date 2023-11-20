@@ -1,27 +1,22 @@
 .body-container--iceland {
-  /* border: 1px solid red; */
   padding: 0;
   background-color: #00B0CD;
   overflow: hidden;
 }
 
 .hero-section {
-  /* border: 1px solid red; */
-  padding: 12% 7.5% 0 7.5%;
+  padding: 12% 7.5% 0;
   display: flex;
   flex-direction: column;
-  color: rgba(255, 255, 255, 0.88);
-
+  color: rgba(255 255 255 / 88%);
 }
 
 .hero-section .back {
-  /* border: 1px solid white; */
   margin-bottom: 2%;
 }
 
 .hero-section .back a {
-  /* border: 1px solid white; */
-  color:rgba(255, 255, 255, 0.88);
+  color:rgba(255 255 255 / 88%);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -37,39 +32,45 @@
 }
 
 .hero-section .back a #slide:hover {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.88);
+  border-bottom: 2px solid rgba(255 255 255 / 88%);
   animation: textSlide 0.5s ease-in-out 1 forwards;
 }
 
-
+// stylelint-disable-next-line keyframes-name-pattern
 @keyframes arrowpoint {
   0% {
       position: relative;
       left: 0;
       opacity: 0;
   }
+
   50% {
       left: -8%;
       opacity: 0.35;
    }
+
    100% {
        left: 0;
        opacity: 1;
   }
 }
 
+// stylelint-disable-next-line keyframes-name-pattern
 @keyframes fadeOn {
   0% {
       opacity: 0;
   }
+
   50% {
       opacity: 0.35;
    }
+
    100% {
        opacity: 1;
   }
 }
 
+// stylelint-disable-next-line keyframes-name-pattern
 @keyframes textSlide {
   0% {left: -25px;}
   100% { left: 0; }
@@ -77,15 +78,14 @@
 
 #invisible {
   width: auto;
-  /* border: 1px solid blue; */
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 #invisible #hover {
   position: relative;
-  /* border: 1px solid black; */
   visibility: hidden;
   opacity: 0;
   
@@ -100,21 +100,16 @@
 .hero-section .desktop {
   display: flex;
   flex-direction: column;
-  /* border: 1px solid red; */
 }
 
 .hero-section .desktop .text-container {
   display: flex;
   flex-basis: 100%;
-  /* padding-bottom: 10%; */
-  /* border: 1px solid red; */
-
 }
 
 .desktop .text-container h1 {
-  /* border: 1px solid white; */
   flex-basis: 50%;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255 255 255 / 72%);
   font-size: 100px;
   font-weight: 600;
   line-height: 110%;
@@ -129,49 +124,41 @@
   font-size: 2em;
   margin-bottom: 5%;
   line-height: 140%;
-
 }
 
 .desktop .text-container .details p {
   font-size: 1.3em;
   line-height: 160%;
   margin-bottom: 10%;
-
 }
 
 .desktop .progress {
   margin-top: 5%;
   font-size: 1.3em;
-  /* border: 1px solid blue; */
 }
 
 .desktop .progress-full {
-  /* border: 1px solid white; */
   position: relative;
   top: 0.5em;
   height: 0.5em;
   margin: 0;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255 255 255 / 40%);
   width: 100%;
   z-index: 1;
   border-radius: 50px;
-
 }
 
 .desktop .progress-bar {
   height: 0.5em;
   width: 85%;
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255 255 255 / 88%);
   border-radius: 50px;
   position: relative;
   z-index: 3;
-  /* border: 1px solid black */
-
 }
 
 .desktop img {
-  /* border: 1px solid black; */
   position: relative;
   top: 200px;
   width: 100%;
@@ -181,16 +168,14 @@
 .mobile {
   display: flex;
   background-color:#FFF6F6;
-  padding: 20% 7.5% 7.5% 7.5%;
-  /* border: 1px solid black; */
+  padding: 20% 7.5% 7.5%;
   flex-basis: 100%;
   justify-content: space-between;
 }
 
 .mobile .image-container  {
-  /* border: 1px solid red; */
   flex-basis: 40%;
-  padding: 0 5% 0 5%;
+  padding: 0 5%;
   position: relative;
   z-index: 3;
 }
@@ -203,7 +188,6 @@
   border-radius: 50%;
   z-index: -1;
   position: absolute;
-  /* border: 1px solid black; */
   top: 73%;
   left: 65%;
 }
@@ -214,7 +198,6 @@
 }
 
 .mobile .text-container {
-  /* border: 1px solid red; */
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
@@ -232,7 +215,6 @@
   border-radius: 50%;
   z-index: -1;
   position: absolute;
-  /* border: 1px solid black; */
   top: -7%;
   left: -30%;
 }
@@ -241,26 +223,24 @@
   font-size: 2em;
   line-height: 140%;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.88);
+  color: rgba(0 0 0 / 88%);
   margin-bottom: 5%;
 }
 
 .mobile .text-container p {
   font-size: 1.5em;
   line-height: 160%;
-  color: rgba(0, 0, 0, 0.88);
+  color: rgba(0 0 0 / 88%);
   margin-bottom: 10%;
 }
 
 .mobile .languages {
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   padding: 0;
 }
 
 .mobile .languages img {
-  /* border: 1px solid black; */
   margin-right: 1.5em;
   width: 100%;
   height: auto;
@@ -268,7 +248,6 @@
 }
 
 .visit-sites {
-  /* border: 1px solid white; */
   background-color: #FFF6F6;
   text-align: center;
   padding: 7.5%;
@@ -292,7 +271,7 @@
 }
 
 .visit-sites a:hover {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 4px 6px rgba(0 0 0 / 32%);
 }
 
 .visit-sites a:active {
@@ -300,18 +279,16 @@
 }
 
 .collab-cta--iceland {
-  /* border: 1px solid red; */
   padding: 10% 7.5%;
   background-color: #00B0CD;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-basis: 100%;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255 255 255 / 88%);
 }
 
 .collab-cta--iceland p {
-  /* border: 1px solid red; */
   flex-basis: 70%;
   font-size: 2em;
   line-height: 140%;
@@ -319,10 +296,9 @@
 }
 
 .collab-cta--iceland a {
-  /* border: 1px solid red; */
   width: 15%;
   color: #F36748;
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255 255 255 / 88%);
   border-radius: 50px;
   text-decoration: none;
   font-size: 1em;
@@ -336,20 +312,19 @@
 }
 
 .collab-cta--iceland a:hover {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 4px 6px rgba(0 0 0 / 24%);
   background-color: #fff;
 
 }
 
 .collab-cta--iceland a:active {
-  background-color: rgba(255, 255, 255, 0.88);
+  background-color: rgba(255 255 255 / 88%);
   box-shadow: none;
 }
 
 /* responsive/mobile */
 
 @media only screen and (max-width: 1220px) {
-
    .collab-cta--iceland a {
        width: 20%;
    }
@@ -357,23 +332,19 @@
 
 @media only screen and (max-width: 1000px) {
   .hero-section .desktop .text-container {
-      /* border: 1px solid white; */
       flex-direction: column;
   }
 
   .hero-section .desktop .text-container h1 {
       flex-basis: 100%;
-      /* border: 1px solid white; */
   }
 
   .hero-section .desktop .text-container .details {
-      /* border: 1px solid white; */
       padding: 0;
       margin-top: 10%;
   }
   
   .desktop img {
-      /* border: 1px solid black; */
       top: 100px;
   }
   
@@ -383,30 +354,24 @@
 }
 
 @media only screen and (max-width: 900px) {
-
   .mobile .text-container::before {
       z-index: -1;
-      /* border: 1px solid black; */
       top: -3%;
   }
 
   .mobile .image-container::after {
       z-index: -1;
-      /* border: 1px solid black; */
       top: 50%;
       left: 45%;
   }
 
    .collab-cta--iceland p {
-       /* border: 1px solid red; */
        flex-basis: 60%;
    }
 }
 
 @media only screen and (max-width: 768px) {
-
   .body-container--iceland .hero-section {
-      /* border: 1px solid red; */
       padding-top: 20%;
   }
   
@@ -423,10 +388,10 @@
   .mobile .text-container {
       flex-basis: 100%;
   }
+
   .mobile .image-container {
       flex-basis: 100%;
       justify-content: center;
-      /* border: 1px solid red; */
       margin: 0;
       padding: 0;
   }
@@ -436,20 +401,16 @@
   }
 
   .mobile .text-container::before {
-      /* border: 1px solid black; */
       top: 3%;
   }
 
   .mobile .image-container::after {
       z-index: -1;
-      /* z-index: 15; */
-      /* border: 1px solid black; */
       top: 25%;
       left: 70%;
   }
 
   .mobile .image-container img {
-      /* max-width: 375px; */
       margin: auto;
   }
 
@@ -480,12 +441,10 @@
 
 @media only screen and (max-width: 640px) {
   .visit-sites {
-      /* border: 1px solid black; */
       padding: 15% 7.5%;
   }
 
   .visit-sites h2 {
-      /* border: 1px solid black; */
       margin-bottom: 5%;
       text-align: left;
   }
@@ -493,14 +452,12 @@
 
 
 @media only screen and (max-width: 500px) {
-
   .body-container--iceland .hero-section {
       padding-top: 36%
   }
 
   .desktop .text-container h1 {
       font-size: 80px;
-      /* border: 1px solid red; */
   }
 
   .mobile {
@@ -521,21 +478,19 @@
   .body-container--iceland .hero-section .text-container h1{
       font-size: 4.5em;
       padding: 0;
-      /* border: 1px solid red; */
   }
+
   .collab-cta--iceland a {
       width: 70%;
    }
 }
 
 @media only screen and (max-width: 325px) {
-
   .body-container--iceland .hero-section .text-container h1{
       font-size: 3.5em;
   }
+  
   .visit-sites a {
       width: 100%;
-      
   }
-
 }

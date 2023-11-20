@@ -26,8 +26,7 @@
 
 // UTILITIES
 
-
-
+// ===============
 .body-container {
     padding: 0;
     background-color: var(--color-dark-teal);
@@ -41,10 +40,10 @@
     align-items: center;
     width: 100%;
     padding: 7.5%;
-    /* border: 1px solid red; */
 }
 
 /* css animations */
+
 /* @keyframes type-on {
     from { width: 0}
     to { width: 100%}
@@ -57,43 +56,37 @@
 } */
 
 .body-container .hero-section .text {
-    /* border: 1px solid black; */
     width: 100%;
     margin: 0;
 }
 
-
 .body-container .hero-section h2 {
-    padding: 10% 0 5% 0;
-    /* cursor: none; */
+    padding: 10% 0 5%;
     text-align: left;
     font-size: 200px;
-    color: rgba(255, 255, 255, 0.72);
+    color: rgba(255 255 255 / 72%);
     flex-shrink: 1;
     flex-grow: 0;
     overflow: hidden;
     border-right: 0.06em solid transparent;
     white-space: nowrap;
     margin: 0 auto;
-    /* animation: type-on 2.5s steps(50, end) alternate infinite,
-    blink-cursor 0.75s step-end infinite; */
 }
 
 .body-container .hero-section h1 {
-    /* border: 1px solid red; */
     width: 55%;
     font-size: 2em;
-    color: rgba(255, 255, 255, 0.88);
+    color: rgba(255 255 255 / 88%);
     line-height: 140%;
 }
 
+// stylelint-disable-next-line keyframes-name-pattern
 @keyframes arrowBounce {
     0% {top: -1.75em;}
     100% {top: -4em;}
 }
 
 .body-container img.arrow {
-    /* border: 1px solid red; */
     position: relative;
     left: 90%;
     top: -1.75em;
@@ -101,9 +94,8 @@
 }
 
 .body-container .about-me {
-    /* border: 1px solid red; */
     background-color:#fff6f6;
-    padding: 7.5% 7.5% 12% 7.5%;
+    padding: 7.5% 7.5% 12%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -115,27 +107,23 @@
     font-size: 1.5em;
     line-height: 1.5em;
     font-weight: 400;
-    /* border: 1px solid red; */
-    flex-basis: 60%;
-    flex-grow: 0;
-    flex-shrink: 1;
+
+    // grow, shrink, basis
+    flex: 0 1 60%;
     z-index: 4;
     padding-left: 7.5%;
     position: relative;
 }
 
 .body-container .about-me .image-container {
-    /* border: 1px solid blue; */
     flex-basis: 40%;
     z-index: 4;
     padding: 0;
 }
 
-
 .body-container .about-me .image-container img {
     width: 100%;
     height: auto;
-    /* border: 1px solid blue; */
     border-radius: 50%;
     position: relative;
     z-index: 3;
@@ -158,7 +146,6 @@
     content: " ";
     height: 513px;
     width: 513px;
-    /* border: 1px solid black; */
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
@@ -169,7 +156,6 @@
 } 
 
 .projects {
-    /* border: 1px solid red; */
     padding-top: 5%;
     color: #fff;
     background-color: #196076;
@@ -178,11 +164,10 @@
 }
 
 .projects h2 {
-    /* border: 1px solid red; */
     font-size: 200px;
     margin-bottom: 5%;
     text-transform: lowercase;
-    color:rgba(255, 255, 255, 0.32);
+    color:rgba(255 255 255 / 32%);
     padding-left: 7.5%;
 }
 
@@ -193,15 +178,15 @@
         "financial"
         "iceland";
     grid-template-columns: 100%;
+    
+    // stylelint-disable-next-line declaration-block-no-redundant-longhand-properties
     grid-template-rows: 1fr 1fr 1fr;
     grid-column-gap: 5%;
-    /* border: 1px solid blue; */
-    color: rgba(255, 255, 255, 0.88);
-    height: auto
+    color: rgba(255 255 255 / 88%);
+    height: auto;
 }
 
 .neverland-travelers {
-    /* border: 1px solid white; */
     grid-area: neverland;
     display: flex;
     flex-basis: 100%;
@@ -212,7 +197,6 @@
 .neverland-travelers .left, 
 .financial .right, 
 .iceland .left {
-    /* border: 1px solid white; */
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
@@ -233,13 +217,11 @@
     font-size: 1.5em;
     line-height: 160%;
     margin-bottom: 10%;
-
 }
 
 .neverland-travelers .links, 
 .financial .links,
 .iceland .links {
-    /* border: 1px solid red; */
     width: 100%;
     height: auto;
     display: flex;
@@ -250,9 +232,8 @@
 .financial .fin-text .links a.link1, 
 .iceland .ice-text .links a.link1 {
     width: 25%;
-    /* border: 1px solid black; */
     color: #F36748;
-    background-color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(255 255 255 / 88%);
     border-radius: 50px;
     text-decoration: none;
     font-size: 1em;
@@ -268,7 +249,7 @@
 .neverland-travelers .nt-text .links a.link1:hover,
 .financial .fin-text .links a.link1:hover, 
 .iceland .ice-text .links a.link1:hover {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 4px 6px rgba(0 0 0 / 32%);
 }
 
 .neverland-travelers .nt-text .links a.link1:active,
@@ -280,11 +261,10 @@
 .neverland-travelers .nt-text .links a.link2,
 .financial .fin-text .links a.link2,
 .iceland .ice-text .links a.link2 {
-    /* border: 1px solid red; */
     width: 35%;
     font-weight: 600;
     color: #fff;
-    background-color:rgba(255, 255, 255, 0.16);
+    background-color:rgba(255 255 255 / 16%);
     border-radius: 50px;
     text-decoration: none;
     padding: 1em;
@@ -293,20 +273,18 @@
     align-items: center;
     justify-content: center;
     transition: all 0.2s ease-in-out;
-
 }
 
 .neverland-travelers .nt-text .links a.link2:hover,
 .financial .fin-text .links a.link2:hover,
 .iceland .ice-text .links a.link2:hover {
-    background-color:rgba(255, 255, 255, 0.24);
+    background-color:rgba(255 255 255 / 24%);
 }
 
 .neverland-travelers .nt-text .links a.link2:active,
 .financial .fin-text .links a.link2:active,
 .iceland .ice-text .links a.link2:active {
-    background-color:rgba(255, 255, 255, 0.1);
-
+    background-color:rgba(255 255 255 / 10%);
 }
 
 .neverland-travelers .nt-screenshot {
@@ -321,7 +299,6 @@
 }
 
 .financial {
-    /* border: 1px solid white; */
     grid-area: financial;
     display: flex;
     flex-direction: row-reverse;
@@ -331,7 +308,6 @@
 }
 
 .financial .fin-text {
-    /* border: 1px solid white; */
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
@@ -351,7 +327,6 @@
 }
 
 .iceland {
-    /* border: 1px solid white; */
     grid-area: iceland;
     display: flex;
     flex-basis: 100%;
@@ -360,7 +335,6 @@
 }
 
 .iceland .ice-text {
-    /* border: 1px solid white; */
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
@@ -380,19 +354,17 @@
 }
 
 .collab-cta {
-    /* border: 1px solid red; */
     padding: 10% 7.5%;
     margin-top: 2.5%;
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(0 0 0 / 8%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-basis: 100%;
-    color: rgba(255, 255, 255, 0.88);
+    color: rgba(255 255 255 / 88%);
 }
 
 .collab-cta p {
-    /* border: 1px solid red; */
     flex-basis: 70%;
     font-size: 2em;
     line-height: 140%;
@@ -400,10 +372,9 @@
 }
 
 .collab-cta a {
-    /* border: 1px solid red; */
     width: 15%;
     color: #F36748;
-    background-color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(255 255 255 / 88%);
     border-radius: 50px;
     text-decoration: none;
     font-size: 1em;
@@ -417,29 +388,24 @@
 }
 
 .collab-cta a:hover {
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 4px 6px rgba(0 0 0 / 32%);
     background-color: #fff;
-
 }
 
 .collab-cta a:active {
-    background-color: rgba(255, 255, 255, 0.88);
+    background-color: rgba(255 255 255 / 88%);
     box-shadow: none;
 }
 
-
 footer {
-    /* border: 1px solid red; */
     padding-bottom: 2.5%;
     background-color: #FFF6F6;
-
 }
 
 footer .social {
     display: flex;
     flex-basis: 35%;
     align-items: center;
-    /* border: 1px solid red; */
     justify-content: center;
     padding: 2% 0;
     list-style-type: none;
@@ -447,7 +413,6 @@ footer .social {
 
 
 footer .social a {
-    /* border: 1px solid black; */
     text-decoration: none;
     color: #F36748;
     transition: all 0.2s ease-in-out;
@@ -455,40 +420,31 @@ footer .social a {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 footer .social a:first-child {
     margin-right: 0.5em;
-    /* border: 1px solid red; */
 }
 
 footer .social a:last-child  {
     margin-left: 0.5em;
-    /* border: 1px solid red; */
 }
 
 footer .social li:first-child {
     transform: scale(2);
-    /* border: 1px solid red; */
     transition: all 0.2s ease-in-out;
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 0.7em;
-
 }
 
-
 footer .social a img {
-    /* border: 1px solid black; */
     border-radius: 50%;
     display: inline;
     padding: 0;
     margin: 0;
-    // width: 100%;
-    // height: auto;
     max-width: 48px;
 }
 
@@ -508,6 +464,7 @@ footer p {
     width: 100%;
     border: 1px solid blue;
 }
+
 #invisible #hover {
     height: 4em;
     width: 100%;
@@ -526,14 +483,11 @@ footer p {
 /* responsive/mobile */
 
 @media only screen and (max-width: 1220px) {
-
     .hero-section h2 span {
-        /* border: 1px solid red; */
         font-size: 90%;
      }
 
     .body-container .hero-section h1 {
-        /* border: 1px solid red; */
         width: 70%;
     }
 
@@ -543,102 +497,84 @@ footer p {
         width: 40%;
     }
 
-
     .neverland-travelers .nt-text .links a.link2,
     .financial .fin-text .links a.link2,
     .iceland .ice-text .links a.link2 {
-        /* border: 1px solid red; */
         width: 55%;
     }
 
     .collab-cta a {
         width: 25%;
-
     }
 } 
 
 @media only screen and (max-width: 1000px) {
     .hero-section h2 span {
-        /* border: 1px solid red; */
         font-size: 80%;
      }
 
     .projects h2 {
-        /* border: 1px solid red; */
         font-size: 180px;
     }
 }
 
 @media only screen and (max-width: 900px) {
-
      .hero-section h2 span {
-        /* border: 1px solid red; */
         font-size: 72%;
      }
 
      .collab-cta p {
-         /* border: 1px solid red; */
          flex-basis: 60%;
      }
 }
 
 @media only screen and (max-width: 820px) {
     .projects h2 {
-        /* border: 1px solid white; */
         font-size: 160px;
     }
 }
 
 
 @media only screen and (max-width: 768px) {
-
     .hero-section h2 span {
-        /* border: 1px solid red; */
         font-size: 60%;
     }
 
     .body-container .hero-section h1 {
-        /* border: 1px solid red; */
         width: 100%;
         margin-bottom: 10%;
     }
 
     .body-container .about-me {
-        /* border: 1px solid red; */
         flex-direction: column-reverse;
     }
     
     .body-container .about-me .text-container {
-        /* border: 1px solid red; */
         flex-basis: 100%;
         z-index: 4;
-        padding: 10% 0 0 0;
+        padding: 10% 0 0;
         position: relative;
     }
     
     .body-container .about-me .text-container::before {
-        /* border: 1px solid black; */
         right: 75%;
         top: -155%;
         z-index: -1;
     }
     
     .body-container .about-me .text-container::after {
-        /* border: 1px solid black; */
         top: -275px;
         left: 60%;
         z-index: -1;
     }  
 
     .projects h2 {
-        /* border: 1px solid black; */
         font-size: 120px;
     }
 
     .neverland-travelers,
     .financial, 
     .iceland {
-        /* border: 1px solid black; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -649,7 +585,6 @@ footer p {
     .neverland-travelers .nt-text, 
     .financial .fin-text, 
     .iceland .ice-text {
-        /* border: 1px solid red; */
         justify-content: center;
         margin-bottom: 10%;
         padding: 0 7.5%;
@@ -669,7 +604,6 @@ footer p {
     .neverland-travelers .nt-text .links a.link2,
     .financial .fin-text .links a.link2,
     .iceland .ice-text .links a.link2 {
-        /* border: 1px solid red; */
         width: 50%;
     }
 
@@ -689,39 +623,31 @@ footer p {
     footer {
         padding: 10% 0;
     }
-
 }
 
 @media only screen and (max-width: 640px) {
     .hero-section h2 span {
-        /* border: 1px solid red; */
         font-size: 45%;
     }
 }
 
-
 @media only screen and (max-width: 500px) {
-    
     .hero-section h2 span {
-        /* border: 1px solid red; */
         font-size: 40%;
         margin-top: 20%;
         }
 
     .body-container .hero-section h1 {
-        /* border: 1px solid red; */
         font-size: 1.5em;
     }
 
     .body-container .about-me .text-container::before {
-        /* border: 1px solid black; */
         right: 55%;
         top: -55%;
         z-index: -1;
     }
     
     .body-container .about-me .text-container::after {
-        /* border: 1px solid black; */
         top: -10%;
         left: 40%;
         z-index: -1;
@@ -732,14 +658,13 @@ footer p {
     }
 
     .projects .links {
-    /* border: 1px solid red; */
     flex-direction: column;
     }
 
     .neverland-travelers .nt-text .links a.link1,
     .financial .fin-text .links a.link1, 
     .iceland .ice-text .links a.link1 {
-        margin: 0 0 5% 0;
+        margin: 0 0 5%;
         width: 70%;
     }
 
@@ -751,15 +676,12 @@ footer p {
     }
 }
 
-
 @media only screen and (max-width: 414px) {
     .hero-section h2 span {
-        /* border: 1px solid red; */
         font-size: 30%;
     }
 
     .body-container .about-me .text-container::before {
-        /* border: 1px solid black; */
         right: 35%;
         top: -35%;
         z-index: -1;
@@ -767,7 +689,6 @@ footer p {
 
     .projects h2 {
         font-size: 4.5em;
-        /* border: 1px solid white; */
      }
 
      .collab-cta a {
@@ -776,10 +697,7 @@ footer p {
 }
 
 @media only screen and (max-width: 325px) {
-    
     .hero-section h2 span {
-        /* border: 1px solid red; */
         font-size: 22%;
      }
-     
 }

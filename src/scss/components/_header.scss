@@ -6,8 +6,8 @@
   top: 0;
   z-index: 5;
   padding: 1rem;
-  background-color: hsla(var(--color-white), 0.95);
-  box-shadow: 0 0 0.625rem hsla(var(--color-black), 0.1);
+  background-color: hsla(var(--color-white) / 95%);
+  box-shadow: 0 0 0.625rem hsla(var(--color-black) / 10%);
   max-height: general.$header-height;
   box-sizing: border-box;
   

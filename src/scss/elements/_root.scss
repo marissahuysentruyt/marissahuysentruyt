@@ -1,10 +1,11 @@
 :root {
-  --color-dark-teal: hsl(194, 65%, 28%);
-  --color-light-peach: hsl(0, 100%, 98%);
-  --color-light-peach-transparent: hsla(0, 100%, 98%, 0.8);
-  --color-bright-coral: hsl(11, 88%, 62%);
-  --color-bright-coral-transparent: hsla(11, 88%, 62%, 0.08);
+  --color-dark-teal: hsl(194deg 65% 28%);
+  --color-light-peach: hsl(0deg 100% 98%);
+  --color-light-peach-transparent: hsla(0deg 100% 98% / 80%);
+  --color-bright-coral: hsl(11deg 88% 62%);
+  --color-bright-coral-transparent: hsla(11deg 88% 62% / 8%);
+
   // black & white are used a lot with an alpha value in hsla
-  --color-white: 0, 100%, 100%;
-  --color-black: 0, 0%, 0%;
+  --color-white: 0deg 100% 100%;
+  --color-black: 0deg 0% 0%;
 }
