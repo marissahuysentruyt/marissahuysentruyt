@@ -32,7 +32,7 @@
     </nav>
   </header>
 
-<main class="cmp-body">
+  <main class="cmp-body">
     <section class="hero-section--blog">
         <h2>blog</h2>
         <p>
@@ -84,15 +84,15 @@
         </ul>
     </section>
     
-
-    <section class="collab-cta">
-        <p>
-            Interested in working together or collaborating on a project? <strong>Shoot me a message!</strong>
+    <section class="cmp-contact">
+      <div class="cmp-contact__container">
+        <p class="cmp-contact__text">
+          {{ collabText.paragraph }} <strong class="util-bold">{{ collabText.bold }}</strong>
         </p>
-        <a href="../contact/contact.html">Get in Touch</a>
+        <a class="cmp-contact__link util-bold" href="/contact/contact.html">{{ collabText.linkText }}</a>
+      </div>
     </section>
-
-</main>
+  </main>
 
   <footer class="cmp-footer">
     <ul class="cmp-footer__link-list">

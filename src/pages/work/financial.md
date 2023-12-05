@@ -3,7 +3,7 @@ title: 'Project: Financial Advisor Website Remake'
 layout: project-page.njk
 permalink: work/financial.html
 bodyClass: cmp-body--financial
-collabClass: collab-cta--financial
+collabClass: cmp-contact--financial
 projectTitle: Financial Advisor's Website
 overview: |
   This financial website is a remake of a live site, without any of the branding and copyrighted photos. I had access to the actual design files, so I used the design styles set up by the designer in order to develop the site. It's as close as possible to having a real-world project, incorporating a homepage, multiple interior pages, and pre-determined mobile breakdowns. 
@@ -21,6 +21,10 @@ languages:
     alt: 'CSS 3'
   - image: '../public/usedresources/javascript.svg'
     alt: 'JavaScript'
+collabText:
+  paragraph: Interested in working together or collaborating on a project?
+  bold: Shoot me a message!
+  linkText: Get in Touch
 ---
 
 # Financial Advisor's Website

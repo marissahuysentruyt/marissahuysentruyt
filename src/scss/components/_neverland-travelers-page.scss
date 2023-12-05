@@ -2,6 +2,10 @@
   padding: 0;
   background-color: #472A82;
   overflow: hidden;
+
+  & .cmp-contact {
+    background-color: transparent;
+  }
 }
 
 .hero-section {
@@ -260,56 +264,7 @@
   background-color: #F84E33;
 }
 
-.collab-cta--nt {
-  padding: 10% 7.5%;
-  background-color: #472A82;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-basis: 100%;
-  color: rgba(255 255 255 / 88%);
-}
-
-.collab-cta--nt p {
-  flex-basis: 70%;
-  font-size: 2em;
-  line-height: 140%;
-  font-weight: 300;
-}
-
-.collab-cta--nt a {
-  width: 15%;
-  color: #F36748;
-  background-color: rgba(255 255 255 / 88%);
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: 600;
-  padding: 1em 1.5em;
-  margin-right: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-in-out;
-}
-
-.collab-cta--nt a:hover {
-  box-shadow: 0 4px 6px rgba(0 0 0 / 32%);
-  background-color: #fff;
-}
-
-.collab-cta--nt a:active {
-  background-color: rgba(255 255 255 / 88%);
-  box-shadow: none;
-}
-
-/* responsive/mobile */
-
-@media only screen and (max-width: 1220px) {
-   .collab-cta--nt a {
-       width: 20%;
-   }
-} 
+/* responsive/mobile */ 
 
 @media only screen and (max-width: 1000px) {
   .hero-section .desktop .text-container {
@@ -328,10 +283,6 @@
   .desktop img {
       top: 100px;
   }
-  
-  .collab-cta--nt a {
-      width: 25%;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -345,10 +296,6 @@
       top: 50%;
       left: 45%;
   }
-
-   .collab-cta--nt p {
-       flex-basis: 60%;
-   }
 }
 
 @media only screen and (max-width: 768px) {
@@ -403,19 +350,6 @@
   .visit-sites a {
       width: 50%;
   }
-
-  .collab-cta--nt {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .collab-cta--nt p {
-      margin-bottom: 15%;
-  }
-
-  .collab-cta--nt a {
-      width: 50%;
-  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -456,10 +390,6 @@
       font-size: 4em;
       padding: 0;
   }
-
-  .collab-cta--nt a {
-      width: 70%;
-   }
 }
 
 @media only screen and (max-width: 325px) {

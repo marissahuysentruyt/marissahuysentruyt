@@ -1,6 +1,11 @@
 .cmp-body--resume {
     background-color: #FFF6F6;
     width: 100%;
+
+    & .cmp-contact {
+        background-color: rgba(243 103 72 / 8%);
+        color: rgba(0 0 0 / 88%);
+    }
 }
 
 .hero-section--resume {
@@ -374,54 +379,7 @@
     height: auto;
 }
 
-.collab-cta--resume { 
-    padding: 10% 7.5%;
-    background-color: rgba(243 103 72 / 8%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-basis: 100%;
-    color: rgba(0 0 0 / 88%);
-}
-
-.collab-cta--resume .resume-page-text {
-    flex-basis: 70%;
-    font-size: 2em;
-    line-height: 140%;
-    font-weight: 300;
-}
-
-.collab-cta--resume a {
-    width: 15%;
-    color: #F36748;
-    background-color: rgba(255 255 255 / 88%);
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 1em 1.5em;
-    margin-right: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease-in-out;
-}
-
-.collab-cta--resume a:hover {
-    box-shadow: 0 4px 6px rgba(0 0 0 / 32%);
-}
-
-.collab-cta--resume a:active {
-    background-color: #fff;
-}
-
 /* responsive/mobile */
-
-@media only screen and (max-width: 1220px) {
-    .collab-cta--resume a {
-        width: 25%;
-    }
-} 
 
 @media only screen and (max-width: 1000px) {
     .hero-section--resume .header h1 {
@@ -430,12 +388,6 @@
 
     .grid-container {
         grid-template-columns: 30% 10% 30% 30%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .collab-cta--resume .resume-page-text {
-         flex-basis: 60%;
     }
 }
 
@@ -492,19 +444,6 @@
     
     #skills h2 {
         padding-bottom: 3.5%;
-    }
-
-    .collab-cta--resume {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .collab-cta--resume .resume-page-text {
-        margin-bottom: 15%;
-    }
-
-    .collab-cta--resume a {
-        width: 50%;
     }
 }
 
@@ -643,10 +582,6 @@
     .hero-section--resume .header h1 {
         margin-top: 5%;
         font-size: 2.5em;
-    }
-
-    .collab-cta--resume a {
-        width: 70%;
     }
 }
 

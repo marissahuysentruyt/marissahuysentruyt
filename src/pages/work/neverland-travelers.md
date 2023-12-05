@@ -3,7 +3,7 @@ title: 'Project: Neverland Travelers Website'
 layout: project-page.njk
 permalink: work/neverland-travelers.html
 bodyClass: cmp-body--nt
-collabClass: collab-cta--nt
+collabClass: cmp-contact--nt
 projectTitle: Neverland Travelers Website
 overview: |
   The Neverland Travelers is what my husband and I call our YouTube channel. We vlog our vacations, and created a website to share upcoming trip information, as well as connect all of our social media. The site contains photos, videos, contact information, and an About section as well.
@@ -22,6 +22,10 @@ languages:
   - image: '../public/usedresources/aws.svg'
     alt: 'AWS'
     className: 'aws'
+collabText:
+  paragraph: Interested in working together or collaborating on a project?
+  bold: Shoot me a message!
+  linkText: Get in Touch
 ---
 
 # Neverland Travelers Website

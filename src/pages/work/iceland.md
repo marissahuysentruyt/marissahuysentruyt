@@ -3,7 +3,7 @@ title: 'Project: Iceland Travel Landing Page'
 layout: project-page.njk
 permalink: work/iceland.html
 bodyClass: cmp-body--iceland
-collabClass: collab-cta--iceland
+collabClass: cmp-contact--iceland
 projectTitle: Fire & Ice Landing Page
 overview: |
   In order to get more experience working with real designs, I headed to Dribbble. I found a landing page dedicated to Iceland and wanted to build it. Because I only had the Dribbble design, I added my own interactivity. After hovers, some minor Javascript and my first image carousel, this page is almost complete.
@@ -21,6 +21,10 @@ languages:
     alt: 'CSS 3'
   - image: '../public/usedresources/javascript.svg'
     alt: 'JavaScript'
+collabText:
+  paragraph: Interested in working together or collaborating on a project?
+  bold: Shoot me a message!
+  linkText: Get in Touch
 ---
 
 # Fire & Ice Landing Page
