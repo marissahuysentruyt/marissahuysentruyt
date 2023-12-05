@@ -29,8 +29,9 @@
     box-sizing: border-box;
     text-align: left;
     font-size: 3rem;
-    color: hsla(var(--color-white) / 0.72);
+    color: hsla(var(--color-white) / 72%);
     margin: 0 auto;
+    
     // TODO: refactor javascript animate-text, to use CSS animations instead?
     // animation: type-on 2.5s steps(50, end) alternate infinite,
     // blink-cursor 0.75s step-end infinite;
@@ -49,7 +50,7 @@
   }
 
   &__heading {
-    color: hsla(var(--color-white) / 0.88);
+    color: hsla(var(--color-white) / 88%);
     font-size: 1.5rem;
     text-wrap: balance;
 
@@ -67,7 +68,7 @@
       position: absolute;
       left: 90%;
       top: 70%;
-      animation: arrowBounce 1s ease-in-out alternate infinite;
+      animation: arrow-bounce 1s ease-in-out alternate infinite;
 
       @media (prefers-reduced-motion) {
         animation: none;
