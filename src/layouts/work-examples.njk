@@ -13,33 +13,33 @@
 </head>
 <body>
 
-    <header class="cmp-header">
-      <nav class="cmp-header__container">
-        <a href="/index.html" class="cmp-header__home-link">
-          {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
-        </a>
-        <ul class="cmp-header__link-list">
-          <li class="cmp-header__list-item">
-            <a class="cmp-header__link" href="/work/work-examples.html">Projects</a>
-          </li>
-          <li class="cmp-header__list-item">
-            <a class="cmp-header__link" href="/resume/resume.html">Resume</a>
-          </li>
-          <li class="cmp-header__list-item">
-            <a class="cmp-header__link" href="/contact/contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main class="cmp-body--projects">
+  <header class="cmp-header">
+    <nav class="cmp-header__container util-max-width">
+      <a href="/index.html" class="cmp-header__home-link">
+        {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
+      </a>
+      <ul class="cmp-header__link-list">
+        <li class="cmp-header__list-item">
+          <a class="cmp-header__link" href="/work/work-examples.html">Projects</a>
+        </li>
+        <li class="cmp-header__list-item">
+          <a class="cmp-header__link" href="/resume/resume.html">Resume</a>
+        </li>
+        <li class="cmp-header__list-item">
+          <a class="cmp-header__link" href="/contact/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="cmp-body--projects">
 
-        <section class="hero-section--projects">
-            <h2>projects</h2>
-            <h1>Below are some of the projects I've worked on. Feel free to browse around, and click into any of these projects for more details on what I contributed during each, what technologies I used to create them, and any other important notes. You can also find links to the GitHub Repos, any CodePens, or live sites.</h1>
-        </section>
+      <section class="hero-section--projects">
+          <h2>projects</h2>
+          <h1>Below are some of the projects I've worked on. Feel free to browse around, and click into any of these projects for more details on what I contributed during each, what technologies I used to create them, and any other important notes. You can also find links to the GitHub Repos, any CodePens, or live sites.</h1>
+      </section>
 
-        <section class="projects">
+      <section class="projects">
 
             <div class="grid">
                 <!-- neverland travelers -->
@@ -61,10 +61,10 @@
                         </div>
                     </div>
 
-                    <div class="nt-screenshot">
-                      {% image 'src/public/usedresources/NT-screenshot-hp.png', '', 'Neverland Travelers Screenshot'%}
-                    </div>
-                </div>
+                  <div class="nt-screenshot">
+                    {% image 'src/public/usedresources/NT-screenshot-hp.png', '', 'Neverland Travelers Screenshot'%}
+                  </div>
+              </div>
 
                 <!-- greg parady remake -->
                 <div class="financial">
@@ -113,17 +113,17 @@
                 </div>
             </div>
 
-        </section>
-
-      <section class="cmp-contact">
-        <div class="cmp-contact__container">
-          <p class="cmp-contact__text">
-            {{ collabText.paragraph }} <strong class="util-bold">{{ collabText.bold }}</strong>
-          </p>
-          <a class="cmp-button cmp-button--primary" href="/contact/contact.html">{{ collabText.linkText }}</a>
-        </div>
       </section>
-    </main>
+
+    <section class="cmp-contact">
+      <div class="cmp-contact__container util-max-width">
+        <p class="cmp-contact__text">
+          {{ collabText.paragraph }} <strong class="util-bold">{{ collabText.bold }}</strong>
+        </p>
+        <a class="cmp-button cmp-button--primary" href="/contact/contact.html">{{ collabText.linkText }}</a>
+      </div>
+    </section>
+  </main>
 
   <footer class="cmp-footer">
     <ul class="cmp-footer__link-list">
