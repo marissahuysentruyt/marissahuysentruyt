@@ -1,5 +1,5 @@
 ---
 title: Contact Marissa
-layout: contact.njk
+layout: contact-page.njk
 permalink: contact/contact.html
 ---
