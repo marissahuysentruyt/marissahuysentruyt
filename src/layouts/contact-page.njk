@@ -36,13 +36,19 @@
     <section class="cmp-contact-page util-max-width">
       <h1 class="cmp-contact-page__heading util-margin-none">
         {{ pageHeading }}
+  <main class="cmp-body">
+    <section class="cmp-contact-page util-max-width">
+      <h1 class="cmp-contact-page__heading util-margin-none">
+        {{ pageHeading }}
       </h1>
 
-      <p class="cmp-contact-page__subheading">
+      <p class="cmp-contact-page__subheading util-margin-none">
         {{ pageSubheading }}
       </p>
       
-      {% include "contact-form.njk" %}
+      <div class="cmp-contact-page__form-container">
+        {% include "contact-form.njk" %}
+      </div>
     </section>
   </main>
     
