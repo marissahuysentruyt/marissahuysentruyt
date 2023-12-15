@@ -12,6 +12,10 @@
 @forward './elements/root';
 @forward './elements/main';
 @forward './elements/footer';
+@forward "./elements/form";
+@forward "./elements/input";
+@forward "./elements/label";
+@forward "./elements/textarea";
 
 // OBJECTS/LAYOUTS
 @forward './layouts/projects-grid';
@@ -32,9 +36,11 @@
 @forward './components/neverland-travelers-page';
 @forward './components/financial-page';
 @forward './components/iceland-page';
+@forward './components/contact-form';
 
 // VENDOR
 
 // UTILITIES
 @forward './utilities/bold';
 @forward './utilities/max-width';
+@forward './utilities/margins';

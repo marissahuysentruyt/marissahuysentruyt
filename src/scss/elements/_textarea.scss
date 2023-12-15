@@ -1,0 +1,22 @@
+// TODO: input border radius to a variable?
+
+textarea:not([class]) {
+  border: 0.125rem solid var(--color-bright-coral);
+  padding: 1rem;
+  background-color: var(--color-bright-coral-transparent);
+  border-radius: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--color-dark-teal);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  box-sizing: border-box;
+
+  // TODO: font family variable?
+  font-family: Montserrat, Raleway, sans-serif;
+  
+  &:focus {
+    background-color: var(--color-white);
+    caret-color: var(--color-dark-teal);
+  }
+}

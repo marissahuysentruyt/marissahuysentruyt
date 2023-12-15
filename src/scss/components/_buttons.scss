@@ -7,8 +7,8 @@
   // TODO: border-radius across all links/buttons should be a variable
   border-radius: 3rem;
   text-decoration: none;
-  padding: 1em 1.5rem;
-  font-size: 1em;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -28,7 +28,8 @@
     }
 }
 
-  &--secondary {color: hsla(var(--color-white) / 100%);
+  &--secondary {
+    color: hsla(var(--color-white) / 100%);
     background-color: hsla(var(--color-white) / 16%);
     gap: 0.5rem;
 
@@ -38,6 +39,38 @@
 
     &:active {
       background-color: hsla(var(--color-white) / 100%);
+    }
+  }
+
+  &--submit {
+    border: 0.125rem solid transparent;
+    color: hsla(var(--color-white) / 100%);
+    background-color:var(--color-bright-coral);
+    
+    /* imitates footer social link hovers */
+    &:hover {
+      background-color: var(--color-bright-coral-dark-hover);
+      box-shadow: 0 0.25rem 0.375rem hsla(var(--color-black) / 10%);
+      cursor: pointer;
+    }
+    
+    &:active {
+      background-color: var(--color-bright-coral-transparent);
+      color: var(--color-dark-teal);
+      box-shadow: none;
+      border-color: var(--color-dark-teal);
+    }
+  }
+
+  &--clear {
+    border: 0.125rem solid var(--color-dark-teal);
+    background-color: var(--color-light-peach-transparent);
+    color: var(--color-dark-teal);
+    
+    &:hover {
+      cursor: pointer;
+      background-color: hsla(var(--color-white) / 100%);
+      box-shadow: 0 0.25rem 0.375rem hsla(var(--color-black) / 10%);
     }
   }
 }

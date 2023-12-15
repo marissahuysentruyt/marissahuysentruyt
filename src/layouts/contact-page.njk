@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+{% include 'head.njk' %}
+
+<body>
+
+  {% include 'page-header.njk' %}
+
+  <main class="cmp-body">
+    <section class="cmp-contact-page util-max-width">
+      <h1 class="cmp-contact-page__heading util-margin-none">
+        {{ pageHeading }}
+      </h1>
+
+      <p class="cmp-contact-page__subheading util-margin-none">
+        {{ pageSubheading }}
+      </p>
+      
+      <div class="cmp-contact-page__form-container">
+        {% include "contact-form.njk" %}
+      </div>
+    </section>
+  </main>
+    
+  {% include 'footer.njk' %}
+
+</body>
+</html>
