@@ -1,9 +1,24 @@
-// TODO: small vs. large screen padding
 $max-page-width: 75rem;
+
+// breakpoints
 $bp-small: 30rem;
 $bp-medium: 50rem;
 $bp-large: 70rem;
+
+// header
 $header-height: 8rem;
+
+// buttons
 $pill-border-radius: 3rem;
+
+// animation transitions
 $default-transition: all ease-in-out 0.2s;
+
+// homepage screenshots
 $screenshot-offscreen: 20%;
+
+// padding
+$padding-small: 2rem 1.5rem;
+$padding-large: 5rem 1.5rem;
+
+// TODO: text colors & transparencies (like heading-color, text-color, background-color, etc)
