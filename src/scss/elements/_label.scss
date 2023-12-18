@@ -1,0 +1,11 @@
+@use "../general/general";
+
+label:not([class]) {
+  color: var(--color-bright-coral);
+  font-size: 1.25rem;
+  line-height: 1.4;
+
+  @media (min-width: general.$bp-medium) {
+    font-size: 1.5rem;
+  }
+}
