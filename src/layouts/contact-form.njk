@@ -1,0 +1,64 @@
+<form action="https://formspree.io/f/xleaanww" method="POST" id="contactForm" class="cmp-contact-form">
+  <div class="cmp-contact-form__container util-max-width">
+    <p class="cmp-contact-form__required util-margin-none">
+      &ast;Required
+    </p>
+
+    <label for="first">
+      First Name&nbsp;&ast;
+      <input
+        type="text"
+        name="first-name"
+        required
+        id="first-name"
+        placeholder="Tony"
+        onfocus="this.placeholder=' '"
+        onblur="this.placeholder='Tony'">
+    </label>
+
+    <label for="last">
+      Last Name&nbsp;&ast;
+      <input
+        type="text"
+        name="last-name"
+        required
+        id="last-name"
+        placeholder="Stark"
+        onfocus="this.placeholder=  '"
+        onblur="this.placeholder='Stark'">
+    </label>
+
+    <label for="email">
+      Email&nbsp;&ast;
+      <input
+        type="email"
+        name="_replyto"
+        required
+        id="email"
+        placeholder="iamironman@starkindustries.com"
+        onfocus="this.placeholder=' '"
+        onblur="this.placeholder='tonystank@starkindustries.com'">
+    </label>
+
+    <label for="message">
+      Message&nbsp;&ast;
+      <textarea
+        name="message"
+        id="message"
+        cols="50"
+        rows="10"
+        placeholder="Got a question? Write me!"
+        required
+        onfocus="this.placeholder=' '"
+        onblur="this.placeholder='Got a question? Write me!'"></textarea>
+    </label>
+  </div>
+
+  <div class="cmp-contact-form__button-group">
+
+    {# TODO: on click, set the button text to sent, or thanks or something? #}
+    {# TODO: could look at one of the Frontend mentor projects that does that... #}
+    <button type="submit" class="cmp-button cmp-button--submit">Send!</button>
+    <button type="reset" class="cmp-button cmp-button--clear">Clear</button>
+  </div>
+</form>
