@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 {% include 'head.njk' %}
+
 <body>
 
   {% include 'page-header.njk' %}
@@ -55,14 +57,8 @@
         </ul>
     </section>
     
-    <section class="cmp-contact">
-      <div class="cmp-contact__container util-max-width">
-        <p class="cmp-contact__text">
-          {{ collabText.paragraph }} <strong class="util-bold">{{ collabText.bold }}</strong>
-        </p>
-        <a class="cmp-button cmp-button--primary" href="/contact/contact.html">{{ collabText.linkText }}</a>
-      </div>
-    </section>
+    {% include 'contact-section.njk' %}
+
   </main>
 
   {% include 'footer.njk' %}
