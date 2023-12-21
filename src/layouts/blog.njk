@@ -13,24 +13,7 @@
 </head>
 <body>
 
-  <header class="cmp-header">
-    <nav class="cmp-header__container util-max-width">
-      <a href="/index.html" class="cmp-header__home-link">
-        {% image 'src/public/usedresources/mh_logo.svg', '', 'Home'%}
-      </a>
-      <ul class="cmp-header__link-list">
-        <li class="cmp-header__list-item">
-          <a class="cmp-header__link" href="/work/work-examples.html">Projects</a>
-        </li>
-        <li class="cmp-header__list-item">
-          <a class="cmp-header__link" href="/resume/resume.html">Resume</a>
-        </li>
-        <li class="cmp-header__list-item">
-          <a class="cmp-header__link" href="/contact/contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  {% include 'page-header.njk' %}
 
   <main class="cmp-body">
     <section class="hero-section--blog util-max-width">
