@@ -1,6 +1,6 @@
 ---
 title: Articles & Thoughts
-layout: blog.njk
+layout: blog-page.njk
 permalink: blog/blog.html
 collabText:
   paragraph: Interested in working together or collaborating on a project?
