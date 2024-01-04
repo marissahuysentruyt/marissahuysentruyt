@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.njk' %}
+
+<body>
+
+  {% include 'page-header.njk' %}
+  
+  <main class="cmp-body">
+
+    <section class="cmp-projects-overview util-max-width">
+      <h1 class="cmp-projects-overview__heading util-margin-none">
+        {{ pageHeading }}
+      </h1>
+      <p class="cmp-projects-overview__intro">
+        {{ introduction}}
+      </p>
+    </section>
+
+
+    <section class="cmp-projects">
+      <div class="cmp-projects__container util-max-width">
+
+        {% include 'projects-grid.njk' %}
+
+      </div>
+    </section>
+
+    {% include 'contact-section.njk' %}
+
+  </main>
+
+  {% include 'footer.njk' %}
+
+</body>
+</html>

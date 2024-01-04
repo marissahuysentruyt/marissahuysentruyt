@@ -1,0 +1,39 @@
+@use "../general/general";
+
+.cmp-projects-overview {
+    padding: general.$padding-small;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+    @media (min-width: general.$bp-medium) {
+      gap: 5rem;
+      padding: general.$padding-large;
+    }
+  
+    &__heading {
+      font-size: 3rem;
+      line-height: 1;
+      text-transform: lowercase;
+      color: hsla(var(--color-white) / 72%);
+  
+      @media (min-width: general.$bp-small) {
+        font-size: 4rem;
+      }
+  
+      @media (min-width: general.$bp-medium) {
+        font-size: 6rem;
+      }
+  
+      @media (min-width: general.$bp-large) {
+        font-size: 10rem;
+      }
+    }
+  
+    &__intro {
+      font-size: 1.25rem;
+      color: hsla(var(--color-white) / 88%);
+      line-height: 1.4;
+    }
+}
