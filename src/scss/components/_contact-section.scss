@@ -11,8 +11,8 @@
   }
 
   .cmp-contact--resume & {
-    background-color: rgba(243 103 72 / 8%);
-    color: rgba(0 0 0 / 88%);
+    background-color: var(--color-bright-coral-transparent-8);
+    color: hsla(var(--color-black) / 88%);
   }
   
   &__container {
@@ -29,7 +29,7 @@
   }
 
   &__text {
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0;
   }
 }
