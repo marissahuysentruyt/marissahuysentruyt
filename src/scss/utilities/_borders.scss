@@ -1,0 +1,11 @@
+@use '../general/general';
+
+.util-border {
+  
+  &__left-at-med {
+
+    @media (min-width: general.$bp-medium) {
+      border-left: 1px solid var(--color-light-gray);
+    }
+  }
+}
