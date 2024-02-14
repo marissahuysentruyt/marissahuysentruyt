@@ -1,0 +1,11 @@
+@use '../general/general';
+
+.util-padding {
+
+  &__left-xs-at-med {
+
+    @media (min-width: general.$bp-medium) {
+      padding-left: 0.5rem;
+    }
+  }
+}
