@@ -1,594 +1,228 @@
-.hero-section--resume {
+@use '../general/general';
+
+.cmp-resume-page {
     display: flex;
     flex-direction: column;
-    margin: 7.5% 7.5% 0;
-    background-color: #fff;
-}
+    background-color: hsla(var(--color-light-peach) / 100%);
+    box-sizing: border-box;
 
-.header {
+  &__hero {
+    box-sizing: border-box;
+    padding: general.$padding-small;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 2%;
-    padding-bottom: 2em;
-}
+    gap: 1rem;
+    background-color: hsla(var(--color-white) / 100%);
 
-.hero-section--resume .header .across-top {
+    @media (min-width: general.$bp-small) {
+      gap: 3rem;
+    }
+
+    @media (min-width: general.$bp-medium) {
+      padding: general.$padding-large;
+    }
+  }
+
+  &__hero-header {
     display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 7.5% 7.5% 0;
-}
-
-.hero-section--resume .header .across-top a.full {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-.hero-section--resume .header .across-top a.icon {
-    display: none;
-}
-
-.hero-section--resume .header .across-top button.download-btn {
-    border: 2px solid #F36748;
-    background-color: #fff;
-    color: #F36748;
-    display: flex;
-    gap: 0.5rem;
     align-items: center;
-    border-radius: 50px;
-    padding: 1em 1.5em;
-    transition: background-color 0.2s ease-in-out;
-}
+    justify-content: space-between;
+  }
 
-.hero-section--resume .header .across-top button.download-btn:hover {
-    background-color: rgba(243 103 72 / 8%);
-    cursor: pointer;
-}
+  &__hero-title {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1;
 
-.hero-section--resume .header .across-top p {
-    background-color: #F36748;
-    color: #fff;
-    display: inline;
-    padding: 0.25em;
-    text-align: center;
+    @media (min-width: general.$bp-small) {
+      font-size: 4rem;
+    }
+  }
+
+  &__hero-subtitle {
+    width: fit-content;
+    background-color: var(--color-bright-coral);
+    color: hsla(var(--color-white) / 100%);
     text-transform: uppercase;
-    z-index: 0;
-}
-
-.hero-section--resume .header .across-top p::after {
-    border-left: 1px solid #F36748;
     padding: 0.25em;
+    font-size: 0.875rem;
     position: relative;
-    top: 0;
-    left: 6%;
-    z-index: 1;
-    content: " ";
-}
 
-.hero-section--resume .header h1 {
-    font-size: 4rem;
-    align-items: flex-end;
-    flex-shrink: 2;
-    flex-grow: 0;
-    margin: 0;
-    padding: 0 7.5%;
-    position: relative;
-    top: 0.825rem;
-}
-
-.grid-container {
-    background-color: #fff;;
-    width: 85%;
-    height: auto;
-    margin: auto;
-    margin-bottom: 7.5%;
-    display: grid;
-    padding: 2% 7.5% 5%;
-    grid-template-areas: 
-        "ed . about about about"
-        "ed . exp exp exp"
-        "ed . exp exp exp"
-        "ed . exp exp exp"
-        "skill . exp exp exp"
-        "skill . exp exp exp"
-        "skill . exp exp exp"
-        "skill . exp exp exp"
-        "skill . exp exp exp";
-    grid-template-rows: 1fr 10% 10% 1fr 10% 10% 10% 10%;
-
-    // stylelint-disable-next-line declaration-block-no-redundant-longhand-properties
-    grid-template-columns: 30% 3% 33.5% 33.5%;
-}
-
-#about {
-    grid-area: about;
-    padding-bottom: 5%;
-}
-
-#about .hello {
-    display: flex;
-    padding-bottom: 3.5%;
-}
-
-#about .hello h2 {
-    padding-left: 1%;
-}
-
-#about p {
-    font-size: 1.3em;
-    font-weight: 300;
-    line-height: 1.3em;
-}
-
-#education h2, 
-#about h2, 
-#experience h2, 
-#skills h2 {
-    font-size: 2em;
-}
-
-#education {
-    grid-area: ed;
-}
-
-#education ul, 
-#experience ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-#education ul li.year {
-    color: #F36748;
-    font-weight: 600;
-    padding-top: 10%;
-    padding-bottom: 1%;
-}
-
-#education ul li.item {
-    font-weight: 600;
-    font-size: 1.3em;
-    padding-bottom: 5%;
-}
-
-#education ul li.sub-items {
-    padding-bottom: 5%;
-}
-
-#education ul li:nth-child(5), 
-#education ul li:nth-child(8) {
-    padding-bottom: 0;
-}
-
-#experience {
-    grid-area: exp;
-}
-
-#experience h2 {
-    padding-bottom: 3.5%;
-}
-
-#experience .experience-container .fraser, 
-#experience .experience-container .wwt, 
-#experience .experience-container .marysville {
-    border-left: 2px solid #e5e5e5;
-    padding-left: 1%;
-    margin-bottom: 3%;
-}
-
-#experience .experience-container .fraser p.date, 
-#experience .experience-container .wwt p.date,
-#experience .experience-container .marysville p.date {
-    color: #F36748;
-    font-weight: 600;
-}
-
-#experience .experience-container .fraser p.title, 
-#experience .experience-container .wwt p.title,
-#experience .experience-container .marysville p.title {
-    font-weight: 600;
-    font-size: 1.3em;
-    padding-bottom: 2%;
-}
-
-#experience .experience-container .fraser p.secondary {
-    padding: 0;
-}
-
-#experience .experience-container .fraser ul.experience-items, 
-#experience .experience-container .wwt ul.experience-items, 
-#experience .experience-container .marysville ul.experience-items {
-    padding: 3% 5%;
-    list-style-image: url("../usedresources/images_2x/arrow.png");
-}
-
-#experience .experience-container .fraser ul li, 
-#experience .experience-container .wwt ul li, 
-#experience .experience-container .marysville ul li {
-    font-size: 1.3em;
-    font-weight: 300;
-}    
-
-#experience .experience-container .marysville ul {
-    display: flex;
-    align-items: flex-end;
-}   
-
-/* % fill, delayed, color: #F36748 */
-@keyframes barshtmlpercent {
-    0% {
-        width: 0%;
-        border-bottom:
-        8px solid #F36748;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 100%;
+      left: calc(100% + 0.25rem);
+      top: 0;
+      background-color: var(--color-bright-coral);
     }
+  }
 
-    100% {
-        width: 87%;
-        border-bottom:
-        8px solid #F36748;
-    }
-}
+  &__section {
 
-@keyframes barscsspercent {
-    0% {
-        width: 0%; 
-        border-bottom: 8px solid #F36748;
-    }
-
-    100% {
-        width: 85%; 
-        border-bottom: 8px solid #F36748;
-    }
-}
-
-@keyframes barsjspercent {
-    0% {
-        width: 0%; 
-        border-bottom: 8px solid #F36748;
-    }
-
-    100% {
-        width: 45%; 
-        border-bottom: 8px solid #F36748;
-    }
-}
-
-
-@keyframes barsgitpercent {
-    0% {
-        width: 0%; 
-        border-bottom: 8px solid #F36748;
-    }
-
-    100% {
-        width: 40%; 
-        border-bottom: 8px solid #F36748;
-    }
-}
-
-@keyframes barsfigmapercent {
-    0% {
-        width: 0%; 
-        border-bottom: 8px solid #F36748;
-    }
-    
-    100% {
-        width: 40%; 
-        border-bottom: 8px solid #F36748;
-    }
-}
-    
-#skills {
-    grid-area: skill;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
-}
+    gap: 1rem;
 
-#skills .html .bars-all.bottom, 
-#skills .css .bars-all.bottom,
-#skills .javascript .bars-all.bottom,
-#skills .github .bars-all.bottom,
-#skills .figma .bars-all.bottom {
-    height: 8px;
-    width: 100%;
-    background-color: rgba(243 103 72 / 16%);
-    position: relative;
-    z-index: 1;
-}
+    @media (min-width: general.$bp-medium) {
+      &--about {
+        grid-area: about;
+      }
 
-#skills h2 {
-    padding-bottom: 10%;
-}
+      &--ed {
+        grid-area: ed;
+      }
 
-#skills .html, 
-#skills .css, 
-#skills .javascript, 
-#skills .github, 
-#skills .figma {
+      &--exp {
+        grid-area: exp;
+      }
+
+      &--tech {
+        grid-area: tech;
+      }
+    }
+  }
+
+  &__section-intro {
+    margin: 0;
+    
+    @supports (text-wrap: pretty) {
+        text-wrap: pretty;
+    }
+  }
+
+  &__code-icon {
+    color: var(--color-bright-coral);
+    background-color: var(--color-bright-coral-transparent-16);
+    border-radius: 50%;
+    padding: 0.25rem;
+    font-weight: 600;
+    height: 1.25rem;
+    width: 1.25rem;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 3%;
-}
-
-#skills .html #animate-html, 
-#skills .css #animate-css, 
-#skills .javascript #animate-js,
-#skills .github #animate-github, 
-#skills .figma #animate-figma {
-    display: flex;
-    flex-direction: row; 
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    top: 8px;
-    z-index: 1;
-    border-bottom: 8px solid transparent;
-}
+  }
 
-.animatehtml{ 
-    animation: barshtmlpercent 1s ease-in-out 0.3s 1 forwards; 
-}
-
-.animatecss {
-    animation: barscsspercent 1.2s ease-in-out 0.3s 1 forwards; 
-}
-
-.animatejs {
-    animation: barsjspercent 1.4s ease-in-out 0.3s 1 forwards; 
-}
-
-.animategit {
-    animation: barsgitpercent 1.6s ease-in-out 0.3s 1 forwards; 
-}
-
-.animatefigma {
-    animation: barsfigmapercent 1.8s ease-in-out 0.3s 1 forwards; 
-}
-
-#skills .html h3, 
-#skills .css h3, 
-#skills .javascript h3, 
-#skills .github h3, 
-#skills .figma h3 {
-    font-weight: 600;
-}
-
-#skills .html img, 
-#skills .css img, 
-#skills .javascript img, 
-#skills .github img, 
-#skills .figma img {
-    padding: 0;
-    width: auto;
-    height: auto;
-}
-
-/* responsive/mobile */
-
-@media only screen and (max-width: 1000px) {
-    .hero-section--resume .header h1 {
-        margin-bottom: 5%;
-    }
-
-    .grid-container {
-        grid-template-columns: 30% 10% 30% 30%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .grid-container {
-        height: auto;
-        grid-template-areas: 
-            "about"
-            "ed"
-            "exp"
-            "skill";
-        grid-template-columns: 100%;
-
-        // stylelint-disable-next-line declaration-block-no-redundant-longhand-properties
-        grid-template-rows: 16% 20% 35% 1fr;
-        grid-row-gap: 2%;
-        padding-top: 7.5%;
-        padding-bottom: 20%
-    }
-
-    #education ul li.year {
-        padding-top: 4%;
-        padding-bottom: 0;
+  &__section-heading {
+    margin: 0;
+    font-size: 1.5rem;
+    
+    @media (min-width: general.$bp-medium) {
+      font-size: 2rem;
     }
     
-    #education ul li.item {
-        padding-bottom: 0;
+    &--with-code-icon {
+      margin-left: 2rem;
+      position: relative;
+
+      &::before {
+
+        @extend .cmp-resume-page__code-icon;
+
+        content: "\003D\003E";
+        font-size: 1rem;
+        position: absolute;
+        left: -2rem;
+        
+        @media (min-width: general.$bp-medium) {
+          top: 0.33rem;
+        }
+      }
     }
-    
-    #education ul li.sub-items {
-        padding-bottom: 2%;
+  }
+
+  &__list {
+
+    &.border-left {
+      padding-left: 1rem;
     }
-    
-    #education ul li:nth-child(5), 
-    #education ul li:nth-child(8) {
-        padding-bottom: 0;
+  }
+
+  &__list-item {
+    font-size: 1rem;
+
+    @media (min-width: general.$bp-medium) {
+      font-size: 1.25rem;
     }
 
-    #experience h2 {
-        padding-bottom: 3.5%;
+    &--heading {
+      color: var(--color-bright-coral);
+      font-weight: 600;
     }
-    
-    #experience .experience-container .fraser ul.experience-items, 
-    #experience .experience-container .wwt ul.experience-items, 
-    #experience .experience-container .marysville ul.experience-items {
-        padding: 3% 0 0 4%;
-    }
-    
-    #experience .experience-container .fraser ul li, 
-    #experience .experience-container .wwt ul li, 
-    #experience .experience-container .marysville ul li {
-        font-size: 1.25em;
-    }    
-    
-    #skills h2 {
-        padding-bottom: 3.5%;
-    }
-}
+  }
 
-@media only screen and (max-width: 640px) {
-    .cmp-body--resume {
-        margin: 0;
-        height: auto;
-        width: 100%;
-        padding-top: 10%;
+  &__sub-list {
+    margin-bottom: 1rem;
+
+    @media (min-width: general.$bp-medium) {
+        margin-bottom: 2rem;
     }
 
-    .hero-section--resume .header .across-top a.full {
-        display: none;
+    & > & {
+      margin-top: 1rem;
+    }
+  }
+
+  &__sub-list-item {
+    margin-bottom: 0.5rem;
+
+    @media (min-width: general.$bp-medium) {
+        font-size: 1rem;
+      }
+
+    &--title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      
+      @media (min-width: general.$bp-medium) {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+      }
     }
 
-    .hero-section--resume .header .across-top a.icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &--with-marker {
+      position: relative;
+      left: 1.5rem;
+      width: calc(100% - 1.5rem);
+
+      &::before {
+        position: absolute;
+        background: url('../../public/usedresources/arrow-marker.svg') center no-repeat;
+        background-size: contain;
+        content: "";
+        top: 0;
+        left: -1.5rem;
+        width: 1rem;
+        height: 1rem;
+      }
     }
 
-    .hero-section--resume .header .across-top a.icon button.download-btn {
-        padding: 1em;
-    }
+    &--with-code-icon {
+      position: relative;
 
-    .hero-section--resume .header .across-top a.icon img {
-        padding: 0; 
-        display: block;
-        border: none;
-    }
+      &::after {
 
-    .hero-section--resume .header h1 {
-        font-size: 3.5em;
-    }
-}
+        @extend .cmp-resume-page__code-icon;
 
-
-@media only screen and (max-width: 500px) {
-    .cmp-body--resume {
-        padding-top: 35%;
+        content: "\002F\003E";
+        position: absolute;
+        right: 0;
+        top: calc(100% + 0.25rem);
+        
+        @media (min-width: general.$max-page-width) {
+          top: -0.25rem;
+        }
+      }
     }
+  }
 
-    .hero-section--resume .header .across-top {
-        display: block;
-    }
-
-    .hero-section--resume .header .across-top a.icon {
-        margin-left: 85%;
-        margin-bottom: 7.5%;
-    }
-
-    .grid-container {
-        padding-bottom: 50%;
-        margin-bottom: 25%;
-    }
-    
-    .hero-section--resume .header h1 {
-        font-size: 3em;
-    }
-
-    #about {
-        line-height: 140%;
-    }
-
-    #about .hello {
-        display: flex;
-        align-items: center;
-        padding-bottom: 8%;
-    }
-
-    #education h2, 
-    #experience h2, 
-    #skills h2 {
-        padding-bottom: 8%;
-    }
-
-    #education ul li.year {
-        padding-bottom: 3%;
-        padding-top: 0;
-    }
-
-    #education ul li.item {
-        padding-bottom: 5%;
-    }
-
-    #education ul li.sub-items {
-        padding-bottom: 5%;
-    }
-
-    #education ul li:nth-child(5), 
-    #education ul li:nth-child(8) {
-        margin-bottom: 5%;
-    }
-
-     #experience .experience-container {
-        padding-bottom: 0;
-    } 
-
-    #experience .experience-container .fraser, 
-    #experience .experience-container .wwt, 
-    #experience .experience-container .marysville {
-        border-left: none;
-        border-bottom: 2px solid #e5e5e5;
-        padding-left: 5%;
-        margin-bottom: 10%;
-    }
-
-    #experience .experience-container .fraser p.date, 
-    #experience .experience-container .wwt p.date,
-    #experience .experience-container .marysville p.date {
-        padding-bottom: 3%;
-    }
-
-    #experience .experience-container .fraser p.title, 
-    #experience .experience-container .wwt p.title,
-    #experience .experience-container .marysville p.title {
-        padding-bottom: 5%;
-    }
-
-    #experience .experience-container .fraser p.secondary {
-        padding: 5% 0;
-    }
-
-    #experience .experience-container .fraser ul.experience-items, 
-    #experience .experience-container .wwt ul.experience-items, 
-    #experience .experience-container .marysville ul.experience-items {
-        padding-bottom: 5%;
-    }
-
-    #skills {
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 414px) {
-    .hero-section--resume .header h1 {
-        margin-top: 5%;
-        font-size: 2.5em;
-    }
-}
-
-@media only screen and (max-width: 325px) {
-    .cmp-body--resume {
-        padding-top: 55%
-    }
-
-    .hero-section--resume {
-        width: 94%;
-        margin: auto;
-    }
-
-    .grid-container {
-        padding-left: 5%;
-        padding-right: 3%;
-        padding-bottom: 80%;
-        width: 94%;
-    }
+  &__tech-logo {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--color-light-gray);
+    box-shadow: 0 0.125rem 0.25rem var(--color-light-gray);
+  }
 }
