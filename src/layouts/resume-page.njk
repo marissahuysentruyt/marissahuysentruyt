@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.njk' %}
+
+<body>
+
+  {% include 'page-header.njk' %}
+
+  <main class="cmp-body util-bg-light-peach">
+    <div class="cmp-resume-page util-max-width util-margin-vertical">
+      <section class="cmp-resume-page__hero">
+        <div class="cmp-resume-page__hero-header">
+          <p class="cmp-resume-page__hero-subtitle">Front End Development</p>
+
+          <button class="cmp-button cmp-button--download" value="Download ">
+            Download Resume
+            {% image 'src/public/usedresources/download_arrow.svg', '', "Download Marissa's Resume"%}
+          </button>
+
+          <button class="cmp-button cmp-button--download-icon" aria-label="Download Marissa's Resume">
+            {% image 'src/public/usedresources/download_arrow.svg', '', "Download Marissa's Resume"%}
+          </button>
+
+        </div>
+        <h1 class="cmp-resume-page__hero-title">
+            Marissa Huysentruyt
+        </h1>
+      </section>
+
+      <section class="obj-resume-grid">
+        {# introduction #}
+        <section class="cmp-resume-page__section cmp-resume-page__section--about">
+          <div class="obj-flex-align-center obj-flex-gap-half-rem">
+            <h2 class="cmp-resume-page__section-heading cmp-resume-page__section-heading--with-code-icon">
+              Hello there!
+            </h2>
+          </div>
+
+          <p class="cmp-resume-page__section-intro">
+            {{ introText | safe }}
+          </p>
+        </section>
+
+        {# education #}
+        <section class="cmp-resume-page__section cmp-resume-page__section--ed">
+          <h2 class="cmp-resume-page__section-heading">
+            Education
+          </h2>
+          <ul class="cmp-resume-page__list">
+            {# primary #}
+            <li class="cmp-resume-page__list-item cmp-resume-page__list-item--heading">2020-2022</li>
+            <ul class="cmp-resume-page__sub-list">
+              {% for item in primaryEducation %}
+                <li class="cmp-resume-page__sub-list-item {% if item.classes %}{{ item.classes }}{% endif %}">
+                  {{ item.content | safe }}
+                </li>
+              {% endfor %}
+            </ul>
+            
+            {# secondary #}
+            <li class="cmp-resume-page__list-item cmp-resume-page__list-item--heading">2015</li>
+            <ul class="cmp-resume-page__sub-list">
+              {% for item in secondaryEducation %}
+                <li class="cmp-resume-page__sub-list-item {% if item.classes %}{{ item.classes }}{% endif %}">
+                  {{ item.content | safe }}
+                </li>
+              {% endfor %}
+            </ul>
+
+            {# tertiary #}
+            <li class="cmp-resume-page__list-item cmp-resume-page__list-item--heading">2012</li>
+            <ul class="cmp-resume-page__sub-list util-margin-bottom-none">
+              {% for item in tertiaryEducation %}
+                <li class="cmp-resume-page__sub-list-item {% if item.classes %}{{ item.classes }}{% endif %}">
+                  {{ item.content | safe }}
+                </li>
+              {% endfor %}
+            </ul>
+          </ul>
+        </section>
+
+        {# experience #}
+        <section class="cmp-resume-page__section cmp-resume-page__section--exp">
+          <h2 class="cmp-resume-page__section-heading">
+            Experience
+          </h2>
+
+          <ul class="cmp-resume-page__list">
+            {# current #}
+            <ul class="cmp-resume-page__sub-list util-border__left-at-med util-padding__left-xs-at-med">
+              {% for item in currentExperienceHighLevels %}
+                <li class="cmp-resume-page__sub-list-item {{item.classes}}">
+                  {{ item.content | safe }}
+                </li>
+              {% endfor %}
+
+              <ul class="cmp-resume-page__sub-list util-margin-bottom-none">
+                {% for item in currentExperienceDetails %}
+                  <li class="cmp-resume-page__sub-list-item cmp-resume-page__sub-list-item--with-marker">
+                    {{ item.content | safe }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </ul>
+
+            {# secondary #}
+            <ul class="cmp-resume-page__sub-list util-border__left-at-med util-padding__left-xs-at-med">
+              {% for item in secondaryExperienceHighLevels %}
+                <li class="cmp-resume-page__sub-list-item {{item.classes}}">
+                  {{ item.content | safe }}
+                </li>
+              {% endfor %}
+
+              <ul class="cmp-resume-page__sub-list util-margin-bottom-none">
+                {% for item in secondaryExperienceDetails %}
+                  <li class="cmp-resume-page__sub-list-item cmp-resume-page__sub-list-item--with-marker">
+                    {{ item.content | safe }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </ul>
+
+            {# tertiary #}
+            <ul class="cmp-resume-page__sub-list util-border__left-at-med util-padding__left-xs-at-med">
+              {% for item in tertiaryExperienceHighLevels %}
+                <li class="cmp-resume-page__sub-list-item {{item.classes}}">
+                  {{ item.content | safe }}
+                </li>
+              {% endfor %}
+                          
+              <ul class="cmp-resume-page__sub-list">
+                {% for item in tertiaryExperienceDetails %}
+                  <li class="cmp-resume-page__sub-list-item cmp-resume-page__sub-list-item--with-marker">
+                    {{ item.content | safe }}
+                  </li>
+                {% endfor %}
+              </ul>
+
+              <ul class="cmp-resume-page__sub-list util-margin-bottom-none">
+                {% for item in additionalExperience %}
+                  <li class="cmp-resume-page__sub-list-item {{ item.classes }}">
+                    {{ item.content | safe }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </ul>
+          </ul>
+        </section>
+
+        {# technology/skills #}
+        <section class="cmp-resume-page__section cmp-resume-page__section--tech">
+          <h2 class="cmp-resume-page__section-heading">
+            Tech
+          </h2>
+
+          <ul class="cmp-resume-page__list obj-resume-grid--tech">
+
+          {% for item in tech %}
+            <li class="cmp-resume-page__list-item util-bold obj-flex-align-center">
+              <img src="{{item.image}}" alt="{{item.alt}}" 
+                class="cmp-resume-page__tech-logo js-tech-logo
+                {% if item.className %} {{item.className}} {% endif %}
+              ">
+            </li>
+          {% endfor %}
+        </section>
+      </section>
+    </div>
+
+    <div class="cmp-contact--resume">
+    {% include 'contact-section.njk' %}
+    </div>
+  </main>
+    
+  {% include 'footer.njk' %}
+
+</body>
+</html>
