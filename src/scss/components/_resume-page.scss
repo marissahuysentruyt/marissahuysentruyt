@@ -60,7 +60,6 @@
   }
 
   &__section {
-
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -118,8 +117,7 @@
       position: relative;
 
       &::before {
-
-        @extend .cmp-resume-page__code-icon;
+        @extend %cmp-resume-page__code-icon !optional;
 
         content: "\003D\003E";
         font-size: 1rem;
@@ -134,7 +132,6 @@
   }
 
   &__list {
-
     &.border-left {
       padding-left: 1rem;
     }
@@ -203,8 +200,7 @@
       position: relative;
 
       &::after {
-
-        @extend .cmp-resume-page__code-icon;
+        @extend %cmp-resume-page__code-icon !optional;
 
         content: "\002F\003E";
         position: absolute;
