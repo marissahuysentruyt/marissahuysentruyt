@@ -24,6 +24,7 @@
 @forward './layouts/projects-grid';
 @forward './layouts/resume-grid';
 @forward './layouts/flex';
+@forward './layouts/project-details-body-grid';
 
 // COMPONENTS
 @forward './components/buttons';
@@ -38,6 +39,7 @@
 @forward './components/contact-page';
 @forward './components/resume-page';
 @forward './components/projects-overview-page';
+@forward './components/project-details-page';
 @forward './components/neverland-travelers-page';
 @forward './components/financial-page';
 @forward './components/iceland-page';
