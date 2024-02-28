@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.njk' %}
+
+<body>
+
+  {% include 'page-header.njk' %}
+
+  <main class="{{ bodyClasses }} cmp-project-details">
+    <section class="{{ heroBackground }}">
+      <div class="cmp-project-details__hero util-max-width">
+        <a href="../index.html" class="cmp-project-details__home-link">
+          <span class="cmp-project-details__home-link-arrow"></span>
+          Back Home
+        </a>
+
+        <div class="cmp-project-details__container">
+          <h1 class="cmp-project-details__project-title util-margin-none">
+            {{ projectTitle | safe }}
+          </h1>
+          <div class="cmp-project-details__overview">
+            <h2 class="cmp-project-details__heading">
+              Overview
+            </h2>
+            <p class="cmp-project-details__content util-margin-none">
+              {{ overview | safe }} 
+            </p>
+          </div>
+        </div>
+
+        <div class="cmp-project-details__image">
+          {% image desktopImage, 'cmp-project-details__image--desktop', desktopAltText %}
+        </div>
+      </div>
+    </section>
+
+    <section class="cmp-project-details__body cmp-project-details__body-grid util-max-width">
+      <div class="cmp-project-details__text-container">
+        <h2 class="cmp-project-details__heading">
+          Contribution
+        </h2>
+        <p class="cmp-project-details__content util-margin-none">
+          {{ contribution | safe }}
+        </p>
+      </div>
+
+      <div class="cmp-project-details__tech-container">
+        <h3 class="cmp-project-details__tech-heading">Languages & Tech</h3>
+        <ul class="cmp-project-details__tech-list">
+          {# TODO: visually hidden div with "Languages Used?" #}
+          {% for item in languages %}
+            <li class="cmp-project-details__tech-list-item">
+              {% image item.image, item.className, item.alt %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="cmp-project-details__image">
+        {% image mobileImage, 'cmp-project-details__image--mobile', mobileAltText %}
+      </div>
+    </section>
+
+    <section class="cmp-project-details__site-cta">
+      <h2 class="cmp-project-details__heading">
+        Take a look at the site in action!
+      </h2>
+      <a href="{{link}}" class="cmp-button cmp-button--external-cta">
+        Visit Site
+        {% image 'src/public/usedresources/external-link.svg', '', projectTitle %}
+      </a>
+    </section>
+                    
+    <div class="{{ collabClass }}">
+      {% include 'contact-section.njk' %}
+    </div>
+  </main>
+    
+  {% include 'footer.njk' %}
+
+</body>
+</html>
