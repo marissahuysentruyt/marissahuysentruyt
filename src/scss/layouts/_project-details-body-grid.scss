@@ -1,0 +1,23 @@
+@use '../general/general';
+
+.cmp-project-details__body-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: general.$bp-medium) {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr auto;
+    gap: 0 2rem;
+
+    @supports (grid-template-rows: masonry) {
+      grid-template-rows: masonry;
+      gap: 4rem 2rem;
+    }
+  }
+
+  & .cmp-project-details__tech-container {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+}
