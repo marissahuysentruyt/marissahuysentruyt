@@ -1,3 +1,17 @@
+@use "../general/general";
+
 .util-margin-none {
   margin: 0;
+}
+
+.util-margin-bottom-none {
+  margin-bottom: 0;
+}
+
+.util-margin-vertical {
+  margin: 1.5rem auto;
+
+  @media (min-width: general.$bp-medium) {
+    margin: 5rem auto;
+  }
 }

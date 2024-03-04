@@ -2,6 +2,7 @@
 
 // TOOLS
 @forward './tools/animations';
+@forward './tools/mixins';
 
 // GENERAL
 @forward './general/general';
@@ -12,13 +13,17 @@
 @forward './elements/root';
 @forward './elements/main';
 @forward './elements/footer';
-@forward "./elements/form";
-@forward "./elements/input";
-@forward "./elements/label";
-@forward "./elements/textarea";
+@forward './elements/form';
+@forward './elements/input';
+@forward './elements/label';
+@forward './elements/textarea';
+@forward './elements/unordered-list';
+@forward './elements/abbr';
 
 // OBJECTS/LAYOUTS
 @forward './layouts/projects-grid';
+@forward './layouts/resume-grid';
+@forward './layouts/flex';
 
 // COMPONENTS
 @forward './components/buttons';
@@ -44,3 +49,6 @@
 @forward './utilities/bold';
 @forward './utilities/max-width';
 @forward './utilities/margins';
+@forward './utilities/backgrounds';
+@forward './utilities/borders';
+@forward './utilities/padding';

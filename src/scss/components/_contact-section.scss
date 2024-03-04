@@ -9,6 +9,11 @@
   @media (min-width: general.$bp-medium) {
     padding: 5rem 1.5rem;
   }
+
+  .cmp-contact--resume & {
+    background-color: var(--color-bright-coral-transparent-8);
+    color: hsla(var(--color-black) / 88%);
+  }
   
   &__container {
     display: flex;
@@ -24,7 +29,7 @@
   }
 
   &__text {
-    font-size: 2em;
+    font-size: 2rem;
     margin: 0;
   }
 }
