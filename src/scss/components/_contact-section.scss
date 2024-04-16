@@ -10,6 +10,13 @@
     padding: 5rem 1.5rem;
   }
 
+  &--resume {
+    .cmp-contact {
+      background-color: var(--color-bright-coral-transparent-16);
+      color: hsla(var(--color-black) / 88%);
+    }
+  }
+
   .cmp-contact--vlog & {
     background-color: var(--color-purple);
     color: hsla(var(--color-white) / 88%);
