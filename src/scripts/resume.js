@@ -1,4 +1,4 @@
-// TODO: this file animates the "skill bars" on the resume page. it can should
+// TODO: this file animates the "skill bars" on the resume page. it can/should
 // TODO: get refactored to use functions with parameters instead.
 
 const resume = () => {
