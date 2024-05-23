@@ -79,7 +79,7 @@
       position: relative;
       left: general.$screenshot-offscreen;
 
-      .obj-projects-grid__item-screenshot--remake & {
+      .obj-projects-grid__item:nth-child(even) & {
         left: unset;
         right: general.$screenshot-offscreen;
       }
