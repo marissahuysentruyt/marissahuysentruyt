@@ -70,6 +70,12 @@
         Visit Site
         {% image 'src/public/usedresources/external-link.svg', '', projectTitle %}
       </a>
+      {% if secondaryLink %}
+        <a href="{{secondaryLink}}" class="cmp-button cmp-button--external-cta">
+          Visit Site
+          {% image 'src/public/usedresources/external-link.svg', '', projectTitle %}
+        </a>
+      {% endif %}
     </section>
                     
     <div class="{{ collabClass }}">
