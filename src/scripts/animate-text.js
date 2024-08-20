@@ -45,13 +45,11 @@ TypeText.prototype.tick = function typeTextTick() {
 
 window.onload = function onLoad() {
   const elements = document.getElementsByClassName('js-typewriter');
-  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < elements.length; i++) {
     const toRotate = elements[i].getAttribute('data-type');
     const period = elements[i].getAttribute('data-period');
 
     if (toRotate) {
-      // eslint-disable-next-line no-new
       new TypeText(elements[i], JSON.parse(toRotate), period);
     }
   }
