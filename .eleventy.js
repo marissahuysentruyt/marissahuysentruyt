@@ -12,29 +12,33 @@ module.exports = function(eleventyConfig) {
   // copies images
   eleventyConfig.addPassthroughCopy({ 'src/public/' : 'public/' });
 
-  // this is the synchronous shortcode, but the individiual words of the alt text
-  // comes in as individual attributes on the image element? but not if you 
-  // console.log the imageAttributes data
-  // eleventyConfig.addNunjucksShortcode("image", function(src, imageClass, alt) {
-  //   if (alt === undefined) {
-  //     throw new Error(`Missing \`alt\` on image from: ${src}`);
-  //   }
+  // this is the synchronous shortcode and can be used in a macro
+  eleventyConfig.addNunjucksShortcode("image", function(src, imageClass, alt) {
+    if (!src) {
+      throw new Error(`Missing image source`);
+    }
 
-  //   let imageAttributes = {
-  //     urlPath: 'public/usedresources/' + `${src}`,
-  //     altText: `${alt}`,
-  //     class: `${imageClass}`
-  //   };
-    
-  //   console.log(imageAttributes)
+    if (!alt) {
+      throw new Error(`Missing \`alt\` on image from: ${src}`);
+    }
 
-	// 	return `
-  //     <img src=${imageAttributes.urlPath} alt=${imageAttributes.altText} class=${imageAttributes.class} />
-  //   `;
-	// });
+    const imagePath = src.startsWith('/')
+      ? `/public/usedresources${src}`
+      : `/public/usedresources/${src}`;
+
+    console.log(alt);
+
+		return `
+      <img src=${imagePath} alt="${alt}" class=${imageClass || ''} />
+    `;
+	});
 
    // this is the asynchronous shortcode (which cannot be used in a macro 😞)
-   eleventyConfig.addNunjucksAsyncShortcode("image", async  function(src, imageClass, altText) {
+   eleventyConfig.addNunjucksAsyncShortcode("asyncImage", async function(src, imageClass, altText) {
+    if (!src) {
+      throw new Error(`Missing image source`);
+    }
+
     if (altText === undefined) {
       throw new Error(`Missing \`alt\` on image from: ${src}`);
     }
@@ -42,12 +46,24 @@ module.exports = function(eleventyConfig) {
     let imageData = await eleventyImage(src, {
       outputDir: 'dist/public/usedresources',
       urlPath: '/public/usedresources/',
-      formats: ['svg', 'png', 'jpeg']
+      formats: ['svg', 'png', 'webp', 'jpeg'],
+      sharpOptions: {
+        animated: true,
+        failOnError: false // could override CI/build errors
+      },
+      sharpJpegOptions: {
+        quality: 80,
+        progressive: true
+      },
+      cacheOptions: {
+        duration: "1y",
+        directory: ".cache"
+      }
     })
 
     let imageAttributes = {
-      alt: `${altText}`,
-      class: `${imageClass}`, 
+      alt: altText,
+      class: imageClass, 
       loading: 'lazy', 
       decoding: 'async'
     };
