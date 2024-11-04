@@ -49,7 +49,6 @@ module.exports = function(eleventyConfig) {
       formats: ['svg', 'png', 'webp', 'jpeg'],
       sharpOptions: {
         animated: true,
-        failOnError: false // could override CI/build errors
       },
       sharpJpegOptions: {
         quality: 80,
