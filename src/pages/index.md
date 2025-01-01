@@ -11,4 +11,30 @@ collabText:
   paragraph: Interested in working together or collaborating on a project?
   bold: Shoot me a message!
   linkText: Get in Touch
+
+projects:
+  - projectTitle: Adobe Spectrum CSS
+    description: As part of the Spectrum CSS team, we migrated our CSS into a brand new design language, while also migrating documentation into Storybook.
+    pageLink: open-source.html
+    ariaLabel: "Learn more about my work on Adobe's Spectrum CSS team."
+    buttonText: Visit Spectrum CSS
+    buttonLink: https://opensource.adobe.com/spectrum-css/
+    hpImage: spectrumcss-screenshot-hp.png
+    screenshotAltText: Spectrum CSS documentation page for a standard button component.
+  - projectTitle: NCSBN
+    description:  Over the course of several projects, I became very familiar with the <abbr title="National Council of State Boards of Nursing">NCSBN</abbr> pattern library, so when a redesign of their marketing site came up with a very tight timeline, I was able to contribute to the technical strategy.
+    pageLink: redesign.html
+    ariaLabel: Learn more about the major pattern library updates.
+    buttonText: Visit NCSBN.org
+    buttonLink: https://ncsbn.org/
+    hpImage: ncsbn-screenshot-hp.png
+    screenshotAltText: NCSBN homepage, with a nurse comforting a patient in a hospital room.
+  - projectTitle: Accessible Components
+    description: During my apprenticeship, our capstone project included creating an educational site dedicated to web accessibility best practices.
+    pageLink: a11y-cheatsheets.html
+    ariaLabel: Learn more about Sparkbox's Accessible Components project.
+    buttonText: Visit Accessible Components
+    buttonLink: https://accessible-components.sparkbox.com/
+    hpImage: a11y-components-screenshot-hp.png
+    screenshotAltText: Accessible Components homepage, with an illustration of a terrier dog, and stylized illustrations of web elements, like a card, accordion and checkboxes.
 ---
