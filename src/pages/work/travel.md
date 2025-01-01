@@ -4,7 +4,7 @@ layout: project-details-page.njk
 permalink: /work/travel.html
 bodyClasses: cmp-body util-bg-light-peach
 projectTitle: Fire &amp; Ice Landing Page
-heroBackground: util-bg-bright-blue
+customBackground: util-bg-bright-blue
 overview: |
   In order to get more experience working with real designs, I headed to Dribbble. I found a landing page dedicated to Iceland travel, and wanted to build it. Because I only had the Dribbble design, I added my own interactivity. I came up with hovers, some minor Javascript and even built my first image carousel.
 desktopImage: '/Ice-desktop-interior.png'

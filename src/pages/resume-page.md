@@ -2,6 +2,8 @@
 title: Resume, Marissa Huysentruyt
 layout: resume-page.njk
 permalink: resume/resume.html
+customBackground: util-bg-bright-coral-transparent
+customTextColor: util-text-black
 introText: |
   I&apos;m a front-end developer. Well actually, web development is my second career. I was a music educator and band director for seven years before I made the switch. What started out as a hobby has blossomed into a career where I can put my problem&hyphen;solving skills to the test. Once I really started to get into development, I realized how passionate I became about creating accessible, yet friendly user interfaces. My inner teacher loves that development is always changing, because that means I get to keep learning, growing and challenging myself.
 
