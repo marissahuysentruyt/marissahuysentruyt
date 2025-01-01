@@ -8,7 +8,6 @@
   @media (min-width: general.$bp-medium) {
     gap: 6rem;
     grid-template-columns: unset;
-    grid-template-rows: repeat(3, 1fr);
   }
   
   &__item {
@@ -62,8 +61,13 @@
 
     @media (min-width: general.$bp-medium) {
       flex-direction: row;
+
+      & > .cmp-button {
+          margin: 0;
+      }
     }
   }
+
 
   &__item-screenshot {
     @media (min-width: general.$bp-medium) {
@@ -79,7 +83,7 @@
       position: relative;
       left: general.$screenshot-offscreen;
 
-      .obj-projects-grid__item-screenshot--remake & {
+      .obj-projects-grid__item:nth-child(even) & {
         left: unset;
         right: general.$screenshot-offscreen;
       }
