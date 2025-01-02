@@ -4,7 +4,7 @@ layout: project-details-page.njk
 permalink: /work/remake.html
 bodyClasses: cmp-body util-bg-light-peach
 projectTitle: Financial Advisor's Website
-heroBackground: util-bg-navy
+customBackground: util-bg-navy
 overview: |
   This financial website was a remake of a live site, without any of the branding and copyrighted photos. I had access to the actual design files in Figma, so I used the design styles set up by the designer in order to develop the site. At the time, it was as close as I had come to having a real-world project, incorporating a homepage, multiple interior pages, and pre-determined mobile breakdowns. 
 desktopImage: '/Fin-desktop-interior.png'

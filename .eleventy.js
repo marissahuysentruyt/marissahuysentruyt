@@ -26,8 +26,6 @@ module.exports = function(eleventyConfig) {
       ? `/public/usedresources${src}`
       : `/public/usedresources/${src}`;
 
-    console.log(alt);
-
 		return `
       <img src=${imagePath} alt="${alt}" class=${imageClass || ''} />
     `;

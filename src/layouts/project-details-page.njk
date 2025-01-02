@@ -8,18 +8,18 @@
   {% include 'page-header.njk' %}
 
   <main class="{{ bodyClasses }} cmp-project-details">
-    <section class="{{ heroBackground }}">
+    <section class="{{ customBackground }}">
       <div class="cmp-project-details__hero util-max-width">
-        <a href="../index.html" class="cmp-project-details__home-link">
+        <a href="../index.html" class="cmp-project-details__home-link {{ customTextColor if customTextColor else 'util-text-white' }}">
           <span class="cmp-project-details__home-link-arrow"></span>
           Back Home
         </a>
 
         <div class="cmp-project-details__container">
-          <h1 class="cmp-project-details__project-title util-margin-none">
+          <h1 class="cmp-project-details__project-title util-margin-none {{ customTextColor if customTextColor else 'util-text-white' }}">
             {{ projectTitle | safe }}
           </h1>
-          <div class="cmp-project-details__overview">
+          <div class="cmp-project-details__overview {{ customTextColor if customTextColor else 'util-text-white' }}">
             <h2 class="cmp-project-details__heading">
               Overview
             </h2>
@@ -62,14 +62,43 @@
       </div>
     </section>
 
+    {# TODO: add extra Atlas info to the NCSBN md file so all that work is just lumped together. #}
+  {# <div class="obj-projects-grid__item">
+    <div class="obj-projects-grid__item-text">
+      <h3 class="obj-projects-grid__heading">
+        Update Pattern Library
+      </h3>
+      <p class="obj-projects-grid__description">
+        In a separate engagement with NCSBN, I was one of the main developers to add a new microsite to their pattern library and monorepo. 
+      </p>
+      <div class="obj-projects-grid__links">
+        <a href="/work/pattern-library.html" class="cmp-button cmp-button--primary" aria-label="Learn more about the major Regulatory Atlas updates for NCSBN">Learn More</a>
+        <a href="https://regulatoryatlas.com/" class="cmp-button cmp-button--secondary">
+          Visit <abbr title="Global Regulatory Atlas">GRA</abbr>
+          {% image 'external-link.svg', 'cmp-button__icon', 'Visit the Global Regulatory Atlas site.' %}
+        </a>
+      </div>
+    </div>
+
+    <div class="obj-projects-grid__item-screenshot">
+      {% image 'gra-screenshot-hp.png', 'obj-projects-grid__image', "Global Regulatory Atlas homepage, featuring a dropdown tool to view a country's nursing regulations and a grid of icons with corresponding descriptions and details of data users can find within the Atlas."%}
+    </div>
+  </div> #}
+
     <section class="cmp-project-details__site-cta">
       <h2 class="cmp-project-details__heading">
         Take a look at the site in action!
       </h2>
       <a href="{{link}}" class="cmp-button cmp-button--external-cta">
-        Visit Site
+        {{ linkText }}
         {% image 'external-link.svg', '', projectTitle %}
       </a>
+      {% if secondaryLink %}
+        <a href="{{ secondaryLink }}" class="cmp-button cmp-button--external-cta">
+          {{ secondaryLinkText }}
+          {% image 'external-link.svg', '', projectTitle %}
+        </a>
+      {% endif %}
     </section>
                     
     <div class="{{ collabClass }}">

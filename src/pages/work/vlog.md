@@ -4,7 +4,7 @@ layout: project-details-page.njk
 permalink: work/vlog.html
 bodyClasses: cmp-body util-bg-light-peach
 projectTitle: Neverland Travelers Website
-heroBackground: util-bg-purple
+customBackground: util-bg-purple
 overview: |
   The Neverland Travelers is what my husband and I call our YouTube channel. We have vlogged our vacations, and I created a website to share upcoming trip information. The site contains photos, videos, contact information, and an &quot;About&quot; section as well.
 desktopImage: '/NT-desktop-interior.png'
