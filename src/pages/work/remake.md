@@ -12,7 +12,7 @@ desktopAltText: 'Financial Website Homepage - Desktop'
 mobileImage: '/Fin-mobile.png'
 mobileAltText: 'Financial Website Remake - Mobile'
 contribution: |
-  The site is an actual design for a real financial advisor, and I was given permission to use the designs as a practice tool. It was extremely gratifying to figure out how to utilize and navigate Figma design files and styles, building everything from the ground up. Besides developing each page, I made a scheduling form, modal windows, and made sure every page broke down to mobile. As for enhancements, I would add proper functionality to the mobile menu and three additional landing pages.
+  The site is an actual design for a real financial advisor, and I was given permission to use the designs as a practice tool. It was extremely gratifying to figure out how to utilize and navigate Figma design files and styles, building everything from the ground up. Besides developing each page, I made a scheduling form, modal windows, and made sure every page broke down to mobile. As for enhancements (besides completely rebuilding it from the ground up again!), I would add proper functionality to the mobile menu and three additional landing pages. 
 linkText: Visit GitHub pages
 link: https://marissahuysentruyt.github.io/Financial-Website-Remake/
 languages: 
