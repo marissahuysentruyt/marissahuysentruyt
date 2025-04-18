@@ -28,8 +28,8 @@ linkText: NCSBN.org
 secondaryLink: https://regulatoryatlas.com/
 secondaryLinkText: Atlas
 languages:
-  - image: "html.svg"
-    alt: "HTML"
+  - image: "azure.svg"
+    alt: "Azure Dev Ops"
     className: "cmp-project-details__tech-list-item--image"
   - image: "handlebars.svg"
     alt: "Handlebars templating"
