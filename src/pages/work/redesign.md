@@ -47,7 +47,6 @@ languages:
     alt: "Node.js"
     className: "cmp-project-details__tech-list-item--image"
 
-collabClass: cmp-contact--remake
 collabText:
   paragraph: Interested in working together or collaborating on a project?
   bold: Shoot me a message!

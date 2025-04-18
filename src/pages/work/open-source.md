@@ -48,7 +48,6 @@ languages:
     alt: "React"
     className: "cmp-project-details__tech-list-item--image"
 
-collabClass: cmp-contact--travel
 collabText:
   paragraph: Interested in working together or collaborating on a project?
   bold: Shoot me a message!
