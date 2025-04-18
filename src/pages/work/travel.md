@@ -13,6 +13,7 @@ mobileImage: '/Ice-mobile.png'
 mobileAltText: 'Fire & Ice - Mobile'
 contribution: |
   I built this landing page from scratch. Because I only had a single image to work with, I added some subtle and tasteful extras, including all of the hovers, the blue bars that load when scrolled to (in the Race section), responsiveness, a proper mobile menu, and the image carousel. Enhancements could be to add the selected states for the navigation, a "thank you" modal for submitting the form, and prevent the mobile menu from bumping down the rest of the content, among others.
+linkText: Visit GitHub pages
 link: https://marissahuysentruyt.github.io/Recreating-Iceland/
 languages: 
   - image: '/html.svg'

@@ -13,6 +13,7 @@ mobileImage: '/NT-mobile.png'
 mobileAltText: 'Neverland Travelers - Mobile'
 contribution: |
   I designed, built and deployed this entire website. This was the first website I created to implement everything I was learning on my own. I used as much HTML & CSS as I could, making sure the pages were responsive. I had never deployed a website before, so using GitHub Pages, I launched our site! There's plenty of room on this first project for me to refactor code to be more readable, and clean up the design and visual styles.
+linkText: neverlandtravelers.com
 link: https://www.neverlandtravelers.com
 languages: 
   - image: '/html.svg'
