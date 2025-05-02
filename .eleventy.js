@@ -1,5 +1,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const eleventyImage = require("@11ty/eleventy-img");
+const { JSDOM } = require("jsdom");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -26,7 +27,7 @@ module.exports = function (eleventyConfig) {
     const imagePath = `/public/usedresources/${String(src).replace(/^\//, "")}`;
 
     return `
-      <img src=${imagePath} alt="${alt}" class=${imageClass || ""} />
+      <img loading="lazy" src=${imagePath} alt="${alt}" class=${imageClass || ""} />
     `;
   });
 
