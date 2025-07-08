@@ -27,7 +27,7 @@
     box-sizing: border-box;
     text-align: left;
     font-size: 3rem;
-    color: hsla(var(--color-white) / 72%);
+    color: hsl(var(--color-white) / 72%);
     margin: 0 auto;
     
     // TODO: refactor javascript animate-text, to use CSS animations instead?
@@ -48,7 +48,7 @@
   }
 
   &__heading {
-    color: hsla(var(--color-white) / 88%);
+    color: hsl(var(--color-white) / 88%);
     font-size: 1.5rem;
     text-wrap: balance;
 

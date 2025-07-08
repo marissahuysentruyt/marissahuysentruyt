@@ -16,7 +16,7 @@
     font-size: 3rem;
     line-height: 1;
     text-transform: lowercase;
-    color: hsla(var(--color-white) / 72%);
+    color: hsl(var(--color-white) / 72%);
 
     @media (min-width: general.$bp-small) {
       font-size: 4rem;
@@ -33,7 +33,7 @@
 
   &__text {
     font-size: 1.25rem;
-    color: hsla(var(--color-white) / 88%);
+    color: hsl(var(--color-white) / 88%);
     line-height: 1.4;
   }
 
@@ -55,14 +55,14 @@
     
   &__link {
     line-height: 1.5;
-    color: hsla(var(--color-white) / 72%);
+    color: hsl(var(--color-white) / 72%);
     text-underline-offset: 0.25rem;
     text-decoration-color: transparent;
     transition: general.$default-transition;
     
     &:hover {
-      color: hsla(var(--color-white) / 95%);
-      text-decoration-color: hsla(var(--color-white) / 72%);
+      color: hsl(var(--color-white) / 95%);
+      text-decoration-color: hsl(var(--color-white) / 72%);
     }
   }
 }

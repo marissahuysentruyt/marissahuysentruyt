@@ -23,51 +23,51 @@
 
   &--primary {
     color: var(--color-bright-coral);
-    background-color: hsla(var(--color-white) / 88%);
+    background-color: hsl(var(--color-white) / 88%);
 
     &:hover {
-      box-shadow: 0 0.25rem 0.625rem hsla(var(--color-black) / 32%);
+      box-shadow: 0 0.25rem 0.625rem hsl(var(--color-black) / 32%);
     }
 
     &:active {
-      background-color: hsla(var(--color-white) / 100%);
+      background-color: hsl(var(--color-white) / 100%);
     }
   }
 
   &--secondary {
-    color: hsla(var(--color-white) / 100%);
-    background-color: hsla(var(--color-white) / 16%);
+    color: hsl(var(--color-white) / 100%);
+    background-color: hsl(var(--color-white) / 16%);
     gap: 0.5rem;
 
     &:hover {
-      background-color: hsla(var(--color-white) / 24%);
+      background-color: hsl(var(--color-white) / 24%);
     }
 
     &:active {
-      background-color: hsla(var(--color-white) / 100%);
+      background-color: hsl(var(--color-white) / 100%);
     }
   }
 
   &--external-cta {
-    color: hsla(var(--color-white) / 88%);
+    color: hsl(var(--color-white) / 88%);
     background-color: var(--color-bright-coral);
     
     &:hover {
-      box-shadow: 0 0.25rem 0.375rem hsla(var(--color-black) / 32%);
+      box-shadow: 0 0.25rem 0.375rem hsl(var(--color-black) / 32%);
     }
 
     &:active {
-      color: hsla(var(--color-white) / 100%);
+      color: hsl(var(--color-white) / 100%);
     }
   }
 
   &--submit {
     border: 0.125rem solid transparent;
-    color: hsla(var(--color-white) / 100%);
+    color: hsl(var(--color-white) / 100%);
     background-color:var(--color-bright-coral);
     
     &:hover {
-      box-shadow: 0 0.25rem 0.375rem hsla(var(--color-black) / 32%);
+      box-shadow: 0 0.25rem 0.375rem hsl(var(--color-black) / 32%);
     }
     
     &:active {
@@ -86,18 +86,18 @@
     &:hover {
       cursor: pointer;
       background-color: var(--color-bright-coral-transparent);
-      box-shadow: 0 0.25rem 0.375rem hsla(var(--color-black) / 10%);
+      box-shadow: 0 0.25rem 0.375rem hsl(var(--color-black) / 10%);
     }
     
     &:active {
-      background-color: hsla(var(--color-white) / 100%);
+      background-color: hsl(var(--color-white) / 100%);
     }
   }
 
   &--download {
     border: 0.125rem solid var(--color-bright-coral);
     color: var(--color-bright-coral);
-    background-color: hsla(var(--color-white) / 100%);
+    background-color: hsl(var(--color-white) / 100%);
     display: none;
     width: fit-content;
     font-size: 0.875rem;
@@ -118,7 +118,7 @@
 
   &--download-icon {
     border: 0.125rem solid var(--color-bright-coral);
-    background-color: hsla(var(--color-white) / 100%);
+    background-color: hsl(var(--color-white) / 100%);
     width: 3rem;
     height: 3rem;
     display: flex;

@@ -1,7 +1,7 @@
 @use "../general/general";
 
 .obj-resume-grid {
-  background-color: hsla(var(--color-white) / 100%);
+  background-color: hsl(var(--color-white) / 100%);
   padding: general.$padding-small;
   display: grid;
   grid-template-columns: 1fr;

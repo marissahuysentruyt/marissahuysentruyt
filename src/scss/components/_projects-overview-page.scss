@@ -16,7 +16,7 @@
       font-size: 3rem;
       line-height: 1;
       text-transform: lowercase;
-      color: hsla(var(--color-white) / 72%);
+      color: hsl(var(--color-white) / 72%);
   
       @media (min-width: general.$bp-small) {
         font-size: 4rem;
@@ -33,7 +33,7 @@
   
     &__intro {
       font-size: 1.25rem;
-      color: hsla(var(--color-white) / 88%);
+      color: hsl(var(--color-white) / 88%);
       line-height: 1.4;
     }
 }

@@ -2,8 +2,8 @@
 
 .cmp-contact {
   padding: 2rem 1.5rem;
-  background-color: hsla(var(--color-black) / 8%);
-  color: hsla(var(--color-white) / 88%);
+  background-color: hsl(var(--color-black) / 8%);
+  color: hsl(var(--color-white) / 88%);
   box-sizing: border-box;
 
   @media (min-width: general.$bp-medium) {

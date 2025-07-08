@@ -145,15 +145,15 @@
     &--mobile {
       border-radius: 3rem;
       box-shadow: 
-        0 2rem 3rem hsla(var(--color-black) / 12%), 
-        inset 0 0.25rem 1rem hsla(var(--color-black) / 12%);
+        0 2rem 3rem hsl(var(--color-black) / 12%), 
+        inset 0 0.25rem 1rem hsl(var(--color-black) / 12%);
     }
   }
 
    &__body {
     box-sizing: border-box;
     padding: general.$padding-small;
-    color: hsla(var(--color-black) / 88%);
+    color: hsl(var(--color-black) / 88%);
 
     @media (min-width: general.$bp-medium) {
       padding: general.$padding-large;
@@ -174,7 +174,7 @@
   }
 
     &::before {
-      background-color: hsla(var(--color-white) / 100%);
+      background-color: hsl(var(--color-white) / 100%);
       height: 32.125rem; // 514px
       width: 32.125rem; // 514px
       top: 1rem;

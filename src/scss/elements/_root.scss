@@ -1,21 +1,21 @@
 :root {
   --color-dark-teal: hsl(194deg 65% 28%);
   --color-light-peach: hsl(0deg 100% 98%);
-  --color-light-peach-transparent: hsla(0deg 100% 98% / 80%);
+  --color-light-peach-transparent: hsl(0deg 100% 98% / 80%);
   --color-bright-coral: hsl(11deg 88% 62%);
-  --color-bright-coral-transparent-8: hsla(11deg 88% 62% / 8%);
-  --color-bright-coral-transparent-16: hsla(11deg 88% 62% / 16%);
-  --color-bright-coral-dark-hover: hsla(11deg 60% 52% / 100%);
-  --color-light-gray: hsla(0deg 0% 85% / 100%);
-  --color-purple: hsla(260deg 51% 34% / 100%);
-  --color-navy:hsla(210deg 53% 14% / 100%);
-  --color-bright-blue: hsla(188deg 100% 40% / 100%);
+  --color-bright-coral-transparent-8: hsl(11deg 88% 62% / 8%);
+  --color-bright-coral-transparent-16: hsl(11deg 88% 62% / 16%);
+  --color-bright-coral-dark-hover: hsl(11deg 60% 52% / 100%);
+  --color-light-gray: hsl(0deg 0% 85% / 100%);
+  --color-purple: hsl(260deg 51% 34% / 100%);
+  --color-navy:hsl(210deg 53% 14% / 100%);
+  --color-bright-blue: hsl(188deg 100% 40% / 100%);
   --color-adobe-red: hsl(0deg 100% 23%);
   --color-a11y-green: hsl(162deg 99% 48%);
   --color-ncsbn-blue: hsl(205deg 100% 30%);
   --color-sbx-black: hsl(0deg 0% 4%);
 
-  // black & white are used a lot with an alpha value in hsla
+  // black & white are used a lot with an alpha value in hsl
   --color-white: 0deg 100% 100%;
   --color-black: 0deg 0% 0%;
 }
