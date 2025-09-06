@@ -19,9 +19,9 @@ contribution: |
   As with any long-time project, technical debt is bound to pile up. As part of yet another project with NCSBN, we entered maintenance mode with them and were able to address that tech debt. In this engagement, we tackled the SCSS architecture. Because the monorepo includes several microsites, the CSS architecture includes shared styles across all microsites, but also offers project-specific styles. Over six weeks, we consolidated shared styles into a single entry point directory, and standardized how we imported the project-specific styles. We were able to modernize the style in which their SCSS is written, refactoring where necessary to use <code>@use</code> and <code>@forward</code>, while maintaining visual parity. The NCSBN data engineers were also migrating from Universal Analytics to Google Analytics. I helped create a Node script that would gather all of the Google Analytics data, and compile it into an exportable CSV file with all sorts of data points. That CSV could then be easily uploaded to Excel or Google Sheets, allowing NCSBN's engineers to make more informed decisions based on their analytics.
 
 secondaryDesktopImage: "gra-desktop-interior.png"
-secondaryDesktopAltText: Global Regulatory Atlas homepage, featuring a dropdown tool to view a country's nursing regulations and a grid of icons with corresponding descriptions and details of data users can find within the Atlas.
+secondaryDesktopAltText: "Global Regulatory Atlas homepage, featuring a dropdown tool to view a country's nursing regulations and a grid of icons with corresponding descriptions and details of data users can find within the Atlas."
 secondaryMobileImage: "gra-mobile.png"
-secondaryMobileAltText: Global Regulatory Atlas search page, showcasing the search results for Mexico and contact information for Mexico's Ministry of Health.
+secondaryMobileAltText: "Global Regulatory Atlas search page, showcasing the search results for Mexico and contact information for Mexico's Ministry of Health."
 
 link: https://ncsbn.org/
 linkText: NCSBN.org
