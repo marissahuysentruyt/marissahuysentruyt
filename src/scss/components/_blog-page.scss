@@ -43,6 +43,7 @@
     padding: 0;
     display: grid;
     gap: 0.5rem;
+    counter-reset: blog-counter;
 
     @media (min-width: general.$bp-medium) {
       margin-top: 5rem;
@@ -51,6 +52,23 @@
 
   &__list-item {
     font-size: 1.25rem;
+    position: relative;
+    counter-increment: blog-counter;
+    padding-left: 3rem; // accommodates the counter
+
+    &::before {
+      content: counter(blog-counter, decimal-leading-zero);
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: hsl(var(--color-white) / 40%);
+      transition: general.$default-transition;
+      line-height: 1.5; /* Match the link's line-height */
+    }
+
+    &:hover::before {
+      color: hsl(var(--color-white) / 95%);
+    }
   }
     
   &__link {
